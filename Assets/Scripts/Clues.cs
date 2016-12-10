@@ -2,13 +2,35 @@
 using System.Collections;
 using System.Collections.Generic;
 
+/*[System.Serializable]
+public class MurderType {
+	public string name;
+	public string description;
+}
+
+[System.Serializable]
+public class Profession {
+	public string name;
+	public MurderType[] murderTypes;
+}
+
+[System.Serializable]
+public class Hobby {
+	public string name;
+	public MurderType[] murderTypes;
+}*/
+
+
 public class Clues : MonoBehaviour {
 
     Dictionary<string, string[]> hobbyKills = new Dictionary<string, string[]>();
     Dictionary<string, string[]> careerKills = new Dictionary<string, string[]>();
 
+	//public MurderType[] murderTypes;
+
     // Use this for initialization
     void Start() {
+
         string[] kills = { "Cut", "Poison", "Stab", "Strangle", "Bludge", "Shoot" };
 
         string[] golf = { "Strangle", "Bludge" };
@@ -67,13 +89,11 @@ public class Clues : MonoBehaviour {
 	
 	}
 
-    public Dictionary<string, string[]> getCareerKills()
-    {
-        return careerKills;
-    }
+	public Dictionary<string, string[]> getHobbyKills() {
+		return hobbyKills;
+	}
 
-    public Dictionary<string, string[]> getHobbyKills()
-    {
-        return hobbyKills;
-    }
+	public Dictionary<string, string[]> getCareerKills() {
+		return careerKills;
+	}
 }
