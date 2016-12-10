@@ -96,4 +96,26 @@ public class Clues : MonoBehaviour {
 	public Dictionary<string, string[]> getCareerKills() {
 		return careerKills;
 	}
+
+	public string getClue() {
+		Random rand = new Random ();
+		int appearanceClue = rand.next (4);
+		if (appearanceClue == 3) {
+			//TODO: Write appearance clue code.
+		}
+		//TODO: Write non-appearance clue code
+	}
+}
+
+[System.Serializable]
+public class Clue {
+	bool isAppearance;
+	string clueText;
+	string guest;
+	//TODO: Change the player reference to the player or guest class
+	public Clue(string _guest, string _clueText, bool _isAppearance) {
+		isAppearance = _isAppearance;
+		clueText = _clueText;
+		guest = _guest;
+	}
 }
