@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
+
 [System.Serializable]
 public class GuestClass {
 	public string name;
@@ -21,9 +23,12 @@ public class GuestScript : MonoBehaviour {
 	public GuestClass[] GuestArray;
 	public Transform[] SpawnPoints;
 	public GameObject GuestPrefab;
+	public murderSystem murderScript;
 	// Use this for initialization
 	void Start () {
+		murderScript = GetComponent<murderSystem> ();
 		SpawnGuests ();
+		murderScript.enabled = true;
 	}
 
 	// Update is called once per frame
@@ -33,11 +38,13 @@ public class GuestScript : MonoBehaviour {
 
 	void SpawnGuests() {
 		int i = 0;
+		murderScript.guests = new List<GameObject> ();
 		foreach (var item in GuestArray) {
 			if (i <= SpawnPoints.Length) { 
 				GameObject SpawnedGuest = Instantiate (GuestPrefab, SpawnPoints[i].position,GuestPrefab.transform.rotation) as GameObject;
 				SpawnedGuest.GetComponent<Guest> ().guestClass = item;
 				SpawnedGuest.GetComponent<Guest> ().setText ();
+				murderScript.guests.Add (SpawnedGuest);
 			}
 			i++;
 		}
