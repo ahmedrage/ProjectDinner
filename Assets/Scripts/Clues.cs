@@ -23,6 +23,8 @@ public class Hobby {
 
 public class Clues : MonoBehaviour {
 
+	List<GuestClass> murderedGuests = new List<GuestClass>();
+
     Dictionary<string, string[]> hobbyKills = new Dictionary<string, string[]>();
     Dictionary<string, string[]> careerKills = new Dictionary<string, string[]>();
 
@@ -97,25 +99,53 @@ public class Clues : MonoBehaviour {
 		return careerKills;
 	}
 
-	public string getClue() {
-		int appearanceClue = Random.Range (0, 3);
-		if (appearanceClue == 3) {
-			//TODO: Write appearance clue code.
+	public List<Clue> getClue(GuestClass guest) {
+		List<Clue> returnList = new List<Clue> ();
+		bool guestAlreadyDead = false;
+		foreach (GuestClass _guest in murderedGuests) {
+			if (_guest == guest) {
+				guestAlreadyDead = true;
+			}
 		}
-		//TODO: Write non-appearance clue code
-		return "Unity, you are a fucking dick cunt whore face!";
+		if (!guestAlreadyDead) {
+			List<string> deathMethods = new List<string> ();
+			foreach (string s in careerKills[guest.profession]) {
+				deathMethods.Add (s);
+			}
+			foreach (string s in hobbyKills[guest.hobby]) {
+				deathMethods.Add (s);
+			}
+
+			int deathNum = Random.Range (0, (deathMethods.Count - 1));
+			Clue deathClue = new Clue (guest, deathMethods[deathNum], 0);
+			returnList.Add (deathClue);
+
+			int appearanceClue = Random.Range (0, 3);
+			if (appearanceClue == 3) {
+				//TODO: Write appearance clue code.
+			}
+			return returnList;
+		}
 	}
 }
 
 [System.Serializable]
 public class Clue {
+	//Death Clues
 	bool isAppearance;
+	GuestClass guest;
+	string deathType;
 	string clueText;
-	string guest;
-	//TODO: Change the player reference to the player or guest class
-	public Clue(string _guest, string _clueText, bool _isAppearance) {
+
+	public Clue(GuestClass _guest, string _deathType, bool _isAppearance) {
 		isAppearance = _isAppearance;
-		clueText = _clueText;
 		guest = _guest;
+		deathType = _deathType;
+
+		//TODO Define clue text
+	}
+
+	public string getClue() {
+		return clueText;
 	}
 }
