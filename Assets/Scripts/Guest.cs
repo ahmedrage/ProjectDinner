@@ -46,9 +46,5 @@ public class Guest : MonoBehaviour {
 	}
 
 	public void Die(string clue) {
-		dead = true;
-		if (clue != null) {
-			deathPanel.transform.GetChild (0).GetComponent<Text> ().text = clue;
-		}
 	}
 }

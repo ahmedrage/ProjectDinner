@@ -5,11 +5,13 @@ public class shotMover : MonoBehaviour {
 
 	public float speed;
 	public float timeTillDestroy;
+	public string shotGuestName;
+	public murderSystem script;
 
 
 	// Use this for initialization
 	void Start () {
-	
+		script = GameObject.Find ("Gm").GetComponent<murderSystem> ();
 	}
 	
 	// Update is called once per frame
@@ -22,10 +24,16 @@ public class shotMover : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D (Collision2D other){
-		if (other.gameObject.tag == "Guest") {
+		if (other.gameObject.tag == "guest") {
 			Destroy (other.gameObject);
 			Destroy (gameObject);
-			//change sprite to dead guest
+			print (shotGuestName);
+
+			if (other.gameObject == script.murderer) {
+				print ("you killed the murderer, you win.");
+			} else {
+				print("that wasn't the killer, you lose,");
+			}
 		}else{
 			Destroy (gameObject);
 		}
