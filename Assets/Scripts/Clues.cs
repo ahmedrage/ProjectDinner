@@ -98,12 +98,12 @@ public class Clues : MonoBehaviour {
 	}
 
 	public string getClue() {
-		Random rand = new Random ();
-		int appearanceClue = rand.next (4);
+		int appearanceClue = Random.Range (0, 3);
 		if (appearanceClue == 3) {
 			//TODO: Write appearance clue code.
 		}
 		//TODO: Write non-appearance clue code
+		return "Unity, you are a fucking dick cunt whore face!";
 	}
 }
 
