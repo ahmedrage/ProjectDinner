@@ -24,7 +24,7 @@ public class shotMover : MonoBehaviour {
 	}
 
 	void OnCollisionEnter2D (Collision2D other){
-		if (other.gameObject.tag == "Guest") {
+		if (other.gameObject.tag == "guest") {
 			Destroy (other.gameObject);
 			Destroy (gameObject);
 			print (shotGuestName);
