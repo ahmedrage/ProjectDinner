@@ -23,7 +23,7 @@ public class Hobby {
 
 public class Clues : MonoBehaviour {
 
-	List<GuestClass> murderedGuests = new List<GuestClass>();
+	List<Guest> murderedGuests = new List<Guest>();
 
     Dictionary<string, string[]> hobbyKills = new Dictionary<string, string[]>();
     Dictionary<string, string[]> careerKills = new Dictionary<string, string[]>();
@@ -99,20 +99,20 @@ public class Clues : MonoBehaviour {
 		return careerKills;
 	}
 
-	public List<Clue> getClue(GuestClass guest, GuestClass murderer) {
+	public List<Clue> getClue(Guest guest, Guest murderer) {
 		List<Clue> returnList = new List<Clue> ();
 		bool guestAlreadyDead = false;
-		foreach (GuestClass _guest in murderedGuests) {
+		foreach (Guest _guest in murderedGuests) {
 			if (_guest == guest) {
 				guestAlreadyDead = true;
 			}
 		}
 		if (!guestAlreadyDead) {
 			List<string> deathMethods = new List<string> ();
-			foreach (string s in careerKills[guest.profession.ToString()]) {
+			foreach (string s in careerKills[guest.guestClass.profession.ToString()]) {
 				deathMethods.Add (s);
 			}
-			foreach (string s in hobbyKills[guest.hobby.ToString()]) {
+			foreach (string s in hobbyKills[guest.guestClass.hobby.ToString()]) {
 				deathMethods.Add (s);
 			}
 
@@ -135,14 +135,14 @@ public class Clues : MonoBehaviour {
 public class Clue {
 	//Death Clues
 	bool isAppearance;
-	GuestClass guest;
+	Guest guest;
 	string deathType;
 	string deathText;
 
 	string appearanceText;
 
 
-	public Clue(GuestClass _guest, string _deathType, bool _isAppearance) {
+	public Clue(Guest _guest, string _deathType, bool _isAppearance) {
 		isAppearance = _isAppearance;
 		guest = _guest;
 		deathType = _deathType;
@@ -178,11 +178,11 @@ public class Clue {
 		return deathText;
 	}
 
-	public void setAppearanceText(GuestClass murderer) {
+	public void setAppearanceText(Guest murderer) {
 		int descriptorRand = Random.Range(0, 1);
 		string appearanceClueText = "";
 		if (descriptorRand == 1) {
-			switch (murderer.Accessory.ToString ()) {
+			switch (murderer.guestClass.Accessory.ToString ()) {
 			case "Hat":
 				appearanceClueText = "I think the murderer was wearing a hat.";
 				break;
@@ -197,7 +197,7 @@ public class Clue {
 				break;
 			}
 		} else {
-			switch(murderer.Blemish.ToString()) {
+			switch(murderer.guestClass.Blemish.ToString()) {
 			case "Tattoo": 
 				appearanceClueText = "I saw that the murderer had a tattoo.";
 				break;

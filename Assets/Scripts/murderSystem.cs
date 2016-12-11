@@ -36,7 +36,14 @@ public class murderSystem : MonoBehaviour {
 	void KillGuest(){
 		light.enabled = false;
 		int i = Random.Range (0, guests.Count);
-		Vector2 tempGuestPos = guests[i].transform.position;
+		Vector2 tempGuestPos = guests [i].transform.position;
+			
+		List<Clue> clues = gameObject.GetComponent<Clues> ().getClue (guests [i].GetComponent<Guest> (), murderer.GetComponent<Guest> ());
+
+		foreach (Clue clue in clues) {
+			print (clue.getDeathClue ());
+		}
+
 		Destroy (guests [i]);
 		//Instantiate (murderedGuests[i], tempGuestPos, Quaternion.identity);
 		guests.RemoveAt (i);
