@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/menuScene.unity
-=======
-- path: Assets/Scenes/Clues.unity
->>>>>>> feature/Clues
+- path: Assets/GuestScene.unity
   isLoaded: 1
   isActive: 1

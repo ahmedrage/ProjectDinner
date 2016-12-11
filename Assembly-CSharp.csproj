@@ -6,11 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-<<<<<<< HEAD
-    <ProjectGuid>{64C4FC6C-3844-D66B-7BEB-5C6B9088784A}</ProjectGuid>
-=======
     <ProjectGuid>{451642F3-9C07-2B51-9386-D9A841F97A29}</ProjectGuid>
->>>>>>> feature/Clues
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -52,6 +48,9 @@
      <Compile Include="Assets\Scripts\Clues.cs" />
      <Compile Include="Assets\Scripts\Guest.cs" />
      <Compile Include="Assets\Scripts\GuestScript.cs" />
+     <Compile Include="Assets\Scripts\murderSystem.cs" />
+     <Compile Include="Assets\Scripts\playerController.cs" />
+     <Compile Include="Assets\Scripts\shotMover.cs" />
      <Compile Include="Assets\lachieFolder\scripts\menu.cs" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>

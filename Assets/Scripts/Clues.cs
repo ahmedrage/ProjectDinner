@@ -99,7 +99,7 @@ public class Clues : MonoBehaviour {
 		return careerKills;
 	}
 
-	public List<Clue> getClue(GuestClass guest) {
+	public List<Clue> getClue(GuestClass guest, GuestClass murderer) {
 		List<Clue> returnList = new List<Clue> ();
 		bool guestAlreadyDead = false;
 		foreach (GuestClass _guest in murderedGuests) {
@@ -122,7 +122,7 @@ public class Clues : MonoBehaviour {
 
 			int appearanceClue = Random.Range (0, 3);
 			if (appearanceClue == 3) {
-				//deathClue.setAppearanceText(***MURDERER***);
+				deathClue.setAppearanceText(murderer);
 			}
 			return returnList;
 		} else {
