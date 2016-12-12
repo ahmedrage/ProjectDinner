@@ -24,5 +24,9 @@ public class Timer : MonoBehaviour {
 		} else {
 			restartTimer = false;
 		}
+
+		if (restartTime == 0) {
+			Destroy (this);
+		}
 	}
 }

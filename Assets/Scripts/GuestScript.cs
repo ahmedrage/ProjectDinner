@@ -39,7 +39,7 @@ public class GuestScript : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
-	
+
 	}
 
 	void SpawnGuests() {

@@ -7,11 +7,13 @@ public class shotMover : MonoBehaviour {
 	public float timeTillDestroy;
 	public string shotGuestName;
 	public murderSystem script;
+	public finishConditions finishScript;
 
 
 	// Use this for initialization
 	void Start () {
 		script = GameObject.Find ("Gm").GetComponent<murderSystem> ();
+		finishScript =  GameObject.Find ("Gm").GetComponent<finishConditions> ();
 	}
 	
 	// Update is called once per frame
@@ -26,16 +28,18 @@ public class shotMover : MonoBehaviour {
 	void OnCollisionEnter2D (Collision2D other){
 		if (other.gameObject.tag == "guest") {
 			other.gameObject.GetComponent<Guest> ().Die ();
-			print (shotGuestName);
+			Destroy (this.gameObject);
 
-
-			if (other.gameObject == script.murderer) {
-				print ("you killed the murderer, you win.");
-			} else {
-				print("that wasn't the killer, you lose,");
+			if (other.gameObject.tag == "guest" && other.gameObject != script.murderer) {
+				finishScript.loseCondition = 1;
+				finishScript.Lose ();
+				Destroy (this.gameObject);
 			}
+		} else {
+			Destroy (this.gameObject);
+			finishScript.loseCondition = 3;
+			finishScript.Lose ();
 		}
-		Destroy (gameObject);
 	}
 
 	IEnumerator destroyDelay(){

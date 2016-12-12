@@ -5,20 +5,23 @@ public class Guest : MonoBehaviour {
 
 	// Use this for initialization
 	public GuestClass guestClass;
+	public GuestClass[] GuestArray;
 	public bool dead;
 	public Transform Panel;
 	public Transform Portrait;
 	Transform deathPanel;
+	public murderSystem murderScript;
+
 	void Start () {
 		deathPanel = transform.GetChild (0).transform.GetChild (1);
 		Portrait = transform.FindChild ("Canvas").FindChild ("Portrait");
-
+		murderScript = GameObject.Find ("Gm").GetComponent<murderSystem> ();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-
 	}
+
 	public void setText () {
 		Panel = transform.GetChild (0).transform.GetChild (0);
 		Panel.transform.GetChild (0).GetComponent<Text> ().text = guestClass.name;
