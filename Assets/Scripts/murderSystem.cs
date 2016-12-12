@@ -9,6 +9,7 @@ public class murderSystem : MonoBehaviour {
 	public GameObject murderer;
 	public float lightDelay;
 	public List<GameObject> guests;
+	public List<Sprite> deadPortraits;
 	public int deadGuests;
 	public Timer script;
 	public Clues clueScript;
