@@ -2,33 +2,12 @@
 using System.Collections;
 using System.Collections.Generic;
 
-/*[System.Serializable]
-public class MurderType {
-	public string name;
-	public string description;
-}
-
-[System.Serializable]
-public class Profession {
-	public string name;
-	public MurderType[] murderTypes;
-}
-
-[System.Serializable]
-public class Hobby {
-	public string name;
-	public MurderType[] murderTypes;
-}*/
-
-
 public class Clues : MonoBehaviour {
 
-	List<GuestClass> murderedGuests = new List<GuestClass>();
+	public List<GuestClass> murderedGuests = new List<GuestClass>();
 
     Dictionary<string, string[]> hobbyKills = new Dictionary<string, string[]>();
     Dictionary<string, string[]> careerKills = new Dictionary<string, string[]>();
-
-	//public MurderType[] murderTypes;
 
     // Use this for initialization
     void Start() {
@@ -65,22 +44,22 @@ public class Clues : MonoBehaviour {
         careerKills.Add("Doctor", doctor);
 
         string[] scientist = { "Cut", "Poison", "Stab" };
-        careerKills.Add("Scientist", scientist);
+		careerKills.Add("Scientist", scientist);
 
         string[] author = { "Cut", "Poison", "Bludge" };
-        careerKills.Add("Author", author);
+		careerKills.Add("Author", author);
 
         string[] homemaker = { "Cut", "Stab", "Bludge" };
-        careerKills.Add("Home-Maker", homemaker);
+		careerKills.Add("HomeMaker", homemaker);
 
         string[] chef = { "Cut", "Stab", "Bludge" };
-        careerKills.Add("Chef", chef);
+		careerKills.Add("Chef", chef);
 
         string[] politician = { "Poison", "Strang", "Shoot" };
-        careerKills.Add("Politician", politician);
+		careerKills.Add("Politician", politician);
 
         string[] filmmaker = { "Strangle", "Bludge", "Shoot" };
-        careerKills.Add("Film-Maker", filmmaker);
+		careerKills.Add("FilmMaker", filmmaker);
 
         string[] veteran = { "Stab", "Bludge", "Shoot" };
         careerKills.Add("Veteran", veteran);
@@ -99,15 +78,7 @@ public class Clues : MonoBehaviour {
 		return careerKills;
 	}
 
-	public List<Clue> getClue(GuestClass guest, GuestClass murderer) {
-		List<Clue> returnList = new List<Clue> ();
-		bool guestAlreadyDead = false;
-		foreach (GuestClass _guest in murderedGuests) {
-			if (_guest == guest) {
-				guestAlreadyDead = true;
-			}
-		}
-		if (!guestAlreadyDead) {
+	public Clue getClue(GuestClass guest, GuestClass murderer) {
 			List<string> deathMethods = new List<string> ();
 			foreach (string s in careerKills[guest.profession.ToString()]) {
 				deathMethods.Add (s);
@@ -118,28 +89,24 @@ public class Clues : MonoBehaviour {
 
 			int deathNum = Random.Range (0, (deathMethods.Count - 1));
 			Clue deathClue = new Clue (guest, deathMethods [deathNum], false);
-			returnList.Add (deathClue);
 
-			int appearanceClue = Random.Range (0, 3);
+			int appearanceClue = Random.Range (2, 4);
 			if (appearanceClue == 3) {
 				deathClue.setAppearanceText(murderer);
 			}
-			return returnList;
-		} else {
-			return null;
-		}
+			return deathClue;
 	}
 }
 
 [System.Serializable]
 public class Clue {
 	//Death Clues
-	bool isAppearance;
-	GuestClass guest;
-	string deathType;
-	string deathText;
+	public bool isAppearance;
+	public GuestClass guest;
+	public string deathType;
+	public string deathText;
 
-	string appearanceText;
+	public string appearanceText;
 
 
 	public Clue(GuestClass _guest, string _deathType, bool _isAppearance) {
@@ -147,7 +114,7 @@ public class Clue {
 		guest = _guest;
 		deathType = _deathType;
 		//TODO Define clue text
-		string deathText = "";
+		deathText = "";
 
 		switch (deathType) {
 		case "Cut":
@@ -179,36 +146,35 @@ public class Clue {
 	}
 
 	public void setAppearanceText(GuestClass murderer) {
-		int descriptorRand = Random.Range(0, 1);
-		string appearanceClueText = "";
+		int descriptorRand = Random.Range(0, 2);
 		if (descriptorRand == 1) {
 			switch (murderer.Accessory.ToString ()) {
 			case "Hat":
-				appearanceClueText = "I think the murderer was wearing a hat.";
+				appearanceText = "I think the murderer was wearing a hat.";
 				break;
 			case "Glasses":
-				appearanceClueText = "I believe I saw the murderer wearing glasses!";
+				appearanceText = "I believe I saw the murderer wearing glasses!";
 				break;
 			case "WorkAccessory":
-				appearanceClueText = "They had some sort of technical instrument.";
+				appearanceText = "They had some sort of technical instrument.";
 				break;
 			default:
-				appearanceClueText = "The murderer didn't seem to have any sort of accessory.";
+				appearanceText = "The murderer didn't seem to have any sort of accessory.";
 				break;
 			}
 		} else {
 			switch(murderer.Blemish.ToString()) {
 			case "Tattoo": 
-				appearanceClueText = "I saw that the murderer had a tattoo.";
+				appearanceText = "I saw that the murderer had a tattoo.";
 				break;
 			case "Scar":
-				appearanceClueText = "They had some sort of horrible scar!";
+				appearanceText = "They had some sort of horrible scar!";
 				break;
 			case "SkinCondition":
-				appearanceClueText = "The murderer had the most horrible skin.";
+				appearanceText = "The murderer had the most horrible skin.";
 				break;
 			default:
-				appearanceClueText = "The murderer had plain skin.";
+				appearanceText = "The murderer had plain skin.";
 				break;
 		}
 	}

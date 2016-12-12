@@ -25,18 +25,17 @@ public class shotMover : MonoBehaviour {
 
 	void OnCollisionEnter2D (Collision2D other){
 		if (other.gameObject.tag == "guest") {
-			Destroy (other.gameObject);
-			Destroy (gameObject);
+			other.gameObject.GetComponent<Guest> ().Die ();
 			print (shotGuestName);
+
 
 			if (other.gameObject == script.murderer) {
 				print ("you killed the murderer, you win.");
 			} else {
 				print("that wasn't the killer, you lose,");
 			}
-		}else{
-			Destroy (gameObject);
 		}
+		Destroy (gameObject);
 	}
 
 	IEnumerator destroyDelay(){

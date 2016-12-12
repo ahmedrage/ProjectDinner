@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 using System.Collections;
+using UnityEngine.UI;
 
 public class murderSystem : MonoBehaviour {
 
@@ -9,9 +10,11 @@ public class murderSystem : MonoBehaviour {
 	public float lightDelay;
 	public List<GameObject> guests;
 	public Timer script;
-
+	public Clues clueScript;
+	public Clue clue;
 	// Use this for initialization
 	void Start () {
+		clueScript = GetComponent<Clues> ();
 		int x = Random.Range (0, guests.Count);
 		murderer = guests [x];
 		guests.RemoveAt (x);
@@ -23,11 +26,11 @@ public class murderSystem : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (guests.Count <= 6) {
-			//print ("you lose");
+			print ("you lose");
 		}
 
-		if (murderer == null) {
-			//print ("you win");
+		if (murderer.GetComponent<Guest>().dead == true) {
+			print ("You win");
 		}
 
 		if (script.restartTimer) {
@@ -40,7 +43,16 @@ public class murderSystem : MonoBehaviour {
 		int i = Random.Range (0, guests.Count);
 		//Vector2 tempGuestPos = guests[i].transform.position;
 		//guests [i].GetComponent<Guest>().Die();
-		Destroy(guests[i]);
+		Guest _guestScript = guests[i].GetComponent<Guest>();
+		guests[i].GetComponent<Guest>().Die();
+		clue = clueScript.getClue (_guestScript.guestClass, murderer.GetComponent<Guest> ().guestClass);
+		print(clueScript.getClue (_guestScript.guestClass, murderer.GetComponent<Guest> ().guestClass).getDeathClue());
+		_guestScript.setDeathText (clueScript.getClue (_guestScript.guestClass, murderer.GetComponent<Guest> ().guestClass).getDeathClue ());
+
+		if (clue.appearanceText != null) {
+			GetComponent<GuestScript> ().dropHint (guests [i], clue.appearanceText);
+		}
+
 		guests.RemoveAt (i);
 		StartCoroutine ("lightFlash");
 	}

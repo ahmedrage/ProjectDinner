@@ -7,10 +7,11 @@ public class Guest : MonoBehaviour {
 	public GuestClass guestClass;
 	public bool dead;
 	public Transform Panel;
+	public Transform Portrait;
 	Transform deathPanel;
 	void Start () {
 		deathPanel = transform.GetChild (0).transform.GetChild (1);
-
+		Portrait = transform.FindChild ("Canvas").FindChild ("Portrait");
 
 	}
 	
@@ -22,10 +23,19 @@ public class Guest : MonoBehaviour {
 		Panel = transform.GetChild (0).transform.GetChild (0);
 		Panel.transform.GetChild (0).GetComponent<Text> ().text = guestClass.name;
 		Panel.transform.GetChild (1).GetComponent<Text> ().text = guestClass.profession.ToString();
-		Panel.transform.GetChild (2).GetComponent<Text> ().text = guestClass.hobby.ToString();
-		Panel.transform.GetChild (3).GetComponent<Text> ().text = guestClass.Accessory.ToString();
-		Panel.transform.GetChild (4).GetComponent<Text> ().text = guestClass.Blemish.ToString();
+		Panel.transform.GetChild (2).GetComponent<Text> ().text = "Likes " + guestClass.hobby.ToString();
+		Panel.transform.GetChild (3).GetComponent<Text> ().text = "Is wearing a " + guestClass.Accessory.ToString();
+		Panel.transform.GetChild (4).GetComponent<Text> ().text = "Has a " +guestClass.Blemish.ToString();
 
+	}
+
+	public void setDeathText (string deathText) {
+		deathPanel.GetChild (0).GetComponent<Text> ().text = deathText;
+	}
+
+	public void setHintText (string hintText) {
+		print (guestClass.name);
+		Panel.transform.GetChild (5).GetComponent<Text> ().text = hintText;
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {
@@ -35,6 +45,10 @@ public class Guest : MonoBehaviour {
 			print (dead.ToString ());
 			deathPanel.gameObject.SetActive (true);
 		}
+
+		if (other.gameObject.tag == "Player" && Portrait != null) {
+			Portrait.gameObject.SetActive (true);
+		}
 		
 	}
 
@@ -43,8 +57,13 @@ public class Guest : MonoBehaviour {
 			Panel.gameObject.SetActive (false);
 			deathPanel.gameObject.SetActive (false);
 		}
+		if (other.gameObject.tag == "Player" && Portrait != null) {
+			Portrait.gameObject.SetActive (false);
+		}
 	}
 
-	public void Die(string clue) {
+	public void Die() {
+		dead = true;
+		transform.FindChild ("Graphics").GetComponent<SpriteRenderer> ().sprite = guestClass.deadSprite;
 	}
 }
