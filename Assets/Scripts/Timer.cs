@@ -3,12 +3,20 @@ using UnityEngine.UI;
 using System.Collections;
 
 public class Timer : MonoBehaviour {
+
 	public Text timerText;
+	public murderSystem murdererScript;
+	public finishConditions finishScript;
 	public float t = 30f;
 	public float restartTime = 25f;
-	[HideInInspector] public bool restartTimer;
-	
+
 	// Update is called once per frame
+	void Start(){
+		murdererScript = GameObject.Find ("Gm").GetComponent<murderSystem> ();
+		finishScript =  GameObject.Find ("Gm").GetComponent<finishConditions> ();
+
+	}
+
 	void Update () {
 		t -= Time.deltaTime; 
 
@@ -18,14 +26,12 @@ public class Timer : MonoBehaviour {
 		timerText.text = "NEXT VICTIM " + seconds;
 		if (t <= 0.0f) {
 			//print ("done");
-			restartTimer = true;
 			t = restartTime;
 			restartTime -= 5;
-		} else {
-			restartTimer = false;
-		}
+			murdererScript.KillGuest ();
+		} 
 
-		if (restartTime == 0) {
+		if (restartTime == 0 || finishScript.win || finishScript.lose) {
 			Destroy (this);
 		}
 	}

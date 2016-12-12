@@ -34,7 +34,7 @@ public class murderSystem : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (guests.Count <= 0) {
+		if (deadGuests == 6) {
 			finishScript.loseCondition =2;
 			finishScript.Lose ();
 		}
@@ -42,19 +42,16 @@ public class murderSystem : MonoBehaviour {
 		if (murderer.GetComponent<Guest>().dead == true) {
 			finishScript.Win ();
 		}
-
-		if (script.restartTimer) {
-			KillGuest();
-		}
-
 	}
 
-	void KillGuest(){
+	public void KillGuest(){
 		light.enabled = false;
 		int i = Random.Range (0, guests.Count);
 		//Vector2 tempGuestPos = guests[i].transform.position;
 		//guests [i].GetComponent<Guest>().Die();
 		Guest _guestScript = guests[i].GetComponent<Guest>();
+		deadPortraits.Add(guests [i].GetComponent<Guest> ().guestClass.Portrait);
+
 		guests[i].GetComponent<Guest>().Die();
 		clue = clueScript.getClue (_guestScript.guestClass, murderer.GetComponent<Guest> ().guestClass);
 		print(clueScript.getClue (_guestScript.guestClass, murderer.GetComponent<Guest> ().guestClass).getDeathClue());

@@ -1,13 +1,18 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using System.Collections.Generic;
 using System.Collections;
 
 public class finishConditions : MonoBehaviour {
 
 	public string numDeadGuests;
 	public string murderer;
+	public GameObject endGameMenu;
+	public GameObject imgs;
 	public Sprite murdererPortrait;
 	public Image murdererPortraitImg;
+	public List<Image> murderedGuestPortraits;
+	public List<Sprite> murderedGuestSprites;
 	public bool win;
 	public bool lose;
 	public Clues clueScript;
@@ -16,9 +21,6 @@ public class finishConditions : MonoBehaviour {
 	public Text murdererName;
 	public Text numDeadGuestsText;
 	public int loseCondition;
-
-	string x;
-
 
 	// Use this for initialization
 	void Start () {
@@ -31,30 +33,36 @@ public class finishConditions : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		endGameInfo ();
-
-		if (numDeadGuests == "1") {
-			x = "";
-		} else {
-			x = "s";
-		}
 	}
 
 	void endGameInfo(){
 		numDeadGuests = murdererScript.deadGuests.ToString();
-		numDeadGuestsText.text = "You let " + numDeadGuests +" Guest"+x +" die"; // even to a guy like me that's cold
+		numDeadGuestsText.text = "You let " + numDeadGuests +" Guest die"; // even to a guy like me that's cold
 		murderer = murdererScript.murdererName;
 		murdererName.text = "Murderer: " + murderer;
 		murdererPortrait = murdererScript.murdererPortrait;
 		murdererPortraitImg.sprite = murdererPortrait;
+		murderedGuestSprites = murdererScript.deadPortraits;
+
+		for (int i = 0; i < murderedGuestSprites.Count; i++) {
+			murderedGuestPortraits[i].sprite = murderedGuestSprites[i];
+			murderedGuestPortraits[i].enabled = true;
+		}
+	}
+
+	void enableUI(){
+		murdererPortraitImg.enabled =true;
+		murdererName.enabled = true;
+		numDeadGuestsText.enabled = true;
+		endGameMenu.SetActive (true);
+		imgs.SetActive (true);
 	}
 
 	public void Win(){
 		print ("you win");
 		title.text = "You got the murderer";
 		win = true;
-		murdererPortraitImg.enabled =true;
-		murdererName.enabled = true;
-		numDeadGuestsText.enabled = true;
+		enableUI ();
 	}
 
 	public void Lose(){
@@ -64,17 +72,15 @@ public class finishConditions : MonoBehaviour {
 			title.text = "You shot the wrong person";
 			break;
 		case 2:
-			print ("you let to many people died");
-			title.text = "You let to many people died";
+			print ("You let to many people die");
+			title.text = "You let to many people die";
 			break;
 		case 3:
-			print ("you wasted your one bullet");
+			print ("You wasted your one bullet");
 			title.text = "You wasted your one bullet";
 			break;
 		}
-		murdererPortraitImg.enabled =true;
-		murdererName.enabled = true;
-		numDeadGuestsText.enabled = true;
+		enableUI ();
 		lose = true;
 	}
 }

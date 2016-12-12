@@ -31,6 +31,8 @@ public class shotMover : MonoBehaviour {
 			Destroy (this.gameObject);
 
 			if (other.gameObject.tag == "guest" && other.gameObject != script.murderer) {
+				script.deadPortraits.Add(other.gameObject.GetComponent<Guest> ().guestClass.Portrait);
+				script.deadGuests++;
 				finishScript.loseCondition = 1;
 				finishScript.Lose ();
 				Destroy (this.gameObject);

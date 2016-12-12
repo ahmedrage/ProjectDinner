@@ -20,6 +20,10 @@ public class Guest : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		if (dead) {
+			this.gameObject.layer = LayerMask.NameToLayer("deadGuest");
+			Physics2D.IgnoreLayerCollision(8,9,true);
+		}
 	}
 
 	public void setText () {

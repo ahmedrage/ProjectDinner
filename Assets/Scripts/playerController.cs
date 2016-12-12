@@ -28,8 +28,8 @@ public class playerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		float moveHorizontal = Input.GetAxis ("Horizontal");
-		float moveVertical = Input.GetAxis ("Vertical");
+		float moveHorizontal = Input.GetAxisRaw ("Horizontal");
+		float moveVertical = Input.GetAxisRaw ("Vertical");
 
 		Vector2 movement = new Vector2 (moveHorizontal, moveVertical);
 		Vector3 difference = Camera.main.ScreenToWorldPoint (Input.mousePosition) - transform.position;
