@@ -18,6 +18,7 @@ public class playerController : MonoBehaviour {
 	bool playing = false;
 	public AudioSource ShootSound;
 	public AudioSource Gasp;
+	public Animator myAnimator;
 	// Use this for initialization
 	void Start () {
 		rb = GetComponent<Rigidbody2D>();
@@ -57,6 +58,11 @@ public class playerController : MonoBehaviour {
 			if (canShoot && Input.GetButtonDown ("Fire1")) {
 				Shoot ();
 			}
+		}
+		if (Input.GetAxis ("Horizontal") == 0 && Input.GetAxis ("Vertical") == 0) {
+			myAnimator.SetBool ("Moving", false);
+		} else {
+			myAnimator.SetBool ("Moving", true);
 		}
 	}
 
