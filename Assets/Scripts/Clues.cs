@@ -3,6 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class Clues : MonoBehaviour {
+	public AudioSource Bludge;
+	public AudioSource Cut;
+	public AudioSource Shot;
+	public AudioSource Stab;
+
+
 
 	public List<GuestClass> murderedGuests = new List<GuestClass>();
 
@@ -91,6 +97,7 @@ public class Clues : MonoBehaviour {
 			Clue deathClue = new Clue (guest, deathMethods [deathNum], false);
 
 			int appearanceClue = Random.Range (2, 4);
+		Debug.Log (appearanceClue.ToString());
 			if (appearanceClue == 3) {
 				deathClue.setAppearanceText(murderer);
 			}
@@ -105,7 +112,6 @@ public class Clue {
 	public GuestClass guest;
 	public string deathType;
 	public string deathText;
-
 	public string appearanceText;
 
 
@@ -146,6 +152,7 @@ public class Clue {
 	}
 
 	public void setAppearanceText(GuestClass murderer) {
+		Debug.Log ("Test");
 		int descriptorRand = Random.Range(0, 2);
 		if (descriptorRand == 1) {
 			switch (murderer.Accessory.ToString ()) {

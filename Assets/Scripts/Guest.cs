@@ -31,7 +31,11 @@ public class Guest : MonoBehaviour {
 		Panel.transform.GetChild (0).GetComponent<Text> ().text = guestClass.name;
 		Panel.transform.GetChild (1).GetComponent<Text> ().text = guestClass.profession.ToString();
 		Panel.transform.GetChild (2).GetComponent<Text> ().text = "Likes " + guestClass.hobby.ToString();
+		if (guestClass.Accessory.ToString () == "NoAccesories") {
+			Panel.transform.GetChild (3).GetComponent<Text> ().text = "Is wearing no Accessories";
+		}else
 		Panel.transform.GetChild (3).GetComponent<Text> ().text = "Is wearing a " + guestClass.Accessory.ToString();
+		
 		Panel.transform.GetChild (4).GetComponent<Text> ().text = "Has a " +guestClass.Blemish.ToString();
 
 	}

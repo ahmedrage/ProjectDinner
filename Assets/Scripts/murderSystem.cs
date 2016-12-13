@@ -35,7 +35,7 @@ public class murderSystem : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if (deadGuests == 6) {
-			finishScript.loseCondition =2;
+			finishScript.loseCondition = 2;
 			finishScript.Lose ();
 		}
 
@@ -54,8 +54,7 @@ public class murderSystem : MonoBehaviour {
 
 		guests[i].GetComponent<Guest>().Die();
 		clue = clueScript.getClue (_guestScript.guestClass, murderer.GetComponent<Guest> ().guestClass);
-		print(clueScript.getClue (_guestScript.guestClass, murderer.GetComponent<Guest> ().guestClass).getDeathClue());
-		_guestScript.setDeathText (clueScript.getClue (_guestScript.guestClass, murderer.GetComponent<Guest> ().guestClass).getDeathClue ());
+		_guestScript.setDeathText (clue.getDeathClue ());
 		deadGuests++;
 
 		if (clue.appearanceText != null) {
@@ -64,6 +63,25 @@ public class murderSystem : MonoBehaviour {
 
 		guests.RemoveAt (i);
 		StartCoroutine ("lightFlash");
+		switch (clue.deathType) {
+		case "Cut":
+			GetComponent<Clues> ().Cut.Play ();
+			break;
+		case "Stab":
+			GetComponent<Clues> ().Stab.Play ();
+			break;
+		case "Strangle":
+			GetComponent<Clues> ().Bludge.Play ();
+			break;
+		case "Bludge":
+			GetComponent<Clues> ().Bludge.Play ();
+			break;
+		case "Shoot":
+			GetComponent<Clues> ().Shot.Play ();
+			break;
+		default:
+			break;
+		}
 	}
 	IEnumerator lightFlash(){
 		yield return new WaitForSeconds (lightDelay);
