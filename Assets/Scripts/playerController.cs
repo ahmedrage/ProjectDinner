@@ -6,15 +6,16 @@ public class playerController : MonoBehaviour {
 	public float speed;
 	public float aimingSpeed;
 	public GameObject shot;
+	public GameObject muzzleFlash;
+	public Texture2D cursor;
+	public Texture2D normalCursor;
 	public Transform shotSpawn;
 	public Rigidbody2D rb;
-	//public AudioSource gasp;
-	//public AudioSource gunSound;
 	public Sprite gun;
 	public SpriteRenderer gunSprite;
 
 	public int ammo = 1;
-	bool canShoot;
+	public bool canShoot;
 	bool playing = false;
 	public AudioSource ShootSound;
 	public AudioSource Gasp;
@@ -24,6 +25,7 @@ public class playerController : MonoBehaviour {
 		rb = GetComponent<Rigidbody2D>();
 		gunSprite = GameObject.Find("gun").GetComponent<SpriteRenderer> ();
 		gunSprite.sprite = null;
+		Cursor.SetCursor (normalCursor,Vector2.zero,CursorMode.Auto);
 	}
 	
 	// Update is called once per frame
@@ -37,6 +39,7 @@ public class playerController : MonoBehaviour {
 		float rotZ = Mathf.Atan2 (difference.y, difference.x) * Mathf.Rad2Deg;
 		transform.rotation = Quaternion.Euler (0f, 0f, rotZ + -90);
 		rb.velocity = (movement * speed);
+
 		if (ammo > 0) {
 			if (Input.GetButtonDown ("Fire2")) {
 				if (playing == false) {
@@ -45,9 +48,11 @@ public class playerController : MonoBehaviour {
 				playing = true;
 				canShoot = true;
 				gunSprite.sprite = gun;
+				Cursor.SetCursor (cursor, Vector2.zero, CursorMode.Auto);
 				speed = aimingSpeed;
 				Gasp.Play ();
 			} if(Input.GetButtonUp("Fire2")){
+				Cursor.SetCursor (normalCursor,Vector2.zero,CursorMode.Auto);
 				playing = false;
 				gunSprite.sprite = null;
 				canShoot = false;
@@ -76,5 +81,12 @@ public class playerController : MonoBehaviour {
 		speed = 6;
 		//gunSound.Play ();
 		Instantiate (shot, shotSpawn.position, shotSpawn.rotation);
+		Instantiate (muzzleFlash, shotSpawn.position, shotSpawn.rotation);
+		StartCoroutine ("flashDestroy");
+	}
+
+	IEnumerator flashDestroy(){
+		yield return new WaitForSeconds (0.05f);
+		Destroy (GameObject.Find("muzzleFlash(Clone)"));
 	}
 }

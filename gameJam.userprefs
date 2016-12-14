@@ -1,18 +1,20 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Guest.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\cameraShake.cs">
     <Files>
-      <File FileName="Assets\Scripts\fadeScreen.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\finishConditions.cs" Line="28" Column="33" />
-      <File FileName="Assets\Scripts\murderSystem.cs" Line="53" Column="20" />
-      <File FileName="Assets\Scripts\shotMover.cs" Line="34" Column="91" />
+      <File FileName="Assets\Scripts\finishConditions.cs" Line="59" Column="25" />
+      <File FileName="Assets\Scripts\murderSystem.cs" Line="68" Column="39" />
+      <File FileName="Assets\Scripts\shotMover.cs" Line="25" Column="34" />
       <File FileName="Assets\Scripts\Timer.cs" Line="34" Column="64" />
       <File FileName="Assets\Scripts\GuestScript.cs" Line="26" Column="1" />
-      <File FileName="Assets\Scripts\Guest.cs" Line="56" Column="46" />
+      <File FileName="Assets\Scripts\Guest.cs" Line="56" Column="29" />
       <File FileName="Assets\Scripts\Clues.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\playerController.cs" Line="32" Column="40" />
-      <File FileName="Assets\Scripts\endGameMenu.cs" Line="14" Column="3" />
-      <File FileName="Assets\lachieFolder\scripts\menu.cs" Line="4" Column="1" />
+      <File FileName="Assets\Scripts\playerController.cs" Line="13" Column="24" />
+      <File FileName="Assets\Scripts\endGameMenu.cs" Line="13" Column="36" />
+      <File FileName="Assets\Scripts\fadeScreen.cs" Line="27" Column="1" />
+      <File FileName="Assets\lachieFolder\scripts\menu.cs" Line="37" Column="3" />
+      <File FileName="Assets\Scripts\pauseMenu.cs" Line="10" Column="28" />
+      <File FileName="Assets\Scripts\cameraShake.cs" Line="39" Column="66" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

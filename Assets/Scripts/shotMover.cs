@@ -22,7 +22,7 @@ public class shotMover : MonoBehaviour {
 	}
 
 	void Update(){
-		transform.Translate (Vector2.right * speed);
+		transform.Translate (Vector2.up * speed);
 	}
 
 	void OnCollisionEnter2D (Collision2D other){

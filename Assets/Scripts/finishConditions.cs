@@ -56,6 +56,7 @@ public class finishConditions : MonoBehaviour {
 		numDeadGuestsText.enabled = true;
 		endGameMenu.SetActive (true);
 		imgs.SetActive (true);
+		Cursor.SetCursor (null,Vector2.zero,CursorMode.Auto);
 	}
 
 	public void Win(){

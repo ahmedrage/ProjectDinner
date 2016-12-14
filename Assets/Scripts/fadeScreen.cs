@@ -24,7 +24,6 @@ public class fadeScreen : MonoBehaviour {
 		}
 
 		if (finishScript.lose) {
-			StartCoroutine ("endGame");
 			OnFade ();
 		}
 	}
@@ -45,21 +44,5 @@ public class fadeScreen : MonoBehaviour {
 			Fadecolor.color = Color.Lerp (A, B, percent);
 			yield return null;
 		}
-
-		if (percent >= 1) {
-			StartCoroutine ("respawnDelay");
-		}
-	}
-
-	IEnumerator respawnDelay()
-	{
-		yield return new WaitForSeconds (0.3f);
-		//Application.LoadLevel (Application.loadedLevel);
-	}
-
-	IEnumerator endGame()
-	{
-		yield return new WaitForSeconds (1f);
-		//SceneManager.LoadScene ("menuScene");
 	}
 }
