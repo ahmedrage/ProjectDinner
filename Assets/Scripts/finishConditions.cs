@@ -20,6 +20,7 @@ public class finishConditions : MonoBehaviour {
 	public Text title;
 	public Text murdererName;
 	public Text numDeadGuestsText;
+	public Texture2D normalCursor;
 	public int loseCondition;
 
 	// Use this for initialization
@@ -56,7 +57,7 @@ public class finishConditions : MonoBehaviour {
 		numDeadGuestsText.enabled = true;
 		endGameMenu.SetActive (true);
 		imgs.SetActive (true);
-		Cursor.SetCursor (null,Vector2.zero,CursorMode.Auto);
+		Cursor.SetCursor (normalCursor, Vector2.zero, CursorMode.Auto);
 	}
 
 	public void Win(){

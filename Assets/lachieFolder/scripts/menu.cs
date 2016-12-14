@@ -9,8 +9,13 @@ public class menu : MonoBehaviour {
 	public Text instructText;
 	public Text clickToContinue;
 	public List<GameObject> menuElements;
+	public Texture2D normalCursor;
 		
 	bool canContinue;
+
+	void Start(){
+		Cursor.SetCursor (normalCursor,Vector2.zero,CursorMode.Auto);
+	}
 
 	public void Update(){
 		
