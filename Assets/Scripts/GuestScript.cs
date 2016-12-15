@@ -27,7 +27,6 @@ public class GuestScript : MonoBehaviour {
 	public GameObject GuestPrefab;
 	public murderSystem murderScript;
 	public Clues clueScript;
-	public GameObject hintPannel;
 	public float maxClueDistance;
 	// Use this for initialization
 	void Start () {
@@ -38,12 +37,6 @@ public class GuestScript : MonoBehaviour {
 	}
 
 	// Update is called once per frame
-	void Update () {
-		if (Input.GetKeyDown (KeyCode.LeftShift)) {
-			hintPannel.SetActive (!(hintPannel.activeSelf));
-		}
-	}
-
 	void SpawnGuests() {
 		int i = 0;
 		murderScript.guests = new List<GameObject> ();

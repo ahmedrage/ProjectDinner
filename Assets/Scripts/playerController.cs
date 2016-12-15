@@ -7,6 +7,7 @@ public class playerController : MonoBehaviour {
 	public float aimingSpeed;
 	public GameObject shot;
 	public GameObject muzzleFlash;
+	public GameObject hintPannel;
 	public Texture2D cursor;
 	public Texture2D normalCursor;
 	public Transform shotSpawn;
@@ -67,6 +68,10 @@ public class playerController : MonoBehaviour {
 			myAnimator.SetBool ("Moving", false);
 		} else {
 			myAnimator.SetBool ("Moving", true);
+		}
+
+		if (Input.GetKeyDown (KeyCode.LeftShift)) {
+			hintPannel.SetActive (!(hintPannel.activeSelf));
 		}
 	}
 
