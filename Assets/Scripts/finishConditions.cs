@@ -9,6 +9,7 @@ public class finishConditions : MonoBehaviour {
 	public string murderer;
 	public GameObject endGameMenu;
 	public GameObject imgs;
+	public GameObject pauseScript;
 	public Sprite murdererPortrait;
 	public Image murdererPortraitImg;
 	public List<Image> murderedGuestPortraits;
@@ -26,6 +27,7 @@ public class finishConditions : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		murdererScript = GameObject.Find ("Gm").GetComponent<murderSystem> ();
+		pauseScript = GameObject.Find ("pauseMenu");
 		murdererPortraitImg.enabled =false;
 		murdererName.enabled = false;
 		numDeadGuestsText.enabled = false;
@@ -58,6 +60,7 @@ public class finishConditions : MonoBehaviour {
 		endGameMenu.SetActive (true);
 		imgs.SetActive (true);
 		Cursor.SetCursor (normalCursor, Vector2.zero, CursorMode.Auto);
+		Destroy (pauseScript);
 	}
 
 	public void Win(){
