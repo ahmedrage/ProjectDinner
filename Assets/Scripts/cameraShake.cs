@@ -38,6 +38,7 @@ public class cameraShake : MonoBehaviour {
 	{
 		if (playerScript.canShoot == true && Input.GetButtonDown("Fire1")) {
 			Shake(_amplitude,_duration);
+			print ("shake shake");
 		}
 
 		if (isShaking) 

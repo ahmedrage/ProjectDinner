@@ -1,5 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using XInputDotNetPure;
+using UnityEngine.EventSystems;
 using System.Collections.Generic;
 using System.Collections;
 
@@ -10,6 +12,7 @@ public class finishConditions : MonoBehaviour {
 	public GameObject endGameMenu;
 	public GameObject imgs;
 	public GameObject pauseScript;
+	public GameObject restartButton;
 	public Sprite murdererPortrait;
 	public Image murdererPortraitImg;
 	public List<Image> murderedGuestPortraits;
@@ -22,12 +25,14 @@ public class finishConditions : MonoBehaviour {
 	public Text murdererName;
 	public Text numDeadGuestsText;
 	public Texture2D normalCursor;
+	public EventSystem eventSystem;
 	public int loseCondition;
 
 	// Use this for initialization
 	void Start () {
 		murdererScript = GameObject.Find ("Gm").GetComponent<murderSystem> ();
 		pauseScript = GameObject.Find ("pauseMenu");
+		eventSystem = GameObject.Find ("EventSystem").GetComponent<EventSystem> ();
 		murdererPortraitImg.enabled =false;
 		murdererName.enabled = false;
 		numDeadGuestsText.enabled = false;
@@ -61,6 +66,14 @@ public class finishConditions : MonoBehaviour {
 		imgs.SetActive (true);
 		Cursor.SetCursor (normalCursor, Vector2.zero, CursorMode.Auto);
 		Destroy (pauseScript);
+
+		if (GamePad.GetState(PlayerIndex.One).IsConnected == false) {
+			eventSystem.SetSelectedGameObject(null);
+		}
+
+		if (GamePad.GetState(PlayerIndex.One).IsConnected && eventSystem.currentSelectedGameObject == null) {
+			eventSystem.SetSelectedGameObject (restartButton);
+		}
 	}
 
 	public void Win(){

@@ -1,20 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\playerController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\finishConditions.cs">
     <Files>
-      <File FileName="Assets\Scripts\finishConditions.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\pauseMenu.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\murderSystem.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\shotMover.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Timer.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\GuestScript.cs" Line="39" Column="36" />
-      <File FileName="Assets\Scripts\Guest.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Clues.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\playerController.cs" Line="66" Column="4" />
+      <File FileName="Assets\Scripts\pauseMenu.cs" Line="55" Column="26" />
+      <File FileName="Assets\lachieFolder\scripts\menu.cs" Line="41" Column="26" />
       <File FileName="Assets\Scripts\endGameMenu.cs" Line="1" Column="1" />
-      <File FileName="Assets\lachieFolder\scripts\menu.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\fadeScreen.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\cameraShake.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\playerController.cs" Line="107" Column="6" />
+      <File FileName="Assets\Scripts\finishConditions.cs" Line="75" Column="52" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -2,19 +2,30 @@
 using UnityEngine.UI;
 using System.Collections;
 using System.Collections.Generic;
+using XInputDotNetPure;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 public class menu : MonoBehaviour {
 
 	public Text instructText;
+	public Text instructTextController;
+	public Text instructTextMouse;
 	public Text clickToContinue;
 	public List<GameObject> menuElements;
 	public Texture2D normalCursor;
+	public EventSystem eventSystem;
 		
 	bool canContinue;
+	bool controllerConnected;
 
 	void Start(){
 		Cursor.SetCursor (normalCursor,Vector2.zero,CursorMode.Auto);
+		eventSystem = GetComponent<EventSystem> ();
+
+		if (GamePad.GetState (PlayerIndex.One).IsConnected) {
+			eventSystem.firstSelectedGameObject = menuElements [1];
+		}
 	}
 
 	public void Update(){
@@ -25,6 +36,28 @@ public class menu : MonoBehaviour {
 			if (Input.GetButtonDown ("Fire1")) {
 				SceneManager.LoadScene ("GuestScene");
 			}
+		}
+
+		if (GamePad.GetState (PlayerIndex.One).IsConnected) {
+			controllerConnected = true;
+			instructText.text = instructTextController.text;
+			clickToContinue.text = "Press A to continue";
+			Cursor.visible = false;
+			Cursor.lockState = CursorLockMode.Locked;
+		} else {
+			controllerConnected = false;
+			instructText.text = instructTextMouse.text;
+			clickToContinue.text = "Click to continue";
+			Cursor.visible = true;
+			Cursor.lockState = CursorLockMode.None;
+		}
+
+		if (controllerConnected == false) {
+			eventSystem.SetSelectedGameObject(null);
+		}
+
+		if (controllerConnected && eventSystem.currentSelectedGameObject == null) {
+			eventSystem.SetSelectedGameObject (menuElements [1]);
 		}
 	}
 
