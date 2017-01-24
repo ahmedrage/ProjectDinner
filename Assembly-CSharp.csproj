@@ -57,8 +57,10 @@
      <Compile Include="Assets\Scripts\murderSystem.cs" />
      <Compile Include="Assets\Scripts\pauseMenu.cs" />
      <Compile Include="Assets\Scripts\playerController.cs" />
+     <Compile Include="Assets\Scripts\settings.cs" />
      <Compile Include="Assets\Scripts\shotMover.cs" />
      <Compile Include="Assets\XInputDotNet\Examples\XInputTestCS.cs" />
+     <Compile Include="Assets\audioManager.cs" />
      <Compile Include="Assets\canvasRotationScript.cs" />
      <Compile Include="Assets\lachieFolder\scripts\menu.cs" />
      <None Include="Assets\XInputDotNet\MITLicense.txt" />

@@ -12,16 +12,21 @@ public class menu : MonoBehaviour {
 	public Text instructTextController;
 	public Text instructTextMouse;
 	public Text clickToContinue;
+	public Text optionTitle;
+	public Text optionInstructionText;
 	public List<GameObject> menuElements;
+	public List<GameObject> optionElements;
 	public Texture2D normalCursor;
 	public EventSystem eventSystem;
 		
 	bool canContinue;
 	bool controllerConnected;
+	settings settingScript;
 
 	void Start(){
 		Cursor.SetCursor (normalCursor,Vector2.zero,CursorMode.Auto);
 		eventSystem = GetComponent<EventSystem> ();
+		settingScript = GameObject.Find ("optionsMenu").GetComponent<settings> ();
 
 		if (GamePad.GetState (PlayerIndex.One).IsConnected) {
 			eventSystem.firstSelectedGameObject = menuElements [1];
@@ -40,7 +45,7 @@ public class menu : MonoBehaviour {
 
 		if (GamePad.GetState (PlayerIndex.One).IsConnected) {
 			controllerConnected = true;
-			instructText.text = instructTextController.text;
+			instructText.text = instructTextController.text; // this should be its own function 
 			clickToContinue.text = "Press A to continue";
 			Cursor.visible = false;
 			Cursor.lockState = CursorLockMode.Locked;
@@ -62,11 +67,41 @@ public class menu : MonoBehaviour {
 	}
 
 	public void Play(){
-		OnPromptFade (); 
+		OnPromptFade ();
+	}
+
+	public void Option(){
+
+		uiHandler (false, true);
 	}
 
 	public void Quit(){
 		Application.Quit ();
+	}
+		
+	public void Back(){
+
+		if (settingScript.controlsSelected) {
+			foreach (GameObject optionElement in optionElements) {
+				optionElement.SetActive (true);
+				optionInstructionText.enabled = false;
+			}
+			optionTitle.text = "OPTIONS";
+			settingScript.controlsSelected = false;
+		} else {
+			uiHandler (true, false);
+		}
+	}
+
+	void uiHandler(bool menuUi, bool optionUi){
+		
+		foreach(GameObject uiElement in menuElements){
+			uiElement.SetActive (menuUi);
+		}
+
+		foreach (GameObject optionElement in optionElements) {
+			optionElement.SetActive (optionUi);
+		}
 	}
 
 	void OnPromptFade(){
