@@ -30,13 +30,12 @@ public class Guest : MonoBehaviour {
 		Panel = transform.GetChild (0).transform.GetChild (0);
 		Panel.transform.GetChild (0).GetComponent<Text> ().text = guestClass.name;
 		Panel.transform.GetChild (1).GetComponent<Text> ().text = guestClass.profession.ToString();
-		Panel.transform.GetChild (2).GetComponent<Text> ().text = "Likes " + guestClass.hobby.ToString();
 		if (guestClass.Accessory.ToString () == "NoAccesories") {
-			Panel.transform.GetChild (3).GetComponent<Text> ().text = "Is wearing no Accessories";
+			Panel.transform.GetChild (2).GetComponent<Text> ().text = "Is wearing no Accessories";
 		}else
-		Panel.transform.GetChild (3).GetComponent<Text> ().text = "Is wearing a " + guestClass.Accessory.ToString();
+		Panel.transform.GetChild (2).GetComponent<Text> ().text = "Is wearing a " + guestClass.Accessory.ToString();
 		
-		Panel.transform.GetChild (4).GetComponent<Text> ().text = "Has a " +guestClass.Blemish.ToString();
+		Panel.transform.GetChild (3).GetComponent<Text> ().text = "Has a " +guestClass.Blemish.ToString();
 
 	}
 
@@ -46,7 +45,7 @@ public class Guest : MonoBehaviour {
 
 	public void setHintText (string hintText) {
 		print (guestClass.name);
-		Panel.transform.GetChild (5).GetComponent<Text> ().text = hintText;
+		Panel.transform.GetChild (4).GetComponent<Text> ().text = hintText;
 	}
 
 	void OnTriggerEnter2D(Collider2D other) {

@@ -7,8 +7,6 @@ public class GuestClass {
 	public string name;
 	public enum professions {Doctor, Scientist, Author, HomeMaker, Chef, Politician, FilmMaker, Veteran};
 	public professions profession;
-	public enum Hobbies {Golf, Baseball, Fishing, Hunting, Collecting, Shooting, Fencing, Cooking};
-	public Hobbies hobby;
 	public enum Accessories {Hat, Glasses, WorkAccessory, NoAccesories};
 	public Accessories Accessory;
 	public enum Blemishes {Tattoo, Scar, SkinCondition, CleanSkin};

@@ -12,38 +12,12 @@ public class Clues : MonoBehaviour {
 
 	public List<GuestClass> murderedGuests = new List<GuestClass>();
 
-    Dictionary<string, string[]> hobbyKills = new Dictionary<string, string[]>();
     Dictionary<string, string[]> careerKills = new Dictionary<string, string[]>();
 
     // Use this for initialization
     void Start() {
 
         string[] kills = { "Cut", "Poison", "Stab", "Strangle", "Bludge", "Shoot" };
-
-        string[] golf = { "Strangle", "Bludge" };
-        hobbyKills.Add("Golf", golf);
-
-        string[] baseball = { "Strangle", "Bludge" };
-        hobbyKills.Add("Baseball", baseball);
-
-        string[] fishing = { "Cut", "Strangle" };
-        hobbyKills.Add("Fishing", fishing);
-
-        string[] hunting = { "Poison", "Shoot" };
-        hobbyKills.Add("Hunting", hunting);
-
-        string[] collecting = { "Shoot", "Bludge" };
-        hobbyKills.Add("Collecting", collecting);
-
-        string[] shooting = { "Bludge", "Shoot" };
-        hobbyKills.Add("Shooting", shooting);
-
-        string[] fencing = { "Cut", "Stab" };
-        hobbyKills.Add("Fencing", fencing);
-
-        string[] cooking = { "Cut", "Poison" };
-        hobbyKills.Add("Cooking", cooking);
-
         //Careers
 
         string[] doctor = { "Poison", "Strangle", "Stab" };
@@ -75,10 +49,7 @@ public class Clues : MonoBehaviour {
 	void Update () {
 	
 	}
-
-	public Dictionary<string, string[]> getHobbyKills() {
-		return hobbyKills;
-	}
+		
 
 	public Dictionary<string, string[]> getCareerKills() {
 		return careerKills;
@@ -86,13 +57,9 @@ public class Clues : MonoBehaviour {
 
 	public Clue getClue(GuestClass guest, GuestClass murderer) {
 			List<string> deathMethods = new List<string> ();
-			foreach (string s in careerKills[guest.profession.ToString()]) {
+		foreach (string s in careerKills[murderer.profession.ToString()]) {
 				deathMethods.Add (s);
 			}
-			foreach (string s in hobbyKills[guest.hobby.ToString()]) {
-				deathMethods.Add (s);
-			}
-
 			int deathNum = Random.Range (0, (deathMethods.Count - 1));
 			Clue deathClue = new Clue (guest, deathMethods [deathNum], false);
 
