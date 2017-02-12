@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using XInputDotNetPure;
 using System.Collections;
-
+using System.Collections.Generic;
 public class playerController : MonoBehaviour {
 
 	public float speed;
@@ -24,6 +24,9 @@ public class playerController : MonoBehaviour {
 	public AudioSource Gasp;
 	public Animator myAnimator;
 
+	public List<Transform> nearbyGuests; // This array holds all the guests who are close enough to display details.
+
+	public GameObject nearestGuest;
 	bool playing = false;
 	bool usingController;
 	float rotZ = 90;
@@ -39,6 +42,7 @@ public class playerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		checkGuests ();
 		float moveHorizontal = Input.GetAxisRaw ("Horizontal");
 		float moveVertical = Input.GetAxisRaw ("Vertical");
 		float rHoriz = Input.GetAxisRaw ("joyHoriz");
@@ -140,6 +144,38 @@ public class playerController : MonoBehaviour {
 		StartCoroutine ("vibrationTime");
 		StartCoroutine ("flashDestroy");
 	}
+
+	//This function chooses one guests details to present
+	void checkGuests() {
+		float closestDist = 10;
+
+		foreach (Transform nearbyGuest in nearbyGuests) {
+			if (Vector3.Distance(transform.position, nearbyGuest.position) < closestDist){
+				nearestGuest = nearbyGuest.gameObject;
+				closestDist = Vector3.Distance (transform.position, nearbyGuest.position);
+			}
+		}
+		if (closestDist == 10) {
+			nearestGuest = null;
+		}
+	}
+
+	public void removeGuest (Transform guest) {
+		if (nearbyGuests.Contains (guest)) {
+			nearbyGuests.Remove (guest);
+		} else {
+			print ("Guest to remove is not in list");
+		}
+	}
+
+	public void addGuest (Transform guest) {
+		if (guest != null) {
+			nearbyGuests.Add (guest);
+		} else {
+			print ("Guest to add does not exist!");
+		}
+	}
+
 
 	IEnumerator flashDestroy(){
 		yield return new WaitForSeconds (0.05f);
