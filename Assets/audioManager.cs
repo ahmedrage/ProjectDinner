@@ -11,17 +11,15 @@ public class audioManager : MonoBehaviour {
 	public Slider sfxVolume;
 	public Slider musicVolume;
 
-	[Range(0,1)]public float sfxLevel = 0.3f;
-	[Range(0,1)]public float musicLevel = 0.3f; 
-	[Range(0,1)]public float masterLevel = 1;
+	[Range(0,1)]public float sfxLevel;
+	[Range(0,1)]public float musicLevel; 
+	[Range(0,1)]public float masterLevel;
 
 	// Use this for initialization
 	void Start () {
-		//DontDestroyOnLoad (this.gameObject);
-
-		/*if (FindObjectsOfType (GetType ()).Length > 1) {
-			Destroy (this.gameObject);
-		}*/
+		sfxLevel = PlayerPrefs.GetFloat ("sfx volume");
+		musicLevel = PlayerPrefs.GetFloat ("music volume");
+		masterLevel = PlayerPrefs.GetFloat ("master volume");
 	}
 	
 	// Update is called once per frame
@@ -31,8 +29,8 @@ public class audioManager : MonoBehaviour {
 		foreach (AudioSource sfx in soundEffects) {
 			sfx.volume = sfxLevel;
 		}
-
 		music.volume = musicLevel;
+
 		masterVolume.value = masterLevel;
 		sfxVolume.value = sfxLevel;
 		musicVolume.value = musicLevel;
@@ -40,13 +38,21 @@ public class audioManager : MonoBehaviour {
 
 	public void masterSlider(float masterVolume){
 		masterLevel = masterVolume;
+		saveSound ("master volume", masterLevel);
 	}
 
 	public void sfxSlider(float sfxVolume){
 		sfxLevel = sfxVolume;
+		saveSound ("sfx volume", sfxLevel);
 	}
 
 	public void musicSlider(float musicVolume){
 		musicLevel = musicVolume;
+		saveSound ("music volume", musicLevel);
+	}
+
+	void saveSound(string id,float value){
+		PlayerPrefs.SetFloat (id, value);
+		PlayerPrefs.Save();
 	}
 }
