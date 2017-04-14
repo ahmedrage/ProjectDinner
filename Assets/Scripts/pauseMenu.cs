@@ -9,12 +9,10 @@ using System.Collections;
 public class pauseMenu : MonoBehaviour {
 
 	public bool paused;
-	public GameObject settingUI;
 	public GameObject resumeButton;
 	public GameObject pauseButtons;
 	public GameObject pauseTitle;
 	public Image pauseScreen;
-	public Text pauseTitleTxt;
 	public playerController playerScript;
 	public EventSystem eventSystem;
 
@@ -35,7 +33,6 @@ public class pauseMenu : MonoBehaviour {
 			} else {
 				pauseUI (false,1,true);
 			}
-			pauseTitleTxt.text = "Paused";
 		}
 
 		if (GamePad.GetState (PlayerIndex.One).IsConnected) {
@@ -75,17 +72,5 @@ public class pauseMenu : MonoBehaviour {
 
 	public void Quit(){
 		Application.Quit ();
-	}
-
-	public void Options(){
-		pauseButtons.SetActive (false);
-		settingUI.SetActive (true);
-		pauseTitleTxt.text = "Options";
-	}
-
-	public void Back(){
-		pauseButtons.SetActive (true);
-		settingUI.SetActive(false);
-		pauseTitleTxt.text = "Paused";
 	}
 }
