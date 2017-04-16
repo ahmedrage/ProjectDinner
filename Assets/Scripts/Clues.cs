@@ -3,12 +3,6 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class Clues : MonoBehaviour {
-	public AudioSource Bludge;
-	public AudioSource Cut;
-	public AudioSource Shot;
-	public AudioSource Stab;
-
-
 
 	public List<GuestClass> murderedGuests = new List<GuestClass>();
 

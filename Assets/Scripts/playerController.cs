@@ -20,8 +20,8 @@ public class playerController : MonoBehaviour {
 	public SpriteRenderer gunSprite;
 	public int ammo = 1;
 	public bool canShoot;
-	public AudioSource ShootSound;
-	public AudioSource Gasp;
+	public AudioClip ShootSound;
+	public AudioClip Gasp;
 	public Animator myAnimator;
 
 	public List<Transform> nearbyGuests; // This array holds all the guests who are close enough to display details.
@@ -87,7 +87,8 @@ public class playerController : MonoBehaviour {
 		if (ammo > 0) {
 			if (Input.GetButtonDown ("Fire2") || leftTrigger == 1 && usingController) {
 				if (playing == false) {
-					Gasp.Play ();
+					//Gasp.Play ();
+					audioManager.instance.playSound(Gasp,Vector2.zero);
 				}
 				playing = true;
 				canShoot = true;
@@ -98,7 +99,8 @@ public class playerController : MonoBehaviour {
 				}
 				Cursor.SetCursor (cursor, Vector2.zero, CursorMode.Auto);
 				speed = aimingSpeed;
-				Gasp.Play ();
+				//Gasp.Play ();
+				audioManager.instance.playSound(Gasp,Vector2.zero);
 			} 
 
 			if(Input.GetButtonUp("Fire2") || leftTrigger == 0 && usingController){
@@ -129,7 +131,8 @@ public class playerController : MonoBehaviour {
 	}
 		
 	void Shoot() {
-		ShootSound.Play ();
+		//ShootSound.Play ();
+		audioManager.instance.playSound(ShootSound,Vector2.zero);
 		print ("shot fired");
 		ammo--;
 		if (ammo <= 0) {
@@ -137,7 +140,6 @@ public class playerController : MonoBehaviour {
 		}
 		gunSprite.sprite = null;
 		speed = 6;
-		//gunSound.Play ();
 		Instantiate (shot, shotSpawn.position, shotSpawn.rotation);
 		Instantiate (muzzleFlash, shotSpawn.position, shotSpawn.rotation);
 		GamePad.SetVibration (PlayerIndex.One, 10, 10);

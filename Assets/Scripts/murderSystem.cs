@@ -17,6 +17,10 @@ public class murderSystem : MonoBehaviour {
 	public finishConditions finishScript;
 	public string murdererName;
 	public Sprite murdererPortrait;
+	public AudioClip Bludge;
+	public AudioClip Cut;
+	public AudioClip Shot;
+	public AudioClip Stab;
 
 
 	// Use this for initialization
@@ -65,19 +69,19 @@ public class murderSystem : MonoBehaviour {
 		StartCoroutine ("lightFlash");
 		switch (clue.deathType) {
 		case "Cut":
-			GetComponent<Clues> ().Cut.Play ();
+			audioManager.instance.playSound(Cut,Vector2.zero);
 			break;
 		case "Stab":
-			GetComponent<Clues> ().Stab.Play ();
+			audioManager.instance.playSound(Stab,Vector2.zero);
 			break;
 		case "Strangle":
-			GetComponent<Clues> ().Bludge.Play ();
+			audioManager.instance.playSound(Bludge,Vector2.zero);
 			break;
 		case "Bludge":
-			GetComponent<Clues> ().Bludge.Play ();
+			audioManager.instance.playSound(Bludge,Vector2.zero);
 			break;
 		case "Shoot":
-			GetComponent<Clues> ().Shot.Play ();
+			audioManager.instance.playSound(Shot,Vector2.zero);
 			break;
 		default:
 			break;
