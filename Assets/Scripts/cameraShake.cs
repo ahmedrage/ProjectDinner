@@ -13,10 +13,7 @@ public class cameraShake : MonoBehaviour {
 	void Start () 
 	{	
 		playerScript = GameObject.Find ("player").GetComponent<playerController>();
-		//Instance = this;
 		initialPosition = transform.localPosition;
-
-		Shake (_amplitude, _duration);
 	}
 
 	public void Shake (float amplitude, float duration)
@@ -25,6 +22,7 @@ public class cameraShake : MonoBehaviour {
 		isShaking = true;
 		CancelInvoke ();
 		Invoke ("StopShaking", duration);
+		playerScript._isShaking = false;
 	}
 
 	public void StopShaking()
@@ -36,9 +34,8 @@ public class cameraShake : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
-		if (playerScript.canShoot == true && Input.GetButtonDown("Fire1")) {
+		if (playerScript._isShaking) {
 			Shake(_amplitude,_duration);
-			print ("shake shake");
 		}
 
 		if (isShaking) 

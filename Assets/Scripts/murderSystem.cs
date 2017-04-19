@@ -11,20 +11,24 @@ public class murderSystem : MonoBehaviour {
 	public List<GameObject> guests;
 	public List<Sprite> deadPortraits;
 	public int deadGuests;
+	public int maxMurderedGuests = 6;
 	public Timer script;
 	public Clues clueScript;
 	public Clue clue;
 	public finishConditions finishScript;
+	public controlSystem controlSys;
 	public string murdererName;
 	public Sprite murdererPortrait;
 	public AudioClip Bludge;
 	public AudioClip Cut;
 	public AudioClip Shot;
 	public AudioClip Stab;
+	public float accusePercent;
 
 
 	// Use this for initialization
 	void Start () {
+		controlSys = GetComponent<controlSystem> ();
 		clueScript = GetComponent<Clues> ();
 		finishScript = GetComponent<finishConditions> ();
 		int x = Random.Range (0, guests.Count);
@@ -38,21 +42,17 @@ public class murderSystem : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (deadGuests == 6) {
-			finishScript.loseCondition = 2;
-			finishScript.Lose ();
-		}
-
 		if (murderer.GetComponent<Guest>().dead == true) {
 			finishScript.Win ();
 		}
+
+		accusePercent = Mathf.Floor(controlSys.initialCalmness - controlSys.calmness);
 	}
 
 	public void KillGuest(){
+		controlSys.calmness -= (controlSys.initialCalmness / maxMurderedGuests) * controlSys.negativePromiseMod;
 		light.enabled = false;
 		int i = Random.Range (0, guests.Count);
-		//Vector2 tempGuestPos = guests[i].transform.position;
-		//guests [i].GetComponent<Guest>().Die();
 		Guest _guestScript = guests[i].GetComponent<Guest>();
 		deadPortraits.Add(guests [i].GetComponent<Guest> ().guestClass.Portrait);
 
@@ -60,6 +60,14 @@ public class murderSystem : MonoBehaviour {
 		clue = clueScript.getClue (_guestScript.guestClass, murderer.GetComponent<Guest> ().guestClass);
 		_guestScript.setDeathText (clue.getDeathClue ());
 		deadGuests++;
+
+		int x = Random.Range (0, Mathf.FloorToInt(controlSys.calmness));
+		//print (x);
+
+		if (x <= accusePercent && controlSys.accused == false) {
+			controlSys.accuse ();
+			//print ("get rekt");
+		}
 
 		if (clue.appearanceText != null) {
 			GetComponent<GuestScript> ().dropHint (guests [i], clue.appearanceText);

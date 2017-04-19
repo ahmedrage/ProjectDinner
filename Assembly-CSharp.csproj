@@ -51,6 +51,7 @@
      <Compile Include="Assets\Scripts\GuestScript.cs" />
      <Compile Include="Assets\Scripts\Timer.cs" />
      <Compile Include="Assets\Scripts\cameraShake.cs" />
+     <Compile Include="Assets\Scripts\controlSystem.cs" />
      <Compile Include="Assets\Scripts\endGameMenu.cs" />
      <Compile Include="Assets\Scripts\fadeScreen.cs" />
      <Compile Include="Assets\Scripts\finishConditions.cs" />
@@ -59,7 +60,7 @@
      <Compile Include="Assets\Scripts\pauseMenu.cs" />
      <Compile Include="Assets\Scripts\playerController.cs" />
      <Compile Include="Assets\Scripts\settings.cs" />
-     <Compile Include="Assets\Scripts\shotMover.cs" />
+     <Compile Include="Assets\Scripts\textTest.cs" />
      <Compile Include="Assets\XInputDotNet\Examples\XInputTestCS.cs" />
      <Compile Include="Assets\audioManager.cs" />
      <Compile Include="Assets\canvasRotationScript.cs" />

@@ -21,16 +21,17 @@ public class finishConditions : MonoBehaviour {
 	public bool lose;
 	public Clues clueScript;
 	public murderSystem murdererScript;
+	public controlSystem controlScript;
 	public Text title;
 	public Text murdererName;
 	public Text numDeadGuestsText;
 	public Texture2D normalCursor;
 	public EventSystem eventSystem;
-	public int loseCondition;
 
 	// Use this for initialization
 	void Start () {
-		murdererScript = GameObject.Find ("Gm").GetComponent<murderSystem> ();
+		murdererScript = GetComponent<murderSystem> ();
+		controlScript = GetComponent<controlSystem> ();
 		pauseScript = GameObject.Find ("pauseMenu");
 		eventSystem = GameObject.Find ("EventSystem").GetComponent<EventSystem> ();
 		murdererPortraitImg.enabled =false;
@@ -59,6 +60,8 @@ public class finishConditions : MonoBehaviour {
 	}
 
 	void enableUI(){
+		controlScript.responseImg.enabled = false;
+		controlScript.dialoguePannel.SetActive(false);
 		murdererPortraitImg.enabled =true;
 		murdererName.enabled = true;
 		numDeadGuestsText.enabled = true;
@@ -77,27 +80,13 @@ public class finishConditions : MonoBehaviour {
 	}
 
 	public void Win(){
-		print ("you win");
 		title.text = "You got the murderer";
 		win = true;
 		enableUI ();
 	}
 
 	public void Lose(){
-		switch (loseCondition) {
-		case 1:
-			print ("You shot the wrong person");
-			title.text = "You shot the wrong person";
-			break;
-		case 2:
-			print ("You let to many people die");
-			title.text = "You let to many people die";
-			break;
-		case 3:
-			print ("You wasted your one bullet");
-			title.text = "You wasted your one bullet";
-			break;
-		}
+		title.text = "You lost control of the crowd and the killer got away";
 		enableUI ();
 		lose = true;
 	}
