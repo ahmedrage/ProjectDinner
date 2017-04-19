@@ -1,7 +1,7 @@
+﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2008
-
-Project("{38AF18F3-5661-B94E-1DB5-B75B385C22F2}") = "ProjectDinner", "Assembly-CSharp.csproj", "{0D750008-F504-CF6F-9895-CB85001095CE}"
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjectDinner", "Assembly-CSharp.csproj", "{0D750008-F504-CF6F-9895-CB85001095CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
