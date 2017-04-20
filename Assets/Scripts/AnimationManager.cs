@@ -5,6 +5,7 @@ using UnityEngine;
 public class AnimationManager : MonoBehaviour {
 
 	//public RuntimeAnimatorController Char1Anim;
+	public List<GameObject> guests;
 
 	// Use this for initialization
 	void Start () {
@@ -19,5 +20,23 @@ public class AnimationManager : MonoBehaviour {
 	public void AttackAnimationEnded () {
 		Debug.Log ("Attack should Stop");
 		gameObject.GetComponent<Animator> ().SetBool ("Attacking", false);
+	}
+
+	public void StopAllNPC () {
+		foreach (GameObject g in guests) {
+			if (!g.GetComponent<Guest> ().dead) {
+				g.transform.FindChild ("Graphics").GetComponent<Animator> ().enabled = false;
+			}
+		}
+		GetComponent<murderSystem> ().murderer.transform.FindChild ("Graphics").GetComponent<Animator> ().enabled = false;
+	}
+
+	public void PlayAllNPC () {
+		foreach (GameObject g in guests) {
+			if (!g.GetComponent<Guest> ().dead) {
+				g.transform.FindChild ("Graphics").GetComponent<Animator> ().enabled = true;
+			}
+		}
+		GetComponent<murderSystem> ().murderer.transform.FindChild ("Graphics").GetComponent<Animator> ().enabled = true;
 	}
 }

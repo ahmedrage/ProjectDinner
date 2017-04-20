@@ -53,6 +53,7 @@ public class GuestScript : MonoBehaviour {
 			}
 			i++;
 		}
+		gameObject.GetComponent<AnimationManager> ().guests = murderScript.guests;
 	}
 
 	public void dropHint(GameObject deadGuest, string clue) {
