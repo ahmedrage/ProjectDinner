@@ -25,7 +25,6 @@ public class murderSystem : MonoBehaviour {
 	public AudioClip Stab;
 	public float accusePercent;
 
-
 	// Use this for initialization
 	void Start () {
 		controlSys = GetComponent<controlSystem> ();
@@ -62,11 +61,9 @@ public class murderSystem : MonoBehaviour {
 		deadGuests++;
 
 		int x = Random.Range (0, Mathf.FloorToInt(controlSys.calmness));
-		//print (x);
 
 		if (x <= accusePercent && controlSys.accused == false) {
 			controlSys.accuse ();
-			//print ("get rekt");
 		}
 
 		if (clue.appearanceText != null) {

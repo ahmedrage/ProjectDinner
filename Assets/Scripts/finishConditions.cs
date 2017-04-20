@@ -13,6 +13,8 @@ public class finishConditions : MonoBehaviour {
 	public GameObject imgs;
 	public GameObject pauseScript;
 	public GameObject restartButton;
+	public GameObject timer;
+	public GameObject bar;
 	public Sprite murdererPortrait;
 	public Image murdererPortraitImg;
 	public List<Image> murderedGuestPortraits;
@@ -30,6 +32,7 @@ public class finishConditions : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		timer = GameObject.Find ("timer");
 		murdererScript = GetComponent<murderSystem> ();
 		controlScript = GetComponent<controlSystem> ();
 		pauseScript = GameObject.Find ("pauseMenu");
@@ -60,7 +63,9 @@ public class finishConditions : MonoBehaviour {
 	}
 
 	void enableUI(){
+		bar.SetActive (false);
 		controlScript.responseImg.enabled = false;
+		controlScript.instruction.enabled = false;  
 		controlScript.dialoguePannel.SetActive(false);
 		murdererPortraitImg.enabled =true;
 		murdererName.enabled = true;
@@ -77,6 +82,10 @@ public class finishConditions : MonoBehaviour {
 		if (GamePad.GetState(PlayerIndex.One).IsConnected && eventSystem.currentSelectedGameObject == null) {
 			eventSystem.SetSelectedGameObject (restartButton);
 		}
+
+		if (timer != null) {
+			Destroy (timer);
+		}
 	}
 
 	public void Win(){
@@ -87,7 +96,7 @@ public class finishConditions : MonoBehaviour {
 
 	public void Lose(){
 		title.text = "You lost control of the crowd and the killer got away";
-		enableUI ();
 		lose = true;
+		enableUI ();
 	}
 }

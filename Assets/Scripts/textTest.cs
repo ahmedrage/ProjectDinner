@@ -9,7 +9,6 @@ public class textTest : MonoBehaviour {
 	public string text;
 	string currentText = "";
 	public Text dialogueText;
-
 	// Use this for initialization
 	void Start () {
 	}
@@ -19,6 +18,10 @@ public class textTest : MonoBehaviour {
 			currentText = text.Substring (0, i);
 			this.GetComponent<Text> ().text = currentText;
 			yield return new WaitForSeconds (delay);
+
+			if (i == text.Length) {
+				print ("ended stooge");
+			}
 		}
 	}
 		

@@ -20,19 +20,13 @@ public class Timer : MonoBehaviour {
 	void Update () {
 		t -= Time.deltaTime; 
 
-		//string minutes = ((int)t / 60).ToString ();
 		string seconds = t.ToString("f0");
 
 		timerText.text = "NEXT VICTIM " + seconds;
 		if (t <= 0.0f) {
-			//print ("done");
 			t = restartTime;
 			restartTime -= 5;
 			murdererScript.KillGuest ();
 		} 
-
-		if (restartTime == 0 || finishScript.win || finishScript.lose) {
-			Destroy (this);
-		}
 	}
 }
