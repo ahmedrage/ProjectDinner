@@ -154,8 +154,8 @@ MonoBehaviour:
     height: 638
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
+    m_SelectedIDs: 26fbffff
+    m_LastClickedID: -1242
     m_ExpandedIDs: dafbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -231,7 +231,7 @@ MonoBehaviour:
   - {fileID: 9}
   - {fileID: 10}
   m_Selected: 0
-  m_LastSelected: 1
+  m_LastSelected: 4
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -634,18 +634,18 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scripts
+    - Assets/Jarod Animations
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/Jarod Animations
   m_LastFoldersGridSize: 96
   m_LastProjectPath: C:\Users\townej\Documents\Git\ProjectDinner
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 60250000
-    m_LastClickedID: 9568
+    m_SelectedIDs: f8260000
+    m_LastClickedID: 9976
     m_ExpandedIDs: 00000000082500007e260000ffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -699,10 +699,10 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: 26fbffff
+    m_LastClickedInstanceID: -1242
     m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: 20200000501f0000c624000052060000380600006224000028050000268c0000e0980000449f0000ced9000072cf0000b6050000cc21000046310000582200006e220000e8220000cc58f9ff50230000c22300005e5300007e480100e642010006220000522200001a2200001c220000000000007a240000ca25000088260000d83900008e250000dc260000bc250000a0250000c8270000423b00004a250000a6250000
+    m_ExpandedInstanceIDs: 20200000501f0000c624000052060000380600006224000028050000268c0000e0980000449f0000ced9000072cf0000b6050000cc21000046310000582200006e220000e8220000cc58f9ff50230000c22300005e5300007e480100e642010006220000522200001a2200001c220000000000007a240000ca25000088260000d83900008e250000dc260000bc250000a0250000c8270000423b00004a250000a6250000d4250000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -726,7 +726,7 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
     m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 91.5}
+    m_ScrollPosition: {x: 0, y: 0}
     m_GridSize: 96
   m_DirectoriesAreaWidth: 154
 --- !u!114 &14
