@@ -89,6 +89,7 @@ public class Guest : MonoBehaviour {
 	}
 	public void Die() {
 		dead = true;
+		transform.FindChild ("Graphics").GetComponent<Animator> ().enabled = false;
 		transform.FindChild ("Graphics").GetComponent<SpriteRenderer> ().sprite = guestClass.deadSprite;
 	}
 }
