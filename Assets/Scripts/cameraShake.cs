@@ -37,7 +37,7 @@ public class cameraShake : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
-		if (playerScript != null && playerScript.canShoot == true && Input.GetButtonDown("Fire1")) {
+		if (playerScript != null && playerScript.canGuess == true && Input.GetButtonDown("Fire1")) {
 			Shake(_amplitude,_duration);
 			print ("shake shake");
 		}

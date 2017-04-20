@@ -1,14 +1,15 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\AnimationManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\cameraShake.cs">
     <Files>
       <File FileName="Assets\canvasRotationScript.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\GuestScript.cs" Line="41" Column="49" />
-      <File FileName="Assets\Scripts\playerController.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Guest.cs" Line="90" Column="21" />
-      <File FileName="Assets\Scripts\murderSystem.cs" Line="9" Column="29" />
+      <File FileName="Assets\Scripts\playerController.cs" Line="50" Column="2" />
+      <File FileName="Assets\Scripts\Guest.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\murderSystem.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Clues.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\AnimationManager.cs" Line="28" Column="74" />
+      <File FileName="Assets\Scripts\AnimationManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\cameraShake.cs" Line="40" Column="52" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
