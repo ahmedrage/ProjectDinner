@@ -20,9 +20,11 @@ public class interrogationSystem : MonoBehaviour {
 	public string[] comfortDialouge;
 	public string[] finalDialouge;
 	public float waitTime;
+	public float timeToComplete;
 	public Text comfortText;
 	public Text threatText;
 	public Text reactText;
+	public Text timerText;
 	public Button comfortButton;
 	public Button threatButton;
 	public Button accuseButton;
@@ -30,11 +32,14 @@ public class interrogationSystem : MonoBehaviour {
 	bool canAccuse = false;
 	int ind = 0;
 	float timeToPrint;
+	int timeLeft;
+	float initialTime;
 	// Use this for initialization
 	void Start () {
 		GenerateStats ();
 		comfortText.text = comfortDialouge [Random.Range (0, comfortDialouge.Length)];
 		threatText.text = threatDialouge [Random.Range (0, threatDialouge.Length)];
+		initialTime = Time.time;
 	}
 	void GenerateStats() {
 		fear = Random.Range (lowerInitial, upperInitial);
@@ -120,11 +125,20 @@ public class interrogationSystem : MonoBehaviour {
 		} else if (finalDialouge.Length - 1 > ind) {
 			//next scene
 		}
+		timeLeft = Mathf.RoundToInt(timeToComplete - (Time.time - initialTime));
+		if (timeLeft <= 0) {
+			comfortButton.interactable = false;
+			threatButton.interactable = false;
+			accuseButton.interactable = false;
+		} else {
+			timerText.text = timeLeft.ToString();
+		}
+
 	}
 
 	void removeText() {
 		List<string> text = (reactText.text).Split ('\n').ToList();
-		if (text.Count > 9) {
+		if (text.Count > 8) {
 			text.RemoveAt (0);
 		}
 		reactText.text = string.Join ("\n", text.ToArray());
