@@ -152,6 +152,7 @@ public class playerController : MonoBehaviour {
 	}
 		
 	void knockOut() {
+		gameObject.GetComponent<Animator> ().SetBool ("Attacking", true);
 		RaycastHit2D hit = Physics2D.Linecast(startPosition.position,endPosition.position);
 		if (hit != null && hit.collider != null) {
 
