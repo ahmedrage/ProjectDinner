@@ -17,6 +17,7 @@ public class GuestClass {
 	public Sprite idleSprite;
 	public Sprite Portrait;
 	public Sprite deadSprite;
+	public RuntimeAnimatorController animationController;
 }
 
 public class GuestScript : MonoBehaviour {
@@ -44,6 +45,7 @@ public class GuestScript : MonoBehaviour {
 				SpawnedGuest.transform.FindChild ("Graphics").rotation = SpawnPoints [i].rotation;
 				SpawnedGuest.GetComponent<Guest> ().guestClass = item;
 				SpawnedGuest.GetComponent<Guest> ().setText ();
+				SpawnedGuest.transform.FindChild ("Graphics").GetComponent<Animator> ().runtimeAnimatorController = item.animationController;
 				SpawnedGuest.transform.FindChild ("Graphics").GetComponent<SpriteRenderer> ().sprite = item.idleSprite;
 				SpawnedGuest.transform.FindChild ("Canvas").FindChild ("Portrait").GetComponent<SpriteRenderer> ().sprite = item.Portrait;
 				item.GuestGameObject = SpawnedGuest;
