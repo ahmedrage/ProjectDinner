@@ -8,12 +8,16 @@ public class cameraShake : MonoBehaviour {
 	private Vector3 initialPosition;
 	private bool isShaking = false;
 	public playerController playerScript;
-
 	// Use this for initialization
 	void Start () 
 	{	
-		playerScript = GameObject.Find ("player").GetComponent<playerController>();
+		if (GameObject.Find ("player") != null) {
+			playerScript = GameObject.Find ("player").GetComponent<playerController> ();
+		}
+		//Instance = this;
 		initialPosition = transform.localPosition;
+
+		Shake (_amplitude, _duration);
 	}
 
 	public void Shake (float amplitude, float duration)
@@ -22,7 +26,6 @@ public class cameraShake : MonoBehaviour {
 		isShaking = true;
 		CancelInvoke ();
 		Invoke ("StopShaking", duration);
-		playerScript._isShaking = false;
 	}
 
 	public void StopShaking()
@@ -34,8 +37,9 @@ public class cameraShake : MonoBehaviour {
 	// Update is called once per frame
 	void Update ()
 	{
-		if (playerScript._isShaking) {
+		if (playerScript != null && playerScript.canShoot == true && Input.GetButtonDown("Fire1")) {
 			Shake(_amplitude,_duration);
+			print ("shake shake");
 		}
 
 		if (isShaking) 
