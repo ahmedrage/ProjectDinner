@@ -1,0 +1,1623 @@
+fileFormatVersion: 2
+guid: 5966603efc4efc54ea46b4d7ca9a7d87
+timeCreated: 1492662843
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Spritesheet.fw_0
+    21300002: Spritesheet.fw_1
+    21300004: Spritesheet.fw_2
+    21300006: Spritesheet.fw_3
+    21300008: Spritesheet.fw_4
+    21300010: Spritesheet.fw_5
+    21300012: Spritesheet.fw_6
+    21300014: Spritesheet.fw_7
+    21300016: Spritesheet.fw_8
+    21300018: Spritesheet.fw_9
+    21300020: Spritesheet.fw_10
+    21300022: Spritesheet.fw_11
+    21300024: Spritesheet.fw_12
+    21300026: Spritesheet.fw_13
+    21300028: Spritesheet.fw_14
+    21300030: Spritesheet.fw_15
+    21300032: Spritesheet.fw_16
+    21300034: Spritesheet.fw_17
+    21300036: Spritesheet.fw_18
+    21300038: Spritesheet.fw_19
+    21300040: Spritesheet.fw_20
+    21300042: Spritesheet.fw_21
+    21300044: Spritesheet.fw_22
+    21300046: Spritesheet.fw_23
+    21300048: Spritesheet.fw_24
+    21300050: Spritesheet.fw_25
+    21300052: Spritesheet.fw_26
+    21300054: Spritesheet.fw_27
+    21300056: Spritesheet.fw_28
+    21300058: Spritesheet.fw_29
+    21300060: Spritesheet.fw_30
+    21300062: Spritesheet.fw_31
+    21300064: Spritesheet.fw_32
+    21300066: Spritesheet.fw_33
+    21300068: Spritesheet.fw_34
+    21300070: Spritesheet.fw_35
+    21300072: Spritesheet.fw_36
+    21300074: Spritesheet.fw_37
+    21300076: Spritesheet.fw_38
+    21300078: Spritesheet.fw_39
+    21300080: Spritesheet.fw_40
+    21300082: Spritesheet.fw_41
+    21300084: Spritesheet.fw_42
+    21300086: Spritesheet.fw_43
+    21300088: Spritesheet.fw_44
+    21300090: Spritesheet.fw_45
+    21300092: Spritesheet.fw_46
+    21300094: Spritesheet.fw_47
+    21300096: Spritesheet.fw_48
+    21300098: Spritesheet.fw_49
+    21300100: Spritesheet.fw_48
+    21300102: Spritesheet.fw_51
+    21300104: Spritesheet.fw_52
+    21300106: Spritesheet.fw_53
+    21300108: Spritesheet.fw_54
+    21300110: Spritesheet.fw_55
+    21300112: Spritesheet.fw_56
+    21300114: Spritesheet.fw_57
+    21300116: Spritesheet.fw_58
+    21300118: Spritesheet.fw_59
+    21300120: Spritesheet.fw_60
+    21300122: Spritesheet.fw_61
+    21300124: Spritesheet.fw_62
+    21300126: Spritesheet.fw_63
+    21300128: Spritesheet.fw_64
+    21300130: Spritesheet.fw_65
+    21300132: Spritesheet.fw_66
+    21300134: Spritesheet.fw_67
+    21300136: Spritesheet.fw_68
+    21300138: Spritesheet.fw_69
+    21300140: Spritesheet.fw_70
+    21300142: Spritesheet.fw_71
+    21300144: Spritesheet.fw_72
+    21300146: Spritesheet.fw_73
+    21300148: Spritesheet.fw_74
+    21300150: Spritesheet.fw_75
+    21300152: Spritesheet.fw_76
+    21300154: Spritesheet.fw_77
+    21300156: Spritesheet.fw_78
+    21300158: Spritesheet.fw_79
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    sRGBTexture: 0
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 10
+  alphaUsage: 1
+  alphaIsTransparency: 0
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: iPhone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Android
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Spritesheet.fw_0
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 619
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 4.5}
+        - {x: -5.5, y: -3.5}
+        - {x: -4.5, y: -4.5}
+        - {x: 4.5, y: -4.5}
+        - {x: 5.5, y: -3.5}
+        - {x: 5.5, y: 4.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_1
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 620
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 4.5}
+        - {x: -5.5, y: -3.5}
+        - {x: -4.5, y: -4.5}
+        - {x: 4.5, y: -4.5}
+        - {x: 5.5, y: -3.5}
+        - {x: 5.5, y: 4.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_2
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 613
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.5, y: 8.5}
+        - {x: -6.5, y: -8.5}
+        - {x: 6.5, y: -8.5}
+        - {x: 6.5, y: 8.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_3
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 598
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.5, y: 4.5}
+        - {x: -6.5, y: -4.5}
+        - {x: 6.5, y: -4.5}
+        - {x: 6.5, y: 4.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_4
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 598
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.5, y: 5}
+        - {x: -6.5, y: -3}
+        - {x: -4.5, y: -5}
+        - {x: 4.5, y: -5}
+        - {x: 6.5, y: -3}
+        - {x: 6.5, y: 5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_5
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 591
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.5, y: 9}
+        - {x: -6.5, y: -9}
+        - {x: 6.5, y: -9}
+        - {x: 6.5, y: 9}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_6
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 577
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 6}
+        - {x: -5.5, y: -5}
+        - {x: -4.5, y: -6}
+        - {x: 4.5, y: -6}
+        - {x: 5.5, y: -5}
+        - {x: 5.5, y: 5}
+        - {x: 3.5, y: 6}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_7
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 577
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 6}
+        - {x: -5.5, y: -5}
+        - {x: -4.5, y: -6}
+        - {x: 4.5, y: -6}
+        - {x: 5.5, y: -5}
+        - {x: 5.5, y: 5}
+        - {x: 3.5, y: 6}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_8
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 577
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 6}
+        - {x: -5.5, y: -5}
+        - {x: -4.5, y: -6}
+        - {x: 4.5, y: -6}
+        - {x: 5.5, y: -5}
+        - {x: 5.5, y: 5}
+        - {x: 3.5, y: 6}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_9
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 577
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 6}
+        - {x: -5.5, y: -5}
+        - {x: -4.5, y: -6}
+        - {x: 4.5, y: -6}
+        - {x: 5.5, y: -5}
+        - {x: 5.5, y: 5}
+        - {x: 3.5, y: 6}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_10
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 577
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.5, y: 5.5}
+        - {x: -5.5, y: 4.5}
+        - {x: -5.5, y: -4.5}
+        - {x: -4.5, y: -5.5}
+        - {x: 4.5, y: -5.5}
+        - {x: 5.5, y: -4.5}
+        - {x: 5.5, y: 5.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_11
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 577
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 5.5}
+        - {x: -5.5, y: -4.5}
+        - {x: -4.5, y: -5.5}
+        - {x: 4.5, y: -5.5}
+        - {x: 5.5, y: -4.5}
+        - {x: 5.5, y: 5.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_12
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 577
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.5, y: 5.5}
+        - {x: -5.5, y: 4.5}
+        - {x: -5.5, y: -4.5}
+        - {x: -4.5, y: -5.5}
+        - {x: 4.5, y: -5.5}
+        - {x: 5.5, y: -4.5}
+        - {x: 5.5, y: 4.5}
+        - {x: 4.5, y: 5.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_13
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 572
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.5, y: 8}
+        - {x: -6.5, y: -8}
+        - {x: 6.5, y: -8}
+        - {x: 6.5, y: 8}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_14
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 552
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 5.5}
+        - {x: -5.5, y: -5.5}
+        - {x: 5.5, y: -5.5}
+        - {x: 5.5, y: 5.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_15
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 552
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 5.5}
+        - {x: -5.5, y: -5.5}
+        - {x: 5.5, y: -5.5}
+        - {x: 5.5, y: 5.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_16
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 552
+        width: 13
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.5, y: 5.5}
+        - {x: -6.5, y: -5.5}
+        - {x: 5.5, y: -5.5}
+        - {x: 6.5, y: -4.5}
+        - {x: 6.5, y: 5.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_17
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 552
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 5.5}
+        - {x: -5.5, y: -5.5}
+        - {x: 5.5, y: -5.5}
+        - {x: 5.5, y: 5.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_18
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 552
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 5.5}
+        - {x: -5.5, y: -5.5}
+        - {x: 5.5, y: -5.5}
+        - {x: 5.5, y: 5.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_19
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 552
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 5.5}
+        - {x: -5.5, y: -5.5}
+        - {x: 5.5, y: -5.5}
+        - {x: 5.5, y: 5.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_20
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 552
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 5.5}
+        - {x: -5.5, y: -5.5}
+        - {x: 5.5, y: -5.5}
+        - {x: 5.5, y: 5.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_21
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 552
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 5.5}
+        - {x: -5.5, y: -5.5}
+        - {x: 5.5, y: -5.5}
+        - {x: 5.5, y: 5.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_22
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 552
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 5.5}
+        - {x: -5.5, y: -5.5}
+        - {x: 5.5, y: -5.5}
+        - {x: 5.5, y: 5.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_23
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 550
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.5, y: 7.5}
+        - {x: -6.5, y: -6.5}
+        - {x: -4.5, y: -7.5}
+        - {x: 5.5, y: -7.5}
+        - {x: 6.5, y: -5.5}
+        - {x: 6.5, y: 7.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_24
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 534
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 5.5}
+        - {x: -5.5, y: -5.5}
+        - {x: 5.5, y: -5.5}
+        - {x: 5.5, y: 5.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_25
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 534
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 5.5}
+        - {x: -5.5, y: -5.5}
+        - {x: 5.5, y: -5.5}
+        - {x: 5.5, y: 5.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_26
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 534
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 5.5}
+        - {x: -5.5, y: -5.5}
+        - {x: 5.5, y: -5.5}
+        - {x: 5.5, y: 5.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_27
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 531
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.5, y: 8}
+        - {x: -6.5, y: -7}
+        - {x: -5.5, y: -8}
+        - {x: 3.5, y: -8}
+        - {x: 6.5, y: -5}
+        - {x: 6.5, y: 8}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_28
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 513
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 7}
+        - {x: -5, y: -7}
+        - {x: 4, y: -7}
+        - {x: 5, y: -6}
+        - {x: 5, y: 5}
+        - {x: 2, y: 7}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_29
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 513
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 7}
+        - {x: -5, y: -7}
+        - {x: 4, y: -7}
+        - {x: 5, y: -6}
+        - {x: 5, y: 5}
+        - {x: 2, y: 7}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_30
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 513
+        width: 10
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 7}
+        - {x: -5, y: -7}
+        - {x: 4, y: -7}
+        - {x: 5, y: -6}
+        - {x: 5, y: 5}
+        - {x: 2, y: 7}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_31
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 513
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 6.5}
+        - {x: -5, y: -6.5}
+        - {x: 4, y: -6.5}
+        - {x: 5, y: -5.5}
+        - {x: 5, y: 5.5}
+        - {x: 3, y: 6.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_32
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 513
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.5, y: 5.5}
+        - {x: -5.5, y: 4.5}
+        - {x: -5.5, y: -4.5}
+        - {x: -4.5, y: -5.5}
+        - {x: 4.5, y: -5.5}
+        - {x: 5.5, y: -4.5}
+        - {x: 5.5, y: 4.5}
+        - {x: 4.5, y: 5.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_33
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 513
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 6.5}
+        - {x: -5, y: -6.5}
+        - {x: 4, y: -6.5}
+        - {x: 5, y: -5.5}
+        - {x: 5, y: 5.5}
+        - {x: 3, y: 6.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_34
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 510
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 8}
+        - {x: -6.5, y: 7}
+        - {x: -6.5, y: -7}
+        - {x: -5.5, y: -8}
+        - {x: 6.5, y: -8}
+        - {x: 6.5, y: 8}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_35
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 496
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 3.5}
+        - {x: -4, y: -3.5}
+        - {x: 4, y: -3.5}
+        - {x: 4, y: 3.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_36
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 496
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 3.5}
+        - {x: -4, y: -3.5}
+        - {x: 4, y: -3.5}
+        - {x: 4, y: 3.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_37
+      rect:
+        serializedVersion: 2
+        x: 45
+        y: 496
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 3.5}
+        - {x: -4, y: -3.5}
+        - {x: 4, y: -3.5}
+        - {x: 4, y: 3.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_38
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 495
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.5, y: 4}
+        - {x: -4.5, y: -4}
+        - {x: 4.5, y: -4}
+        - {x: 4.5, y: 4}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_39
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 496
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 3.5}
+        - {x: -4, y: -3.5}
+        - {x: 4, y: -3.5}
+        - {x: 4, y: 3.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_40
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 496
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 3.5}
+        - {x: -4, y: -3.5}
+        - {x: 4, y: -3.5}
+        - {x: 4, y: 3.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_41
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 496
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 3.5}
+        - {x: -4, y: -3.5}
+        - {x: 4, y: -3.5}
+        - {x: 4, y: 3.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_42
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 496
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 3.5}
+        - {x: -4, y: -3.5}
+        - {x: 4, y: -3.5}
+        - {x: 4, y: 3.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_43
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 488
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 8.5}
+        - {x: -6.5, y: 4.5}
+        - {x: -6.5, y: -7.5}
+        - {x: -4.5, y: -8.5}
+        - {x: 4.5, y: -8.5}
+        - {x: 6.5, y: -6.5}
+        - {x: 6.5, y: 8.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_44
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 471
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3, y: 4}
+        - {x: -3, y: -4}
+        - {x: 3, y: -4}
+        - {x: 3, y: 4}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_45
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 471
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -31.5, y: 11.5}
+        - {x: -31.5, y: -4.5}
+        - {x: -15.5, y: -11.5}
+        - {x: 31.5, y: -11.5}
+        - {x: 31.5, y: 11.5}
+      - - {x: 7.5, y: 11.5}
+        - {x: 3.5, y: 11.5}
+        - {x: -1.5, y: 7.5}
+        - {x: -1.5, y: -5.5}
+        - {x: 3.5, y: -6.5}
+        - {x: 10.5, y: -6.5}
+        - {x: 13.5, y: -3.5}
+        - {x: 13.5, y: 8.5}
+      - - {x: 15.5, y: 10.5}
+        - {x: 13.5, y: 5.5}
+        - {x: 13.5, y: -3.5}
+        - {x: 17.5, y: -6.5}
+        - {x: 25.5, y: -6.5}
+        - {x: 28.5, y: -1.5}
+        - {x: 28.5, y: 8.5}
+        - {x: 23.5, y: 10.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_46
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 471
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 7}
+        - {x: -5.5, y: -7}
+        - {x: 5.5, y: -7}
+        - {x: 5.5, y: 5}
+        - {x: 3.5, y: 7}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_47
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 471
+        width: 11
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 10}
+        - {x: -5.5, y: -9}
+        - {x: -4.5, y: -10}
+        - {x: 4.5, y: -10}
+        - {x: 5.5, y: -9}
+        - {x: 5.5, y: 5}
+        - {x: 3.5, y: 10}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_49
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 467
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.5, y: 8.5}
+        - {x: -6.5, y: -8.5}
+        - {x: 6.5, y: -8.5}
+        - {x: 6.5, y: 8.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_48
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 471
+        width: 12
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 4.5}
+        - {x: -5.5, y: -3.5}
+        - {x: -4.5, y: -4.5}
+        - {x: 4.5, y: -4.5}
+        - {x: 5.5, y: -3.5}
+        - {x: 5.5, y: 4.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_51
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 450
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 5}
+        - {x: -5.5, y: -4}
+        - {x: -4.5, y: -5}
+        - {x: 4.5, y: -5}
+        - {x: 5.5, y: -4}
+        - {x: 5.5, y: 5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_52
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 450
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 5.5}
+        - {x: -5.5, y: -4.5}
+        - {x: -4.5, y: -5.5}
+        - {x: 4.5, y: -5.5}
+        - {x: 5.5, y: -4.5}
+        - {x: 5.5, y: 5.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_53
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 450
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 5.5}
+        - {x: -5.5, y: -4.5}
+        - {x: -4.5, y: -5.5}
+        - {x: 4.5, y: -5.5}
+        - {x: 5.5, y: -4.5}
+        - {x: 5.5, y: 5.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_54
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 445
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.5, y: 9}
+        - {x: -6.5, y: -8}
+        - {x: -5.5, y: -9}
+        - {x: 6.5, y: -9}
+        - {x: 6.5, y: 8}
+        - {x: 5.5, y: 9}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_55
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 428
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.5, y: 7}
+        - {x: -4.5, y: -7}
+        - {x: 4.5, y: -7}
+        - {x: 4.5, y: 6}
+        - {x: 2.5, y: 7}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_56
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 428
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 8}
+        - {x: -5.5, y: -7}
+        - {x: -4.5, y: -8}
+        - {x: 4.5, y: -8}
+        - {x: 5.5, y: -7}
+        - {x: 5.5, y: 5}
+        - {x: 0.5, y: 8}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_57
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 428
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5, y: 8}
+        - {x: -5, y: -8}
+        - {x: 5, y: -8}
+        - {x: 5, y: 8}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_58
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 428
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4, y: 7.5}
+        - {x: -5, y: 6.5}
+        - {x: -5, y: -7.5}
+        - {x: 4, y: -7.5}
+        - {x: 5, y: -6.5}
+        - {x: 5, y: 5.5}
+        - {x: 3, y: 7.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_59
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 425
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 8}
+        - {x: -6.5, y: 6}
+        - {x: -6.5, y: -8}
+        - {x: 6.5, y: -8}
+        - {x: 6.5, y: 8}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_60
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 408
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 6}
+        - {x: -5.5, y: -6}
+        - {x: 5.5, y: -6}
+        - {x: 5.5, y: 5}
+        - {x: 3.5, y: 6}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_61
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 408
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 5.5}
+        - {x: -5.5, y: -5.5}
+        - {x: 5.5, y: -5.5}
+        - {x: 5.5, y: 4.5}
+        - {x: 4.5, y: 5.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_62
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 408
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 5.5}
+        - {x: -5.5, y: -5.5}
+        - {x: 5.5, y: -5.5}
+        - {x: 5.5, y: 4.5}
+        - {x: 4.5, y: 5.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_63
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 408
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 5.5}
+        - {x: -5.5, y: -5.5}
+        - {x: 5.5, y: -5.5}
+        - {x: 5.5, y: 4.5}
+        - {x: 4.5, y: 5.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_64
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 408
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 6}
+        - {x: -5.5, y: -6}
+        - {x: 5.5, y: -6}
+        - {x: 5.5, y: 6}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_65
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 408
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.5, y: 6}
+        - {x: -5.5, y: 5}
+        - {x: -5.5, y: -6}
+        - {x: 5.5, y: -6}
+        - {x: 5.5, y: 5}
+        - {x: 4.5, y: 6}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_66
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 405
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.5, y: 8}
+        - {x: -6.5, y: 4}
+        - {x: -6.5, y: -8}
+        - {x: 6.5, y: -8}
+        - {x: 6.5, y: 8}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_67
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 385
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 7}
+        - {x: -5.5, y: -7}
+        - {x: 3.5, y: -7}
+        - {x: 5.5, y: -5}
+        - {x: 5.5, y: 7}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_68
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 385
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 6.5}
+        - {x: -5.5, y: -5.5}
+        - {x: -4.5, y: -6.5}
+        - {x: 5.5, y: -6.5}
+        - {x: 5.5, y: 6.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_69
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 384
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 7.5}
+        - {x: -5.5, y: -6.5}
+        - {x: -4.5, y: -7.5}
+        - {x: 5.5, y: -7.5}
+        - {x: 5.5, y: 7.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_70
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 383
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.5, y: 9}
+        - {x: -6.5, y: -9}
+        - {x: 1.5, y: -9}
+        - {x: 6.5, y: -4}
+        - {x: 6.5, y: 9}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_71
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 368
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.5, y: 5}
+        - {x: -4.5, y: -5}
+        - {x: 4.5, y: -5}
+        - {x: 4.5, y: 5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_72
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 368
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.5, y: 5}
+        - {x: -4.5, y: -5}
+        - {x: 4.5, y: -5}
+        - {x: 4.5, y: 5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_73
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 363
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.5, y: 8.5}
+        - {x: -6.5, y: 4.5}
+        - {x: -6.5, y: -6.5}
+        - {x: -4.5, y: -8.5}
+        - {x: 4.5, y: -8.5}
+        - {x: 6.5, y: -7.5}
+        - {x: 6.5, y: 8.5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_74
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 346
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.5, y: 4}
+        - {x: -4.5, y: -4}
+        - {x: 4.5, y: -4}
+        - {x: 4.5, y: 4}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_75
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 346
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -3.5, y: 4}
+        - {x: -3.5, y: -4}
+        - {x: 3.5, y: -4}
+        - {x: 3.5, y: 4}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_76
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 341
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.5, y: 8}
+        - {x: -6.5, y: -7}
+        - {x: -4.5, y: -8}
+        - {x: 5.5, y: -8}
+        - {x: 6.5, y: -7}
+        - {x: 6.5, y: 8}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_77
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 325
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -4.5, y: 5}
+        - {x: -4.5, y: -5}
+        - {x: 4.5, y: -5}
+        - {x: 4.5, y: 5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_78
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 326
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -5.5, y: 5}
+        - {x: -5.5, y: -5}
+        - {x: 5.5, y: -5}
+        - {x: 5.5, y: 5}
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Spritesheet.fw_79
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 320
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -6.5, y: 8.5}
+        - {x: -6.5, y: -7.5}
+        - {x: -4.5, y: -8.5}
+        - {x: 5.5, y: -8.5}
+        - {x: 6.5, y: -6.5}
+        - {x: 6.5, y: 8.5}
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
