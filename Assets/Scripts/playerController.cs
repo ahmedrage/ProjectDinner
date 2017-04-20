@@ -125,6 +125,21 @@ public class playerController : MonoBehaviour {
 				knockOut ();
 			}
 		}
+
+		if (controlSys.accused) {
+			if (Input.GetKeyDown(KeyCode.Q)) {
+				speed = 0;
+				myAnimator.SetBool ("Moving", false);
+				controlSys.response (controlSys.promises.Count, controlSys.promises, true);
+			}
+
+			if (Input.GetKeyDown (KeyCode.E)) {
+				speed = 0;
+				myAnimator.SetBool ("Moving", false);
+				controlSys.response (controlSys.calming.Count, controlSys.calming, false);
+			}
+		}
+
 		if (Input.GetAxis ("Horizontal") == 0 && Input.GetAxis ("Vertical") == 0) {
 			myAnimator.SetBool ("Moving", false);
 		} else {
@@ -133,18 +148,6 @@ public class playerController : MonoBehaviour {
 
 		if (Input.GetKeyDown (KeyCode.LeftShift) || Input.GetButtonDown("controllerBack")) {
 			hintPannel.SetActive (!(hintPannel.activeSelf));
-		}
-
-		if (controlSys.accused) {
-			if (Input.GetKeyDown(KeyCode.Q)) {
-				speed = 0;
-				controlSys.response (controlSys.promises.Count, controlSys.promises, true);
-			}
-
-			if (Input.GetKeyDown (KeyCode.E)) {
-				speed = 0;
-				controlSys.response (controlSys.calming.Count, controlSys.calming, false);
-			}
 		}
 	}
 		

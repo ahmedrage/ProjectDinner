@@ -24,6 +24,7 @@ public class textTest : MonoBehaviour {
 		
 
 	public void displayDialogue(int listCount, List<string> dialogue){
+		dialogueText.color = Color.white;
 		int x = Random.Range (0, listCount);
 		text = dialogue [x];
 		StartCoroutine (showText());

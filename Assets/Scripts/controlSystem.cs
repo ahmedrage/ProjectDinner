@@ -25,6 +25,8 @@ public class controlSystem : MonoBehaviour {
 	public bool accused;
 	public GameObject dialoguePannel;
 
+	public float fadeSpeed; // make this  hide in inspector
+
 	[HideInInspector]public float negativePromiseMod;
 
 
@@ -54,6 +56,7 @@ public class controlSystem : MonoBehaviour {
 		GameObject accuser = murderScript.guests [i];
 		acussingGuestSprite = accuser.GetComponent<Guest> ().guestClass.Portrait;
 		responseImg.sprite = acussingGuestSprite;
+		responseImg.color = Color.white;
 		typeWritter.displayDialogue (accusations.Count,accusations);
 		// fade in response
 	}
@@ -62,6 +65,7 @@ public class controlSystem : MonoBehaviour {
 		responseImg.enabled = true;
 		responseImg.sprite = playerPortraitSprite;
 		accused = false;
+		responseImg.color = Color.white;
 		typeWritter.displayDialogue (listCount, responses);
 		StartCoroutine ("playerHalt");
 
@@ -72,11 +76,28 @@ public class controlSystem : MonoBehaviour {
 			calmness += calmBonus;
 			negativePromiseMod = 1;
 		}
-		// fade response away
+
 	}
 
 	IEnumerator playerHalt(){
 		yield return new WaitForSeconds (controldialogueWaitTime);
 		playerScript.speed = 6;
+		playerScript.myAnimator.SetBool ("Moving", true);
+		yield return new WaitForSeconds (1.5f);
+		StartCoroutine (Fade (Color.white, Color.clear, 1));
+	}
+
+	IEnumerator Fade(Color A, Color B, float time)
+	{
+		float speed = 1 / time;
+		float percent = 0;
+
+		while (percent < 1) 
+		{
+			percent += Time.deltaTime * speed;
+			typeWritter.dialogueText.color = Color.Lerp (A, B, percent);
+			responseImg.color = Color.Lerp (A, B, percent);
+			yield return null;
+		}
 	}
 }
