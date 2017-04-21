@@ -5,11 +5,11 @@ using System.Collections.Generic;
 [System.Serializable]
 public class GuestClass {
 	public string name;
-	public enum professions {Doctor, Scientist, Author, HomeMaker, Chef, Politician, FilmMaker, Veteran};
+	public enum professions {Doctor, Scientist, Author, Home_maker, Chef, Politician, Film_maker, Veteran};
 	public professions profession;
-	public enum Accessories {Hat, Glasses, WorkAccessory, NoAccesories};
+	public enum Accessories {hat, glasses, work_accessory, no_accesories};
 	public Accessories Accessory;
-	public enum Blemishes {Tattoo, Scar, SkinCondition, CleanSkin};
+	public enum Blemishes {Tattoo, Scar, skin_condition, clean_skin};
 	public Blemishes Blemish;
 
 
