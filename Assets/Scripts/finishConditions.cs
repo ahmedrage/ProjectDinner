@@ -49,7 +49,12 @@ public class finishConditions : MonoBehaviour {
 
 	void endGameInfo(){
 		numDeadGuests = murdererScript.deadGuests.ToString();
-		numDeadGuestsText.text = "You let " + numDeadGuests +" Guest die"; // even to a guy like me that's cold
+		if (murdererScript.deadGuests == 1) {
+			numDeadGuestsText.text = "You let " + numDeadGuests +" Guest die"; // even to a guy like me that's cold
+		}else{
+		numDeadGuestsText.text = "You let " + numDeadGuests +" Guests die";
+		}
+
 		murderer = murdererScript.murdererName;
 		murdererName.text = "Murderer: " + murderer;
 		murdererPortrait = murdererScript.murdererPortrait;

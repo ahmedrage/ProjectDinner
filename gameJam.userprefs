@@ -2,13 +2,13 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\finishConditions.cs">
     <Files>
-      <File FileName="Assets\Scripts\murderSystem.cs" Line="64" Column="1" />
-      <File FileName="Assets\Scripts\controlSystem.cs" Line="57" Column="3" />
-      <File FileName="Assets\Scripts\textTest.cs" Line="12" Column="1" />
-      <File FileName="Assets\Scripts\fadeScreen.cs" Line="33" Column="43" />
-      <File FileName="Assets\Scripts\playerController.cs" Line="142" Column="3" />
-      <File FileName="Assets\Scripts\finishConditions.cs" Line="66" Column="25" />
-      <File FileName="Assets\Scripts\Timer.cs" Line="30" Column="5" />
+      <File FileName="Assets\Scripts\murderSystem.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\controlSystem.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\textTest.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\fadeScreen.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\playerController.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\finishConditions.cs" Line="52" Column="32" />
+      <File FileName="Assets\Scripts\Timer.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
