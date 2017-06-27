@@ -46,27 +46,27 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\AnimationManager.cs" />
-     <Compile Include="Assets\Scripts\Clues.cs" />
-     <Compile Include="Assets\Scripts\Guest.cs" />
-     <Compile Include="Assets\Scripts\GuestScript.cs" />
-     <Compile Include="Assets\Scripts\Timer.cs" />
-     <Compile Include="Assets\Scripts\cameraShake.cs" />
-     <Compile Include="Assets\Scripts\controlSystem.cs" />
-     <Compile Include="Assets\Scripts\endGameMenu.cs" />
-     <Compile Include="Assets\Scripts\fadeScreen.cs" />
-     <Compile Include="Assets\Scripts\finishConditions.cs" />
-     <Compile Include="Assets\Scripts\instructions.cs" />
-     <Compile Include="Assets\Scripts\murderSystem.cs" />
-     <Compile Include="Assets\Scripts\pauseMenu.cs" />
-     <Compile Include="Assets\Scripts\playerController.cs" />
-     <Compile Include="Assets\Scripts\settings.cs" />
-     <Compile Include="Assets\Scripts\textTest.cs" />
+     <Compile Include="Assets\Used Assets\AnimationManager.cs" />
+     <Compile Include="Assets\Used Assets\Clues.cs" />
+     <Compile Include="Assets\Used Assets\Guest.cs" />
+     <Compile Include="Assets\Used Assets\GuestScript.cs" />
+     <Compile Include="Assets\Used Assets\Timer.cs" />
+     <Compile Include="Assets\Used Assets\audioManager.cs" />
+     <Compile Include="Assets\Used Assets\cameraShake.cs" />
+     <Compile Include="Assets\Used Assets\canvasRotationScript.cs" />
+     <Compile Include="Assets\Used Assets\controlSystem.cs" />
+     <Compile Include="Assets\Used Assets\endGameMenu.cs" />
+     <Compile Include="Assets\Used Assets\fadeScreen.cs" />
+     <Compile Include="Assets\Used Assets\finishConditions.cs" />
+     <Compile Include="Assets\Used Assets\instructions.cs" />
+     <Compile Include="Assets\Used Assets\interrogationSystem.cs" />
+     <Compile Include="Assets\Used Assets\menu.cs" />
+     <Compile Include="Assets\Used Assets\murderSystem.cs" />
+     <Compile Include="Assets\Used Assets\pauseMenu.cs" />
+     <Compile Include="Assets\Used Assets\playerController.cs" />
+     <Compile Include="Assets\Used Assets\settings.cs" />
+     <Compile Include="Assets\Used Assets\textTest.cs" />
      <Compile Include="Assets\XInputDotNet\Examples\XInputTestCS.cs" />
-     <Compile Include="Assets\audioManager.cs" />
-     <Compile Include="Assets\canvasRotationScript.cs" />
-     <Compile Include="Assets\interrogationSystem.cs" />
-     <Compile Include="Assets\lachieFolder\scripts\menu.cs" />
      <None Include="Assets\XInputDotNet\Docs.txt" />
      <None Include="Assets\XInputDotNet\MITLicense.txt" />
  <Reference Include="UnityEngine.UI">
