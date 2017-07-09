@@ -17,7 +17,7 @@ public class Guest : MonoBehaviour {
 	void Start () {
 		playerScript = GameObject.FindWithTag ("Player").GetComponent<playerController> ();
 		deathPanel = transform.GetChild (0).transform.GetChild (1);
-		Portrait = transform.FindChild ("Canvas").FindChild ("Portrait");
+		Portrait = transform.Find ("Canvas").Find ("Portrait");
 		murderScript = GameObject.Find ("Gm").GetComponent<murderSystem> ();
 	}
 	
@@ -89,7 +89,7 @@ public class Guest : MonoBehaviour {
 	}
 	public void Die() {
 		dead = true;
-		transform.FindChild ("Graphics").GetComponent<Animator> ().enabled = false;
-		transform.FindChild ("Graphics").GetComponent<SpriteRenderer> ().sprite = guestClass.deadSprite;
+		transform.Find ("Graphics").GetComponent<Animator> ().enabled = false;
+		transform.Find ("Graphics").GetComponent<SpriteRenderer> ().sprite = guestClass.deadSprite;
 	}
 }

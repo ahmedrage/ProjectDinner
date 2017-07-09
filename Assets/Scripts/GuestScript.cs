@@ -42,12 +42,12 @@ public class GuestScript : MonoBehaviour {
 		foreach (var item in GuestArray) {
 			if (i <= SpawnPoints.Length) { 
 				GameObject SpawnedGuest = Instantiate (GuestPrefab, SpawnPoints[i].position,GuestPrefab.transform.rotation) as GameObject;
-				SpawnedGuest.transform.FindChild ("Graphics").rotation = SpawnPoints [i].rotation;
+				SpawnedGuest.transform.Find ("Graphics").rotation = SpawnPoints [i].rotation;
 				SpawnedGuest.GetComponent<Guest> ().guestClass = item;
 				SpawnedGuest.GetComponent<Guest> ().setText ();
-				SpawnedGuest.transform.FindChild ("Graphics").GetComponent<Animator> ().runtimeAnimatorController = item.animationController;
-				SpawnedGuest.transform.FindChild ("Graphics").GetComponent<SpriteRenderer> ().sprite = item.idleSprite;
-				SpawnedGuest.transform.FindChild ("Canvas").FindChild ("Portrait").GetComponent<SpriteRenderer> ().sprite = item.Portrait;
+				SpawnedGuest.transform.Find ("Graphics").GetComponent<Animator> ().runtimeAnimatorController = item.animationController;
+				SpawnedGuest.transform.Find ("Graphics").GetComponent<SpriteRenderer> ().sprite = item.idleSprite;
+				SpawnedGuest.transform.Find ("Canvas").Find ("Portrait").GetComponent<SpriteRenderer> ().sprite = item.Portrait;
 				item.GuestGameObject = SpawnedGuest;
 				murderScript.guests.Add (SpawnedGuest);
 			}

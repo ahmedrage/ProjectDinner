@@ -25,18 +25,18 @@ public class AnimationManager : MonoBehaviour {
 	public void StopAllNPC () {
 		foreach (GameObject g in guests) {
 			if (!g.GetComponent<Guest> ().dead) {
-				g.transform.FindChild ("Graphics").GetComponent<Animator> ().enabled = false;
+				g.transform.Find ("Graphics").GetComponent<Animator> ().enabled = false;
 			}
 		}
-		GetComponent<murderSystem> ().murderer.transform.FindChild ("Graphics").GetComponent<Animator> ().enabled = false;
+		GetComponent<murderSystem> ().murderer.transform.Find ("Graphics").GetComponent<Animator> ().enabled = false;
 	}
 
 	public void PlayAllNPC () {
 		foreach (GameObject g in guests) {
 			if (!g.GetComponent<Guest> ().dead) {
-				g.transform.FindChild ("Graphics").GetComponent<Animator> ().enabled = true;
+				g.transform.Find ("Graphics").GetComponent<Animator> ().enabled = true;
 			}
 		}
-		GetComponent<murderSystem> ().murderer.transform.FindChild ("Graphics").GetComponent<Animator> ().enabled = true;
+		GetComponent<murderSystem> ().murderer.transform.Find ("Graphics").GetComponent<Animator> ().enabled = true;
 	}
 }
