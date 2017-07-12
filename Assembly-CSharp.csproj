@@ -46,6 +46,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\InteractableObjectScript.cs" />
      <Compile Include="Assets\Scripts\AnimationManager.cs" />
      <Compile Include="Assets\Scripts\Clues.cs" />
      <Compile Include="Assets\Scripts\Guest.cs" />
@@ -91,7 +92,11 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityVR/RuntimeEditor/UnityEngine.VR.dll</HintPath>
  </Reference>
  <Reference Include="XInputDotNetPure">
+<<<<<<< HEAD
  <HintPath>C:/Users/simpsl/Desktop/gameJam/Assets/XInputDotNet/Plugins/XInputDotNetPure.dll</HintPath>
+=======
+ <HintPath>C:/Users/townej/Documents/Source Tree/ProjectDinner/Assets/XInputDotNet/Plugins/XInputDotNetPure.dll</HintPath>
+>>>>>>> 0e620b7130847021b0d51d32fee8559545391f81
  </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
