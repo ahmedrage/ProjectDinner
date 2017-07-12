@@ -92,12 +92,19 @@ public class murderSystem : MonoBehaviour {
 			break;
 		}
 
-		for (int y = 0 ; y < guests.Count; y++) {
-			guests [y].GetComponent<Guest> ().scared = true;
-		}
+		_shake ();
+
 	}
 	IEnumerator lightFlash(){
 		yield return new WaitForSeconds (lightDelay);
 		light.enabled = true;
+	}
+
+	public void _shake(){
+		for (int y = 0 ; y < guests.Count; y++) {
+			guests [y].GetComponent<Guest> ().scared = true;
+			guests [y].GetComponent<Guest> ().threat = false;
+			guests [y].GetComponent<Guest> ().shakeFrequencey += 0.005f;
+		}
 	}
 }

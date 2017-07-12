@@ -28,13 +28,13 @@ public class playerController : MonoBehaviour {
 	public int guesses = 2;
 	public bool canGuess; 
 	public bool _isShaking;
-	public bool rmb;
 	public AudioClip blugeSound;
 	public Animator myAnimator;
 	public List<Transform> nearbyGuests; // This array holds all the guests who are close enough to display details.
 	public GameObject nearestGuest;
 	//bool playing = false;
 	bool usingController;
+	public bool rmb;
 	float rotZ = 90;
 	Sprite cursorSprite;
 
@@ -106,6 +106,7 @@ public class playerController : MonoBehaviour {
 				speed = knockoutSpeed;
 			} else {
 				rmb = false;
+
 			} 
 
 
@@ -154,7 +155,8 @@ public class playerController : MonoBehaviour {
 		gameObject.GetComponent<Animator> ().SetBool ("Attacking", true);
 		RaycastHit2D hit = Physics2D.Linecast(startPosition.position,endPosition.position);
 		if (hit != null && hit.collider != null && hit.collider.gameObject.layer == LayerMask.NameToLayer("Guest")) {
-			hit.collider.gameObject.GetComponent<Guest>().Die();
+			hit.collider.gameObject.GetComponent<Guest>().arrest();
+			murderSys._shake ();
 			if (hit.collider.gameObject != murderSys.murderer) { // incorrect guess
 				_isShaking = true;
 				audioManager.instance.playSound(blugeSound,Vector2.zero);
@@ -212,15 +214,13 @@ public class playerController : MonoBehaviour {
 		for (int i = 0; i < targetsInCircle.Length; i++) { 
 			Transform target = targetsInCircle [i].transform;
 			Vector2 directionToGuest = (target.position - transform.position).normalized;
-			Debug.DrawRay (transform.position, directionToGuest, Color.white);
+			//Debug.DrawRay (transform.position, directionToGuest, Color.white);
 			if (Vector2.Angle (transform.up, directionToGuest) < fovAngle / 2) {
-				Debug.DrawRay (transform.position, directionToGuest, Color.red);
+				//Debug.DrawRay (transform.position, directionToGuest, Color.red);
 				targetsInCircle [i].GetComponent<Guest> ().scared = true;
-				Vector2 Direction = targetsInCircle [i].transform.position - transform.position;
-				Direction.Normalize ();
-				rotZ = Mathf.Atan2 (Direction.y, Direction.x) * Mathf.Rad2Deg;	
-				targetsInCircle [i].transform.rotation = Quaternion.Euler (0f, 0f, rotZ);
-			} 
+				targetsInCircle [i].GetComponent<Guest> ().threat = true;
+				targetsInCircle [i].GetComponent<Guest> ().Rotate ();
+			}
 		}
 	}
 

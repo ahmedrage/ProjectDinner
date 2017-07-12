@@ -7,7 +7,9 @@ public class Guest : MonoBehaviour {
 	public GuestClass guestClass;
 	public GuestClass[] GuestArray;
 	public bool dead;
+	public bool arrested;
 	public bool scared;
+	public bool threat;
 	public float shakeTime= 3f;
 	public float shakeFrequencey = 0.04f;
 	public Transform Panel;
@@ -16,6 +18,8 @@ public class Guest : MonoBehaviour {
 	public Vector3 initialPosition;
 	public Vector3 currentPosition;
 	public GameObject playerPos;
+	public GameObject graphics;
+	public Vector3 initialRotataion;
 
 	playerController playerScript;
 	Transform deathPanel;
@@ -25,20 +29,28 @@ public class Guest : MonoBehaviour {
 		deathPanel = transform.GetChild (0).transform.GetChild (1);
 		Portrait = transform.Find ("Canvas").Find ("Portrait");
 		murderScript = GameObject.Find ("Gm").GetComponent<murderSystem> ();
-		initialPosition = transform.localPosition;
+		initialPosition = transform.Find ("Graphics").GetComponent<Transform> ().localPosition;
 		playerPos = GameObject.FindWithTag ("Player");
+		initialRotataion =  transform.Find("Graphics").GetComponent<Transform>().rotation.eulerAngles;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		DisplayText ();
-		if (dead) {
+		if (dead || arrested) {
 			this.gameObject.layer = LayerMask.NameToLayer("deadGuest");
+			graphics.layer = LayerMask.NameToLayer ("deadGuest");
 			Physics2D.IgnoreLayerCollision(8,9,true);
+			Portrait.gameObject.SetActive (false);
 		}
 
-		if (scared) {
+		if (scared && graphics.layer == LayerMask.NameToLayer("Guest") && gameObject.layer == LayerMask.NameToLayer("Guest") ) {
 			Shake ();
+		}
+
+		Vector2 directionToPlayer = (playerPos.transform.position - transform.localPosition);
+		if (graphics.layer == LayerMask.NameToLayer("Guest") && gameObject.layer == LayerMask.NameToLayer("Guest") && playerScript.rmb == false || directionToPlayer.magnitude > 4f && graphics.layer == LayerMask.NameToLayer("Guest") && gameObject.layer == LayerMask.NameToLayer("Guest")) { // maximum magnitude should be a variabe, but I dont give a fuck.
+			SlerpRot ();		
 		}
 	}
 
@@ -93,6 +105,10 @@ public class Guest : MonoBehaviour {
 			if (Portrait != null) {
 				Portrait.gameObject.SetActive (true);
 			}
+			if (arrested == true) {
+				Panel.gameObject.SetActive (false);
+				deathPanel.gameObject.SetActive (false);
+			}
 		} else {
 			if (Panel != null && deathPanel != null) {
 				Panel.gameObject.SetActive (false);
@@ -110,19 +126,40 @@ public class Guest : MonoBehaviour {
 		transform.Find ("Graphics").GetComponent<SpriteRenderer> ().sprite = guestClass.deadSprite;
 	}
 
+	public void arrest(){
+		arrested = true;
+		this.gameObject.layer = LayerMask.NameToLayer("deadGuest");
+		deathPanel.gameObject.SetActive (false);
+		transform.Find ("Graphics").GetComponent<Animator> ().enabled = false;
+		transform.Find ("Graphics").GetComponent<SpriteRenderer> ().sprite = guestClass.deadSprite; // need to change to dead sprite with no blood
+	}
+
+	public void Rotate(){
+		Vector2 directionToPlayer = (playerPos.transform.position - transform.localPosition).normalized;
+		Debug.DrawRay (transform.position, directionToPlayer, Color.red);
+		Transform graphicTransform = transform.Find("Graphics").GetComponent<Transform>();
+		Debug.DrawRay(transform.position,graphicTransform.up,Color.white);
+		float rotZ = Mathf.Atan2 (directionToPlayer.y, directionToPlayer.x) * Mathf.Rad2Deg;	
+		graphicTransform.rotation = Quaternion.Euler (0f, 0f, rotZ - 90);
+	}
+
+	public void SlerpRot(){
+		Transform graphicTransform = transform.Find("Graphics").GetComponent<Transform>();
+		graphicTransform.rotation = Quaternion.Slerp (graphicTransform.localRotation, Quaternion.Euler(initialRotataion), Time.deltaTime * 1.5f);
+		threat = false;
+	}
+
 	public void Shake(){
-		currentPosition = transform.localPosition;
-		transform.localPosition = initialPosition + Random.insideUnitSphere * shakeFrequencey;
-		StartCoroutine ("coroutineShake");
-		if (playerScript.rmb == false) {
-			transform.rotation = Quaternion.Slerp (transform.localRotation, Quaternion.identity, Time.deltaTime * 1.5f);
-			//transform.rotation = Quaternion.identity;
+		currentPosition = transform.Find("Graphics").GetComponent<Transform>().localPosition;
+		transform.Find("Graphics").GetComponent<Transform>().localPosition = initialPosition + Random.insideUnitSphere * shakeFrequencey;
+		if (threat == false) {
+			StartCoroutine ("coroutineShake");
 		}
 	}
 
 	IEnumerator coroutineShake(){
 		yield return new WaitForSeconds (shakeTime);
-		transform.localPosition = initialPosition;
+		transform.Find("Graphics").GetComponent<Transform>().localPosition = initialPosition;
 		scared = false;
 	}
 }
