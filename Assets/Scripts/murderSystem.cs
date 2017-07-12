@@ -17,6 +17,7 @@ public class murderSystem : MonoBehaviour {
 	public Clue clue;
 	public finishConditions finishScript;
 	public controlSystem controlSys;
+	public statManager _statManager;
 	public string murdererName;
 	public Sprite murdererPortrait;
 	public AudioClip Bludge;
@@ -37,6 +38,8 @@ public class murderSystem : MonoBehaviour {
 		KillGuest ();
 		murdererName = murderer.GetComponent<Guest> ().guestClass.name;
 		murdererPortrait = murderer.GetComponent<Guest> ().guestClass.Portrait;
+		_statManager = GameObject.Find ("dataManager").GetComponent<statManager> ();
+		_statManager.murderers.Add (murdererPortrait);
 	}
 	
 	// Update is called once per frame
@@ -54,7 +57,6 @@ public class murderSystem : MonoBehaviour {
 		int i = Random.Range (0, guests.Count);
 		Guest _guestScript = guests[i].GetComponent<Guest>();
 		deadPortraits.Add(guests [i].GetComponent<Guest> ().guestClass.Portrait);
-
 		guests[i].GetComponent<Guest>().Die();
 		clue = clueScript.getClue (_guestScript.guestClass, murderer.GetComponent<Guest> ().guestClass);
 		_guestScript.setDeathText (clue.getDeathClue ());

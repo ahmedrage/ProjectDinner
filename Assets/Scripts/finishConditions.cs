@@ -21,6 +21,7 @@ public class finishConditions : MonoBehaviour {
 	public List<Sprite> murderedGuestSprites;
 	public bool win;
 	public bool lose;
+	public int _deadGuests;
 	public Clues clueScript;
 	public murderSystem murdererScript;
 	public controlSystem controlScript;
@@ -29,6 +30,7 @@ public class finishConditions : MonoBehaviour {
 	public Text numDeadGuestsText;
 	public Texture2D normalCursor;
 	public EventSystem eventSystem;
+	public statManager _statManager;
 
 	// Use this for initialization
 	void Start () {
@@ -37,6 +39,7 @@ public class finishConditions : MonoBehaviour {
 		controlScript = GetComponent<controlSystem> ();
 		pauseScript = GameObject.Find ("pauseMenu");
 		eventSystem = GameObject.Find ("EventSystem").GetComponent<EventSystem> ();
+		_statManager = GameObject.Find ("dataManager").GetComponent<statManager> ();
 		murdererPortraitImg.enabled =false;
 		murdererName.enabled = false;
 		numDeadGuestsText.enabled = false;
@@ -48,7 +51,12 @@ public class finishConditions : MonoBehaviour {
 	}
 
 	void endGameInfo(){
+		_deadGuests = murdererScript.deadGuests;
 		numDeadGuests = murdererScript.deadGuests.ToString();
+		_statManager.deadGuestsPorts = new Sprite[_deadGuests]; // I know it's cancer, but it will do
+		murdererScript.deadPortraits.CopyTo (_statManager.deadGuestsPorts);
+
+
 		if (murdererScript.deadGuests == 1) {
 			numDeadGuestsText.text = "You let " + numDeadGuests +" Guest die"; // even to a guy like me that's cold
 		}else{
@@ -65,6 +73,7 @@ public class finishConditions : MonoBehaviour {
 			murderedGuestPortraits[i].sprite = murderedGuestSprites[i];
 			murderedGuestPortraits[i].enabled = true;
 		}
+
 	}
 
 	void enableUI(){

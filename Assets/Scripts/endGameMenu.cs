@@ -12,4 +12,8 @@ public class endGameMenu : MonoBehaviour {
 	public void Quit(){
 		SceneManager.LoadScene("menuScene");
 	}
+
+	public void Stats(){
+		SceneManager.LoadScene ("statScene");
+	}
 }

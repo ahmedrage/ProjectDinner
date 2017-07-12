@@ -20,6 +20,7 @@ public class playerController : MonoBehaviour {
 	public murderSystem murderSys;
 	public finishConditions finishScript;
 	public controlSystem controlSys;
+	public statManager _statManager;
 	public SpriteRenderer gunSprite;
 	public Transform endPosition;
 	public Transform startPosition;
@@ -45,6 +46,7 @@ public class playerController : MonoBehaviour {
 		controlSys = GameObject.Find ("Gm").GetComponent<controlSystem> ();
 		murderSys = GameObject.Find ("Gm").GetComponent<murderSystem> ();
 		gunSprite = GameObject.Find("gun").GetComponent<SpriteRenderer> ();
+		_statManager = GameObject.Find ("dataManager").GetComponent<statManager> ();
 		gunSprite.sprite = null;
 		Cursor.SetCursor (normalCursor,Vector2.zero,CursorMode.Auto);
 		_isShaking = false;
@@ -162,6 +164,7 @@ public class playerController : MonoBehaviour {
 				audioManager.instance.playSound(blugeSound,Vector2.zero);
 				guesses--; // decrease calm
 				controlSys.calmness -= (controlSys.initialCalmness/ initialGuess) * controlSys.negativePromiseMod;
+				_statManager.failedArrests += 1;
 			}
 
 			if (hit.collider.gameObject == murderSys.murderer) {
