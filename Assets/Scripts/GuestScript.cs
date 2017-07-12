@@ -16,6 +16,7 @@ public class GuestClass {
 	public GameObject GuestGameObject;
 	public Sprite idleSprite;
 	public Sprite Portrait;
+	public Sprite[] interrogationSprites; //0 = bad; 1 = good; 2 = neuteral  
 	public Sprite deadSprite;
 	public RuntimeAnimatorController animationController;
 }

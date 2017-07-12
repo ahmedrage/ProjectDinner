@@ -41,7 +41,7 @@ public class finishConditions : MonoBehaviour {
 		murdererName.enabled = false;
 		numDeadGuestsText.enabled = false;
 	}
-	
+
 	// Update is called once per frame
 	void Update () {
 		endGameInfo ();
@@ -52,7 +52,7 @@ public class finishConditions : MonoBehaviour {
 		if (murdererScript.deadGuests == 1) {
 			numDeadGuestsText.text = "You let " + numDeadGuests +" Guest die"; // even to a guy like me that's cold
 		}else{
-		numDeadGuestsText.text = "You let " + numDeadGuests +" Guests die";
+			numDeadGuestsText.text = "You let " + numDeadGuests +" Guests die";
 		}
 
 		murderer = murdererScript.murdererName;
@@ -95,6 +95,7 @@ public class finishConditions : MonoBehaviour {
 
 	public void Win(){
 		title.text = "You got the murderer";
+		restartButton.GetComponentInChildren<Text> ().text = "Next";
 		win = true;
 		enableUI ();
 	}
