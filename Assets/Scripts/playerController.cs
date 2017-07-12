@@ -5,6 +5,8 @@ using System.Collections.Generic;
 public class playerController : MonoBehaviour {
 
 	public float speed;
+	public float radius;
+	public float fovAngle;
 	public float knockoutSpeed;
 	public GameObject controllerCrosshair;
 	public GameObject hintPannel;
@@ -21,15 +23,15 @@ public class playerController : MonoBehaviour {
 	public SpriteRenderer gunSprite;
 	public Transform endPosition;
 	public Transform startPosition;
+	public LayerMask guestMask;
 	public int initialGuess = 2;
 	public int guesses = 2;
 	public bool canGuess; 
 	public bool _isShaking;
+	public bool rmb;
 	public AudioClip blugeSound;
 	public Animator myAnimator;
-
 	public List<Transform> nearbyGuests; // This array holds all the guests who are close enough to display details.
-
 	public GameObject nearestGuest;
 	//bool playing = false;
 	bool usingController;
@@ -81,7 +83,6 @@ public class playerController : MonoBehaviour {
 			controllerCrosshair.GetComponent<SpriteRenderer> ().sprite = controllerNormalCursor;
 			Cursor.visible = false;
 			Cursor.lockState = CursorLockMode.Locked;
-
 		} else {
 			Vector3 difference = Camera.main.ScreenToWorldPoint (Input.mousePosition) - transform.position;
 			difference.Normalize ();
@@ -93,25 +94,23 @@ public class playerController : MonoBehaviour {
 		}
 
 		if (guesses > 0) {
-			if (Input.GetButtonDown ("Fire2") || leftTrigger == 1 && usingController) {
-				/*if (playing == false) {
-					//Gasp.Play ();
-					//audioManager.instance.playSound(Gasp,Vector2.zero);
-				}
-				playing = true;*/
+			if (Input.GetButton ("Fire2") || leftTrigger == 1 && usingController) {
 				canGuess = true;
 				gunSprite.sprite = gun;
-
+				rmb = true;
+				guestsInView ();
 				if (usingController) {
 					controllerCrosshair.GetComponent<SpriteRenderer> ().sprite = controllerCursor;
 				}
 				Cursor.SetCursor (cursor, Vector2.zero, CursorMode.Auto);
 				speed = knockoutSpeed;
+			} else {
+				rmb = false;
 			} 
+
 
 			if(Input.GetButtonUp("Fire2") || leftTrigger == 0 && usingController){
 				Cursor.SetCursor (normalCursor,Vector2.zero,CursorMode.Auto);
-				//playing = false;
 				gunSprite.sprite = null;
 
 				if (usingController) {
@@ -154,8 +153,8 @@ public class playerController : MonoBehaviour {
 	void knockOut() {
 		gameObject.GetComponent<Animator> ().SetBool ("Attacking", true);
 		RaycastHit2D hit = Physics2D.Linecast(startPosition.position,endPosition.position);
-		if (hit != null && hit.collider != null) {
-
+		if (hit != null && hit.collider != null && hit.collider.gameObject.layer == LayerMask.NameToLayer("Guest")) {
+			hit.collider.gameObject.GetComponent<Guest>().Die();
 			if (hit.collider.gameObject != murderSys.murderer) { // incorrect guess
 				_isShaking = true;
 				audioManager.instance.playSound(blugeSound,Vector2.zero);
@@ -205,6 +204,23 @@ public class playerController : MonoBehaviour {
 			nearbyGuests.Add (guest);
 		} else {
 			//print ("Guest to add does not exist!");
+		}
+	}
+
+	public void guestsInView(){
+		Collider2D[] targetsInCircle = Physics2D.OverlapCircleAll (transform.position, radius, guestMask);
+		for (int i = 0; i < targetsInCircle.Length; i++) { 
+			Transform target = targetsInCircle [i].transform;
+			Vector2 directionToGuest = (target.position - transform.position).normalized;
+			Debug.DrawRay (transform.position, directionToGuest, Color.white);
+			if (Vector2.Angle (transform.up, directionToGuest) < fovAngle / 2) {
+				Debug.DrawRay (transform.position, directionToGuest, Color.red);
+				targetsInCircle [i].GetComponent<Guest> ().scared = true;
+				Vector2 Direction = targetsInCircle [i].transform.position - transform.position;
+				Direction.Normalize ();
+				rotZ = Mathf.Atan2 (Direction.y, Direction.x) * Mathf.Rad2Deg;	
+				targetsInCircle [i].transform.rotation = Quaternion.Euler (0f, 0f, rotZ);
+			} 
 		}
 	}
 

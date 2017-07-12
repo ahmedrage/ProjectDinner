@@ -91,6 +91,10 @@ public class murderSystem : MonoBehaviour {
 		default:
 			break;
 		}
+
+		for (int y = 0 ; y < guests.Count; y++) {
+			guests [y].GetComponent<Guest> ().scared = true;
+		}
 	}
 	IEnumerator lightFlash(){
 		yield return new WaitForSeconds (lightDelay);

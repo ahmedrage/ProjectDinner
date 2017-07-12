@@ -3,7 +3,12 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Guest.cs">
     <Files>
       <File FileName="Assets\Scripts\GuestScript.cs" Line="10" Column="60" />
-      <File FileName="Assets\Scripts\Guest.cs" Line="44" Column="94" />
+      <File FileName="Assets\Scripts\Guest.cs" Line="116" Column="37" />
+      <File FileName="Assets\Scripts\playerController.cs" Line="222" Column="76" />
+      <File FileName="Assets\Scripts\murderSystem.cs" Line="96" Column="10" />
+      <File FileName="Assets\Editor\fieldOfViewEditor.cs" Line="13" Column="1" />
+      <File FileName="Assets\Scripts\controlSystem.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\finishConditions.cs" Line="58" Column="12" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

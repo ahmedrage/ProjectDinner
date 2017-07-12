@@ -24,7 +24,7 @@ public class Clues : MonoBehaviour {
 		careerKills.Add("Author", author);
 
         string[] homemaker = { "Cut", "Stab", "Bludge" };
-		careerKills.Add("HomeMaker", homemaker);
+		careerKills.Add("Home_maker", homemaker);
 
         string[] chef = { "Cut", "Stab", "Bludge" };
 		careerKills.Add("Chef", chef);
@@ -33,7 +33,7 @@ public class Clues : MonoBehaviour {
 		careerKills.Add("Politician", politician);
 
         string[] filmmaker = { "Strangle", "Bludge", "Shoot" };
-		careerKills.Add("FilmMaker", filmmaker);
+		careerKills.Add("Film_maker", filmmaker);
 
         string[] veteran = { "Stab", "Bludge", "Shoot" };
         careerKills.Add("Veteran", veteran);

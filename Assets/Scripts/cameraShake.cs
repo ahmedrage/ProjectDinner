@@ -6,6 +6,7 @@ public class cameraShake : MonoBehaviour {
 	public float _amplitude = 1f;
 	public float _duration = 1;
 	private Vector3 initialPosition;
+	private Vector3 currentPosition;
 	private bool isShaking = false;
 	public playerController playerScript;
 	// Use this for initialization
@@ -42,10 +43,11 @@ public class cameraShake : MonoBehaviour {
 			print ("shake shake");
 		}
 
-		if (isShaking) 
-		{
-			initialPosition = transform.localPosition; 
-			transform.localPosition = initialPosition + Random.insideUnitSphere* _amplitude;
+		if (isShaking) {
+			currentPosition = transform.localPosition; 
+			transform.localPosition = initialPosition + Random.insideUnitSphere * _amplitude;
+		} else {
+			transform.localPosition = initialPosition;
 		}
 	}
 }
