@@ -22,6 +22,7 @@ public class finishConditions : MonoBehaviour {
 	public bool win;
 	public bool lose;
 	public int _deadGuests;
+	public int _savedGuests;
 	public Clues clueScript;
 	public murderSystem murdererScript;
 	public controlSystem controlScript;
@@ -51,9 +52,9 @@ public class finishConditions : MonoBehaviour {
 	}
 
 	void endGameInfo(){
-		_deadGuests = murdererScript.deadGuests;
 		numDeadGuests = murdererScript.deadGuests.ToString();
-		_statManager.deadGuestsPorts = new Sprite[_deadGuests]; // I know it's cancer, but it will do
+		_statManager.deadGuestsPorts = new Sprite[murdererScript.deadGuests]; // I know it's cancer, but it will do
+		_statManager.savedGuests = murdererScript.guests.Count;
 		murdererScript.deadPortraits.CopyTo (_statManager.deadGuestsPorts);
 
 

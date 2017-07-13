@@ -68,6 +68,7 @@
      <Compile Include="Assets\canvasRotationScript.cs" />
      <Compile Include="Assets\interrogationSystem.cs" />
      <Compile Include="Assets\lachieFolder\scripts\menu.cs" />
+     <Compile Include="Assets\statDisplay.cs" />
      <Compile Include="Assets\statManager.cs" />
      <Compile Include="Assets\testScript.cs" />
      <None Include="Assets\XInputDotNet\Docs.txt" />

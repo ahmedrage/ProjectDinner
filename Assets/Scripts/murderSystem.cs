@@ -12,6 +12,7 @@ public class murderSystem : MonoBehaviour {
 	public List<Sprite> deadPortraits;
 	public int deadGuests;
 	public int maxMurderedGuests = 6;
+	public int initialGuestCount;
 	public Timer script;
 	public Clues clueScript;
 	public Clue clue;
@@ -40,6 +41,9 @@ public class murderSystem : MonoBehaviour {
 		murdererPortrait = murderer.GetComponent<Guest> ().guestClass.Portrait;
 		_statManager = GameObject.Find ("dataManager").GetComponent<statManager> ();
 		_statManager.murderers.Add (murdererPortrait);
+		_statManager.murdererNames.Add (murdererName);
+		initialGuestCount = guests.Count;
+		_statManager.totalGuests += initialGuestCount;
 	}
 	
 	// Update is called once per frame
