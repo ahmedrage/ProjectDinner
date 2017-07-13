@@ -1,13 +1,73 @@
 fileFormatVersion: 2
 guid: 48382fc096d79fa43a2ba4f336a27c67
-timeCreated: 1499843285
+timeCreated: 1499963027
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: char portraints level 2_3
+    21300002: char portraints level 2_4
+    21300004: char portraints level 2_5
+    21300006: char portraints level 2_6
+    21300008: char portraints level 2_9
+    21300010: char portraints level 2_10
+    21300012: char portraints level 2_11
+    21300014: char portraints level 2_12
+    21300016: char portraints level 2_14
+    21300018: char portraints level 2_15
+    21300020: char portraints level 2_16
+    21300022: char portraints level 2_17
+    21300024: char portraints level 2_19
+    21300026: char portraints level 2_20
+    21300028: char portraints level 2_21
+    21300030: char portraints level 2_22
+    21300032: char portraints level 2_24
+    21300034: char portraints level 2_25
+    21300036: char portraints level 2_26
+    21300038: char portraints level 2_27
+    21300040: char portraints level 2_30
+    21300042: char portraints level 2_31
+    21300044: char portraints level 2_32
+    21300046: char portraints level 2_33
+    21300048: char portraints level 2_35
+    21300050: char portraints level 2_36
+    21300052: char portraints level 2_37
+    21300054: char portraints level 2_38
+    21300056: char portraints level 2_40
+    21300058: char portraints level 2_41
+    21300060: char portraints level 2_42
+    21300062: char portraints level 2_43
+    21300064: char portraints level 2_45
+    21300066: char portraints level 2_46
+    21300068: char portraints level 2_47
+    21300070: char portraints level 2_48
+    21300072: char portraints level 2_50
+    21300074: char portraints level 2_51
+    21300076: char portraints level 2_52
+    21300078: char portraints level 2_53
+    21300080: char portraints level 2_56
+    21300082: char portraints level 2_57
+    21300084: char portraints level 2_58
+    21300086: char portraints level 2_59
+    21300088: char portraints level 2_61
+    21300090: char portraints level 2_62
+    21300092: char portraints level 2_63
+    21300094: char portraints level 2_64
+    21300096: char portraints level 2_67
+    21300098: char portraints level 2_68
+    21300100: char portraints level 2_69
+    21300102: char portraints level 2_70
+    21300104: char portraints level 2_72
+    21300106: char portraints level 2_73
+    21300108: char portraints level 2_74
+    21300110: char portraints level 2_75
+    21300112: char portraints level 2_77
+    21300114: char portraints level 2_78
+    21300116: char portraints level 2_79
+    21300118: char portraints level 2_80
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -27,14 +87,14 @@ TextureImporter:
   textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
+    filterMode: 0
     aniso: -1
     mipBias: -1
-    wrapMode: -1
-  nPOTScale: 1
+    wrapMode: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -42,9 +102,9 @@ TextureImporter:
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
@@ -58,9 +118,797 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: char portraints level 2_3
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 588
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_4
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 588
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_5
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 588
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_6
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 588
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_9
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 546
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_10
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 546
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_11
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 546
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_12
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 546
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_14
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 504
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_15
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 504
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_16
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 504
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_17
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 504
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_19
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 462
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_20
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 462
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_21
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 462
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_22
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 462
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_24
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 420
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_25
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 420
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_26
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 420
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_27
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 420
+        width: 38
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_30
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 377
+        width: 34
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_31
+      rect:
+        serializedVersion: 2
+        x: 76
+        y: 377
+        width: 34
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_32
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 377
+        width: 34
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_33
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 377
+        width: 34
+        height: 42
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_35
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 336
+        width: 26
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_36
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 336
+        width: 26
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_37
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 336
+        width: 26
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_38
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 336
+        width: 26
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_40
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 294
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_41
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 294
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_42
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 294
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_43
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 294
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_45
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 252
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_46
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 252
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_47
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 252
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_48
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 252
+        width: 24
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_50
+      rect:
+        serializedVersion: 2
+        x: 37
+        y: 210
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_51
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 210
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_52
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 210
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_53
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 210
+        width: 28
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_56
+      rect:
+        serializedVersion: 2
+        x: 35
+        y: 168
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_57
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 168
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_58
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 168
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_59
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 168
+        width: 30
+        height: 40
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_61
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 126
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_62
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 126
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_63
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 126
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_64
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 126
+        width: 30
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_67
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 84
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_68
+      rect:
+        serializedVersion: 2
+        x: 74
+        y: 84
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_69
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 84
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_70
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 84
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_72
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 42
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_73
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 42
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_74
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 42
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_75
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 42
+        width: 20
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_77
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 0
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_78
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 0
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_79
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 0
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: char portraints level 2_80
+      rect:
+        serializedVersion: 2
+        x: 166
+        y: 0
+        width: 24
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
     outline: []
   spritePackingTag: 
   userData: 

@@ -124,6 +124,21 @@ public class Guest : MonoBehaviour {
 		dead = true;
 		transform.Find ("Graphics").GetComponent<Animator> ().enabled = false;
 		transform.Find ("Graphics").GetComponent<SpriteRenderer> ().sprite = guestClass.deadSprite;
+
+		if (GameObject.FindGameObjectsWithTag ("Room") != null) {
+			float smallestDistance = Mathf.Infinity;
+			GameObject nearestRoom = gameObject;
+			foreach (var room in GameObject.FindGameObjectsWithTag ("Room")) {
+				room.GetComponent<roomScript> ().recentDead = false;
+				if (Vector3.Distance (transform.position, room.transform.position) < smallestDistance) {
+					smallestDistance = Vector3.Distance (transform.position, room.transform.position);
+					nearestRoom = room;
+				}
+			}
+			if (nearestRoom != null) {
+				nearestRoom.GetComponent<roomScript> ().recentDead = true;
+			}
+		}
 	}
 
 	public void arrest(){
