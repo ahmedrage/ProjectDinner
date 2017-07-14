@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 public class interrogationSystem : MonoBehaviour {
 	public statManager stats;
-	public finishConditions finishScript;
 	public GuestClass murderer;
 	public int fear;
 	public int comfort;
@@ -31,6 +31,7 @@ public class interrogationSystem : MonoBehaviour {
 	public Button threatButton;
 	public Button accuseButton;
 	public Image portrait;
+	public GameObject menu;
 	bool accusing;
 	bool canAccuse = false;
 	bool won = false;
@@ -40,16 +41,16 @@ public class interrogationSystem : MonoBehaviour {
 	float initialTime;
 	// Use this for initialization
 	void Awake () {
-		finishScript = GetComponent<finishConditions> ();
-		finishScript.interrogation = true;
+		menu = GameObject.Find ("Canvas").transform.Find("menu").gameObject;
 		portrait = GameObject.Find ("port").GetComponent<Image>();
 		stats = GameObject.Find("dataManager").GetComponent<statManager> ();
-		if (stats.lastMurderer != null) {
+		if (stats.lastMurderer.Portrait != null) {
 			murderer = stats.lastMurderer;
+			portrait.sprite = murderer.interrogationSprites [2];
+
 		} else {
-			Debug.LogError ("MURDERER NOT FOUND!");
+			Debug.LogError ("MURDERER NOT FOUND! Are you playing the game out of order?");
 		}
-		portrait.sprite = murderer.interrogationSprites [2];
 		GenerateStats ();
 		comfortText.text = comfortDialouge [Random.Range (0, comfortDialouge.Length)];
 		threatText.text = threatDialouge [Random.Range (0, threatDialouge.Length)];
@@ -92,14 +93,18 @@ public class interrogationSystem : MonoBehaviour {
 ";
 		//playanimation
 		if (isPositive) {
-			portrait.sprite = murderer.interrogationSprites [1];
+			if (murderer.Portrait != null) {
+				portrait.sprite = murderer.interrogationSprites [1];
+			}
 			if (isComfort) {
 				reactText.text += positiveComfortDialouge [Random.Range (0, positiveComfortDialouge.Length)];
 			} else {
 				reactText.text += positiveThreatDialouge [Random.Range (0, positiveThreatDialouge.Length)];
 			}
 		} else {
-			portrait.sprite = murderer.interrogationSprites [0];
+			if (murderer.Portrait != null) {
+				portrait.sprite = murderer.interrogationSprites [0];
+			}
 			if (isComfort) {
 				reactText.text += negativeComfortDialouge [Random.Range (0, negativeComfortDialouge.Length)];
 			} else {
@@ -140,9 +145,7 @@ public class interrogationSystem : MonoBehaviour {
 			timeToPrint = Time.time + waitTime;
 			removeText ();
 		} else if (ind >= finalDialouge.Length) {
-			finishScript.interrogation = true;
-			print ("Test");
-			finishScript.Win ();
+			win ();
 		}
 		if (!won) {
 			timeLeft = Mathf.RoundToInt (timeToComplete - (Time.time - initialTime));
@@ -151,7 +154,7 @@ public class interrogationSystem : MonoBehaviour {
 			comfortButton.interactable = false;
 			threatButton.interactable = false;
 			accuseButton.interactable = false;
-			finishScript.Lose ();
+			lose ();
 		} else {
 			timerText.text = timeLeft.ToString();
 		}
@@ -164,5 +167,14 @@ public class interrogationSystem : MonoBehaviour {
 			text.RemoveAt (0);
 		}
 		reactText.text = string.Join ("\n", text.ToArray());
+	}
+
+	void win () {
+		print (SceneManager.GetActiveScene().buildIndex.ToString());
+		SceneManager.LoadScene (SceneManager.GetActiveScene().buildIndex + 1);
+	}
+
+	void lose () {
+		menu.SetActive (true);
 	}
 }
