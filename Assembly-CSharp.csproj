@@ -69,8 +69,11 @@
      <Compile Include="Assets\interrogationSystem.cs" />
      <Compile Include="Assets\lachieFolder\scripts\menu.cs" />
      <Compile Include="Assets\roomScript.cs" />
+     <Compile Include="Assets\statDisplay.cs" />
+     <Compile Include="Assets\statManager.cs" />
      <Compile Include="Assets\statScript.cs" />
      <Compile Include="Assets\testMover.cs" />
+     <Compile Include="Assets\testScript.cs" />
      <Compile Include="Assets\trackMover.cs" />
      <None Include="Assets\XInputDotNet\Docs.txt" />
      <None Include="Assets\XInputDotNet\MITLicense.txt" />

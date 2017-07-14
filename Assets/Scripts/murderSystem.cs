@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class murderSystem : MonoBehaviour {
 	public bool cameraShake = false;
-	public statScript stats;
 	public Light light;
 	public GameObject murderer;
 	public float lightDelay;
@@ -43,16 +42,12 @@ public class murderSystem : MonoBehaviour {
 		KillGuest ();
 		murdererName = murderer.GetComponent<Guest> ().guestClass.name;
 		murdererPortrait = murderer.GetComponent<Guest> ().guestClass.Portrait;
-<<<<<<< HEAD
 		_statManager = GameObject.Find ("dataManager").GetComponent<statManager> ();
 		_statManager.murderers.Add (murdererPortrait);
 		_statManager.murdererNames.Add (murdererName);
 		initialGuestCount = guests.Count;
 		_statManager.totalGuests += initialGuestCount;
-=======
-		stats = GameObject.Find ("statsBox").GetComponent<statScript>();
-		stats.lastMurderer = murderer.GetComponent<Guest>().guestClass;
->>>>>>> cded86585a396a7b20307d5d90686aa4c1833ed5
+		_statManager.lastMurderer = murderer.GetComponent<Guest> ().guestClass;
 	}
 	
 	// Update is called once per frame

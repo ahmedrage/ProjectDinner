@@ -124,7 +124,7 @@ public class Guest : MonoBehaviour {
 		transform.Find ("Graphics").GetComponent<Animator> ().enabled = false;
 		transform.Find ("Graphics").GetComponent<SpriteRenderer> ().sprite = guestClass.deadSprite;
 
-		if (GameObject.FindGameObjectsWithTag ("Room") != null) {
+		if (GameObject.FindGameObjectsWithTag ("Room") != null && GameObject.FindGameObjectsWithTag ("Room").Length > 0) {
 			float smallestDistance = Mathf.Infinity;
 			GameObject nearestRoom = gameObject;
 			foreach (var room in GameObject.FindGameObjectsWithTag ("Room")) {

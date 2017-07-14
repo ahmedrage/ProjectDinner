@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class interrogationSystem : MonoBehaviour {
-	public statScript stats;
+	public statManager stats;
 	public GuestClass murderer;
 	public int fear;
 	public int comfort;
@@ -39,7 +39,7 @@ public class interrogationSystem : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		portrait = GameObject.Find ("port").GetComponent<Image>();
-		stats = GameObject.Find("statsBox").GetComponent<statScript> ();
+		stats = GameObject.Find("dataManager").GetComponent<statManager> ();
 		if (stats.lastMurderer != null) {
 			murderer = stats.lastMurderer;
 		} else {

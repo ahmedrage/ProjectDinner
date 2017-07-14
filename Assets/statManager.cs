@@ -6,6 +6,7 @@ public class statManager : MonoBehaviour {
 
 	static statManager Instance;
 	public Sprite[] deadGuestsPorts;
+	public GuestClass lastMurderer;
 	public List<Sprite> murderers;
 	public List<string> murdererNames;
 	public List<string> levelNames;
