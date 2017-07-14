@@ -1,0 +1,443 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 1690805510783604}
+  m_IsPrefabParent: 1
+--- !u!1 &1690805510783604
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4583126741444666}
+  - component: {fileID: 114508330023072828}
+  - component: {fileID: 114843962850234096}
+  - component: {fileID: 114642998136190178}
+  - component: {fileID: 114239251350989480}
+  - component: {fileID: 114784873500353040}
+  - component: {fileID: 114284843260944220}
+  m_Layer: 0
+  m_Name: Gm1
+  m_TagString: GameController
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4583126741444666
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1690805510783604}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 1.2366444, y: -0.08865726, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114239251350989480
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1690805510783604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 334e353432215c847aaa31e570fa45d2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numDeadGuests: 
+  murderer: 
+  endGameMenu: {fileID: 0}
+  imgs: {fileID: 0}
+  pauseScript: {fileID: 0}
+  restartButton: {fileID: 0}
+  timer: {fileID: 0}
+  bar: {fileID: 0}
+  murdererPortrait: {fileID: 0}
+  murdererPortraitImg: {fileID: 0}
+  murderedGuestPortraits:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  murderedGuestSprites: []
+  win: 0
+  lose: 0
+  clueScript: {fileID: 0}
+  murdererScript: {fileID: 0}
+  controlScript: {fileID: 0}
+  title: {fileID: 0}
+  murdererName: {fileID: 0}
+  numDeadGuestsText: {fileID: 0}
+  normalCursor: {fileID: 2800000, guid: a2e3c849de81ff9489ce8532611e2733, type: 3}
+  eventSystem: {fileID: 0}
+--- !u!114 &114284843260944220
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1690805510783604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 865756fe8fd6d934d953176f07121bdc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  guests: []
+--- !u!114 &114508330023072828
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1690805510783604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3c60dac300190a42bcde198b95cc167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GuestArray:
+  - name: Doctor Harold Chesworth
+    profession: 0
+    Accessory: 2
+    Blemish: 1
+    GuestGameObject: {fileID: 0}
+    idleSprite: {fileID: 21300028, guid: 9aad855742e78074d8f3a16f0bc68972, type: 3}
+    Portrait: {fileID: 21300012, guid: 85bd58bdd42be424fbe7b9eb1670b1a3, type: 3}
+    interrogationSprites:
+    - {fileID: 21300058, guid: f151bd449b991d747bb89e46f8d07c2e, type: 3}
+    - {fileID: 21300060, guid: f151bd449b991d747bb89e46f8d07c2e, type: 3}
+    - {fileID: 21300062, guid: f151bd449b991d747bb89e46f8d07c2e, type: 3}
+    deadSprite: {fileID: 21300030, guid: 9aad855742e78074d8f3a16f0bc68972, type: 3}
+    animationController: {fileID: 9100000, guid: 1204ff75d332f9042b1580d76513c900,
+      type: 2}
+  - name: General Barnhoff
+    profession: 7
+    Accessory: 2
+    Blemish: 1
+    GuestGameObject: {fileID: 0}
+    idleSprite: {fileID: 21300004, guid: 9aad855742e78074d8f3a16f0bc68972, type: 3}
+    Portrait: {fileID: 21300002, guid: 85bd58bdd42be424fbe7b9eb1670b1a3, type: 3}
+    interrogationSprites:
+    - {fileID: 21300010, guid: f151bd449b991d747bb89e46f8d07c2e, type: 3}
+    - {fileID: 21300012, guid: f151bd449b991d747bb89e46f8d07c2e, type: 3}
+    - {fileID: 21300014, guid: f151bd449b991d747bb89e46f8d07c2e, type: 3}
+    deadSprite: {fileID: 21300006, guid: 9aad855742e78074d8f3a16f0bc68972, type: 3}
+    animationController: {fileID: 9100000, guid: 5bda667167b73614bad560cd321b39a6,
+      type: 2}
+  - name: Ms Plath
+    profession: 2
+    Accessory: 2
+    Blemish: 0
+    GuestGameObject: {fileID: 0}
+    idleSprite: {fileID: 21300040, guid: 9aad855742e78074d8f3a16f0bc68972, type: 3}
+    Portrait: {fileID: 21300028, guid: 85bd58bdd42be424fbe7b9eb1670b1a3, type: 3}
+    interrogationSprites:
+    - {fileID: 21300082, guid: f151bd449b991d747bb89e46f8d07c2e, type: 3}
+    - {fileID: 21300084, guid: f151bd449b991d747bb89e46f8d07c2e, type: 3}
+    - {fileID: 21300086, guid: f151bd449b991d747bb89e46f8d07c2e, type: 3}
+    deadSprite: {fileID: 21300042, guid: 9aad855742e78074d8f3a16f0bc68972, type: 3}
+    animationController: {fileID: 9100000, guid: 5fb24a888bb88e64cb9c68d8df66fc99,
+      type: 2}
+  - name: Herbert Loom
+    profession: 2
+    Accessory: 1
+    Blemish: 2
+    GuestGameObject: {fileID: 0}
+    idleSprite: {fileID: 21300008, guid: 9aad855742e78074d8f3a16f0bc68972, type: 3}
+    Portrait: {fileID: 21300004, guid: 85bd58bdd42be424fbe7b9eb1670b1a3, type: 3}
+    interrogationSprites:
+    - {fileID: 21300018, guid: f151bd449b991d747bb89e46f8d07c2e, type: 3}
+    - {fileID: 21300020, guid: f151bd449b991d747bb89e46f8d07c2e, type: 3}
+    - {fileID: 21300022, guid: f151bd449b991d747bb89e46f8d07c2e, type: 3}
+    deadSprite: {fileID: 21300010, guid: 9aad855742e78074d8f3a16f0bc68972, type: 3}
+    animationController: {fileID: 9100000, guid: 3ce6e4b971e394840884e8b866a2e4e5,
+      type: 2}
+  - name: Lady Penelope
+    profession: 3
+    Accessory: 0
+    Blemish: 3
+    GuestGameObject: {fileID: 0}
+    idleSprite: {fileID: 21300020, guid: 9aad855742e78074d8f3a16f0bc68972, type: 3}
+    Portrait: {fileID: 21300022, guid: 85bd58bdd42be424fbe7b9eb1670b1a3, type: 3}
+    interrogationSprites:
+    - {fileID: 21300034, guid: f151bd449b991d747bb89e46f8d07c2e, type: 3}
+    - {fileID: 21300036, guid: f151bd449b991d747bb89e46f8d07c2e, type: 3}
+    - {fileID: 21300038, guid: f151bd449b991d747bb89e46f8d07c2e, type: 3}
+    deadSprite: {fileID: 21300022, guid: 9aad855742e78074d8f3a16f0bc68972, type: 3}
+    animationController: {fileID: 9100000, guid: 49b4cfece9402a24fbea063a04ec35f7,
+      type: 2}
+  - name: Professor MacMiller
+    profession: 1
+    Accessory: 1
+    Blemish: 0
+    GuestGameObject: {fileID: 0}
+    idleSprite: {fileID: 21300032, guid: 9aad855742e78074d8f3a16f0bc68972, type: 3}
+    Portrait: {fileID: 21300024, guid: 85bd58bdd42be424fbe7b9eb1670b1a3, type: 3}
+    interrogationSprites:
+    - {fileID: 21300066, guid: f151bd449b991d747bb89e46f8d07c2e, type: 3}
+    - {fileID: 21300068, guid: f151bd449b991d747bb89e46f8d07c2e, type: 3}
+    - {fileID: 21300070, guid: f151bd449b991d747bb89e46f8d07c2e, type: 3}
+    deadSprite: {fileID: 21300034, guid: 9aad855742e78074d8f3a16f0bc68972, type: 3}
+    animationController: {fileID: 9100000, guid: 5fd255e012cb32f4592927f760509207,
+      type: 2}
+  - name: Senator Edwards
+    profession: 5
+    Accessory: 0
+    Blemish: 2
+    GuestGameObject: {fileID: 0}
+    idleSprite: {fileID: 21300048, guid: 9aad855742e78074d8f3a16f0bc68972, type: 3}
+    Portrait: {fileID: 21300016, guid: 85bd58bdd42be424fbe7b9eb1670b1a3, type: 3}
+    interrogationSprites:
+    - {fileID: 21300098, guid: f151bd449b991d747bb89e46f8d07c2e, type: 3}
+    - {fileID: 21300100, guid: f151bd449b991d747bb89e46f8d07c2e, type: 3}
+    - {fileID: 21300102, guid: f151bd449b991d747bb89e46f8d07c2e, type: 3}
+    deadSprite: {fileID: 21300050, guid: 9aad855742e78074d8f3a16f0bc68972, type: 3}
+    animationController: {fileID: 9100000, guid: 28ce3fec26532cc40a15c17737605583,
+      type: 2}
+  - name: Chef Edwards
+    profession: 4
+    Accessory: 0
+    Blemish: 0
+    GuestGameObject: {fileID: 0}
+    idleSprite: {fileID: 21300052, guid: 9aad855742e78074d8f3a16f0bc68972, type: 3}
+    Portrait: {fileID: 21300018, guid: 85bd58bdd42be424fbe7b9eb1670b1a3, type: 3}
+    interrogationSprites:
+    - {fileID: 21300106, guid: f151bd449b991d747bb89e46f8d07c2e, type: 3}
+    - {fileID: 21300108, guid: f151bd449b991d747bb89e46f8d07c2e, type: 3}
+    - {fileID: 21300110, guid: f151bd449b991d747bb89e46f8d07c2e, type: 3}
+    deadSprite: {fileID: 21300054, guid: 9aad855742e78074d8f3a16f0bc68972, type: 3}
+    animationController: {fileID: 9100000, guid: 7ae2f5d00bd24b5439028c06d3595718,
+      type: 2}
+  - name: Mr Paris
+    profession: 6
+    Accessory: 2
+    Blemish: 2
+    GuestGameObject: {fileID: 0}
+    idleSprite: {fileID: 21300024, guid: 9aad855742e78074d8f3a16f0bc68972, type: 3}
+    Portrait: {fileID: 21300010, guid: 85bd58bdd42be424fbe7b9eb1670b1a3, type: 3}
+    interrogationSprites:
+    - {fileID: 21300050, guid: f151bd449b991d747bb89e46f8d07c2e, type: 3}
+    - {fileID: 21300052, guid: f151bd449b991d747bb89e46f8d07c2e, type: 3}
+    - {fileID: 21300054, guid: f151bd449b991d747bb89e46f8d07c2e, type: 3}
+    deadSprite: {fileID: 21300026, guid: 9aad855742e78074d8f3a16f0bc68972, type: 3}
+    animationController: {fileID: 9100000, guid: 06c9af8a421c31744b0d0caded354af7,
+      type: 2}
+  - name: Mr Smith
+    profession: 2
+    Accessory: 0
+    Blemish: 3
+    GuestGameObject: {fileID: 0}
+    idleSprite: {fileID: 21300056, guid: 9aad855742e78074d8f3a16f0bc68972, type: 3}
+    Portrait: {fileID: 21300020, guid: 85bd58bdd42be424fbe7b9eb1670b1a3, type: 3}
+    interrogationSprites:
+    - {fileID: 21300114, guid: f151bd449b991d747bb89e46f8d07c2e, type: 3}
+    - {fileID: 21300116, guid: f151bd449b991d747bb89e46f8d07c2e, type: 3}
+    - {fileID: 21300118, guid: f151bd449b991d747bb89e46f8d07c2e, type: 3}
+    deadSprite: {fileID: 21300058, guid: 9aad855742e78074d8f3a16f0bc68972, type: 3}
+    animationController: {fileID: 9100000, guid: 85f00c6443509864c91888a3a52b8d17,
+      type: 2}
+  - name: Dr Elizabeth
+    profession: 0
+    Accessory: 1
+    Blemish: 3
+    GuestGameObject: {fileID: 0}
+    idleSprite: {fileID: 21300044, guid: 9aad855742e78074d8f3a16f0bc68972, type: 3}
+    Portrait: {fileID: 21300014, guid: 85bd58bdd42be424fbe7b9eb1670b1a3, type: 3}
+    interrogationSprites:
+    - {fileID: 21300090, guid: f151bd449b991d747bb89e46f8d07c2e, type: 3}
+    - {fileID: 21300092, guid: f151bd449b991d747bb89e46f8d07c2e, type: 3}
+    - {fileID: 21300094, guid: f151bd449b991d747bb89e46f8d07c2e, type: 3}
+    deadSprite: {fileID: 21300046, guid: 9aad855742e78074d8f3a16f0bc68972, type: 3}
+    animationController: {fileID: 9100000, guid: abc1e8cb62e07cf47b092b09ca79b072,
+      type: 2}
+  - name: Cook Frannie
+    profession: 4
+    Accessory: 0
+    Blemish: 1
+    GuestGameObject: {fileID: 0}
+    idleSprite: {fileID: 21300012, guid: 9aad855742e78074d8f3a16f0bc68972, type: 3}
+    Portrait: {fileID: 21300006, guid: 85bd58bdd42be424fbe7b9eb1670b1a3, type: 3}
+    interrogationSprites:
+    - {fileID: 21300026, guid: f151bd449b991d747bb89e46f8d07c2e, type: 3}
+    - {fileID: 21300028, guid: f151bd449b991d747bb89e46f8d07c2e, type: 3}
+    - {fileID: 21300030, guid: f151bd449b991d747bb89e46f8d07c2e, type: 3}
+    deadSprite: {fileID: 21300014, guid: 9aad855742e78074d8f3a16f0bc68972, type: 3}
+    animationController: {fileID: 9100000, guid: 57372fd365d84bb43a5e20e2979149ec,
+      type: 2}
+  - name: Mrs Nash
+    profession: 1
+    Accessory: 2
+    Blemish: 2
+    GuestGameObject: {fileID: 0}
+    idleSprite: {fileID: 21300016, guid: 9aad855742e78074d8f3a16f0bc68972, type: 3}
+    Portrait: {fileID: 21300008, guid: 85bd58bdd42be424fbe7b9eb1670b1a3, type: 3}
+    interrogationSprites:
+    - {fileID: 21300034, guid: f151bd449b991d747bb89e46f8d07c2e, type: 3}
+    - {fileID: 21300036, guid: f151bd449b991d747bb89e46f8d07c2e, type: 3}
+    - {fileID: 21300038, guid: f151bd449b991d747bb89e46f8d07c2e, type: 3}
+    deadSprite: {fileID: 21300018, guid: 9aad855742e78074d8f3a16f0bc68972, type: 3}
+    animationController: {fileID: 9100000, guid: e0863b3232e6fbb4b9053b769624ecf1,
+      type: 2}
+  - name: Mr Carter
+    profession: 6
+    Accessory: 0
+    Blemish: 0
+    GuestGameObject: {fileID: 0}
+    idleSprite: {fileID: 21300000, guid: 9aad855742e78074d8f3a16f0bc68972, type: 3}
+    Portrait: {fileID: 21300000, guid: 85bd58bdd42be424fbe7b9eb1670b1a3, type: 3}
+    interrogationSprites:
+    - {fileID: 21300002, guid: f151bd449b991d747bb89e46f8d07c2e, type: 3}
+    - {fileID: 21300004, guid: f151bd449b991d747bb89e46f8d07c2e, type: 3}
+    - {fileID: 21300006, guid: f151bd449b991d747bb89e46f8d07c2e, type: 3}
+    deadSprite: {fileID: 21300002, guid: 9aad855742e78074d8f3a16f0bc68972, type: 3}
+    animationController: {fileID: 9100000, guid: 67b95c3a275f06a40be5e913e9f35e3c,
+      type: 2}
+  - name: Madame Agatha
+    profession: 2
+    Accessory: 3
+    Blemish: 3
+    GuestGameObject: {fileID: 0}
+    idleSprite: {fileID: 21300036, guid: 9aad855742e78074d8f3a16f0bc68972, type: 3}
+    Portrait: {fileID: 21300026, guid: 85bd58bdd42be424fbe7b9eb1670b1a3, type: 3}
+    interrogationSprites:
+    - {fileID: 21300074, guid: f151bd449b991d747bb89e46f8d07c2e, type: 3}
+    - {fileID: 21300076, guid: f151bd449b991d747bb89e46f8d07c2e, type: 3}
+    - {fileID: 21300078, guid: f151bd449b991d747bb89e46f8d07c2e, type: 3}
+    deadSprite: {fileID: 21300038, guid: 9aad855742e78074d8f3a16f0bc68972, type: 3}
+    animationController: {fileID: 9100000, guid: 0668bac820038144dbf9c726ef84af66,
+      type: 2}
+  SpawnPoints:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  GuestPrefab: {fileID: 1000014136677540, guid: 1c6e8fd3c7eda1240963a93ea78a3d52,
+    type: 2}
+  murderScript: {fileID: 0}
+  clueScript: {fileID: 0}
+  maxClueDistance: 0
+--- !u!114 &114642998136190178
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1690805510783604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79c49615d0b8dd14792fbf086b00543e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  murderedGuests: []
+--- !u!114 &114784873500353040
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1690805510783604}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 424e491721302444a8162920bd436022, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  finishScript: {fileID: 0}
+  murderScript: {fileID: 0}
+  playerScript: {fileID: 0}
+  typeWritter: {fileID: 0}
+  accusations:
+  - 'What are you going to do? '
+  - 'Who put you incharge? '
+  - 'We need to get out of here! '
+  - 'Staying here will kill us! '
+  - 'Are you even a cop? '
+  - 'You can''t keep us here! '
+  promises:
+  - 'I promise that I will find the killer '
+  - 'I promise, you will be fine '
+  calming:
+  - 'Everything will be fine, remain calm '
+  - 'Its okay, remain calm '
+  responseImg: {fileID: 0}
+  calmnessBar: {fileID: 0}
+  playerPortraitSprite: {fileID: 21300004, guid: 7c238ca464fe16c4297c6423f47ebb77,
+    type: 3}
+  acussingGuestSprite: {fileID: 0}
+  instruction: {fileID: 0}
+  calmness: 100
+  initialCalmness: 100
+  promiseBonus: 15
+  calmBonus: 5
+  promiseMod: 2
+  controldialogueWaitTime: 3
+  accused: 0
+  dialoguePannel: {fileID: 0}
+  accuser: {fileID: 0}
+  negativePromiseMod: 0
+--- !u!114 &114843962850234096
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1690805510783604}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05f654f15114911489e5fab44d3407a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stats: {fileID: 0}
+  light: {fileID: 0}
+  murderer: {fileID: 0}
+  lightDelay: 1
+  guests: []
+  deadPortraits: []
+  deadGuests: 0
+  maxMurderedGuests: 6
+  script: {fileID: 0}
+  clueScript: {fileID: 0}
+  clue:
+    isAppearance: 0
+    guest:
+      name: 
+      profession: 0
+      Accessory: 0
+      Blemish: 0
+      GuestGameObject: {fileID: 0}
+      idleSprite: {fileID: 0}
+      Portrait: {fileID: 0}
+      interrogationSprites: []
+      deadSprite: {fileID: 0}
+      animationController: {fileID: 0}
+    deathType: 
+    deathText: 
+    appearanceText: 
+  finishScript: {fileID: 0}
+  controlSys: {fileID: 0}
+  murdererName: 
+  murdererPortrait: {fileID: 0}
+  Bludge: {fileID: 8300000, guid: 06d5737ff00cd96498ab6a68f63a6c07, type: 3}
+  Cut: {fileID: 8300000, guid: e3f29935312092a41b2efa8e5a2e08cf, type: 3}
+  Shot: {fileID: 8300000, guid: d3f8ff3791391714faedffbbfe7003fe, type: 3}
+  Stab: {fileID: 8300000, guid: 7b9cb113f15654c42b22e4b01d6aed64, type: 3}
+  accusePercent: 0

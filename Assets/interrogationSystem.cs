@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 public class interrogationSystem : MonoBehaviour {
+	public statScript stats;
 	public GuestClass murderer;
 	public int fear;
 	public int comfort;
@@ -28,6 +29,7 @@ public class interrogationSystem : MonoBehaviour {
 	public Button comfortButton;
 	public Button threatButton;
 	public Button accuseButton;
+	public Image portrait;
 	bool accusing;
 	bool canAccuse = false;
 	int ind = 0;
@@ -36,6 +38,14 @@ public class interrogationSystem : MonoBehaviour {
 	float initialTime;
 	// Use this for initialization
 	void Start () {
+		portrait = GameObject.Find ("port").GetComponent<Image>();
+		stats = GameObject.Find("statsBox").GetComponent<statScript> ();
+		if (stats.lastMurderer != null) {
+			murderer = stats.lastMurderer;
+		} else {
+			Debug.LogError ("MURDERER NOT FOUND!");
+		}
+		portrait.sprite = murderer.interrogationSprites [2];
 		GenerateStats ();
 		comfortText.text = comfortDialouge [Random.Range (0, comfortDialouge.Length)];
 		threatText.text = threatDialouge [Random.Range (0, threatDialouge.Length)];
@@ -78,12 +88,14 @@ public class interrogationSystem : MonoBehaviour {
 ";
 		//playanimation
 		if (isPositive) {
+			portrait.sprite = murderer.interrogationSprites [1];
 			if (isComfort) {
 				reactText.text += positiveComfortDialouge [Random.Range (0, positiveComfortDialouge.Length)];
 			} else {
 				reactText.text += positiveThreatDialouge [Random.Range (0, positiveThreatDialouge.Length)];
 			}
 		} else {
+			portrait.sprite = murderer.interrogationSprites [0];
 			if (isComfort) {
 				reactText.text += negativeComfortDialouge [Random.Range (0, negativeComfortDialouge.Length)];
 			} else {
