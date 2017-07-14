@@ -98,7 +98,6 @@ public class Guest : MonoBehaviour {
 			if (dead == false && Panel != null) {
 				Panel.gameObject.SetActive (true);
 			} else if (dead == true && deathPanel != null) {
-				print (dead.ToString ());
 				deathPanel.gameObject.SetActive (true);
 			}
 
