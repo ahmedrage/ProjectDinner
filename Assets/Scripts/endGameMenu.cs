@@ -10,7 +10,7 @@ public class endGameMenu : MonoBehaviour {
 		if (finishScript.win == true) {
 			SceneManager.LoadScene (nextScene);
 		} else {
-			SceneManager.LoadScene ("GuestScene");
+			SceneManager.LoadScene (SceneManager.GetActiveScene().name);
 		}
 	}
 

@@ -4,6 +4,7 @@ using System.Collections;
 using UnityEngine.UI;
 
 public class murderSystem : MonoBehaviour {
+	public bool cameraShake = false;
 	public statScript stats;
 	public Light light;
 	public GameObject murderer;
@@ -27,9 +28,11 @@ public class murderSystem : MonoBehaviour {
 	public AudioClip Shot;
 	public AudioClip Stab;
 	public float accusePercent;
+	cameraShake camShake;
 
 	// Use this for initialization
 	void Start () {
+		camShake = Camera.main.gameObject.GetComponent<cameraShake> ();
 		controlSys = GetComponent<controlSystem> ();
 		clueScript = GetComponent<Clues> ();
 		finishScript = GetComponent<finishConditions> ();
@@ -62,6 +65,7 @@ public class murderSystem : MonoBehaviour {
 	}
 
 	public void KillGuest(){
+		camShake.Shake (0.5f, lightDelay);
 		controlSys.calmness -= (controlSys.initialCalmness / maxMurderedGuests) * controlSys.negativePromiseMod;
 		light.enabled = false;
 		int i = Random.Range (0, guests.Count);

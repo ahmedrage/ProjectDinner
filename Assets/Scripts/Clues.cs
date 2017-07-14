@@ -58,7 +58,6 @@ public class Clues : MonoBehaviour {
 			Clue deathClue = new Clue (guest, deathMethods [deathNum], false);
 
 			int appearanceClue = Random.Range (2, 4);
-		Debug.Log (appearanceClue.ToString());
 			if (appearanceClue == 3) {
 				deathClue.setAppearanceText(murderer);
 			}
@@ -113,7 +112,6 @@ public class Clue {
 	}
 
 	public void setAppearanceText(GuestClass murderer) {
-		Debug.Log ("Test");
 		int descriptorRand = Random.Range(0, 2);
 		if (descriptorRand == 1) {
 			switch (murderer.Accessory.ToString ()) {
