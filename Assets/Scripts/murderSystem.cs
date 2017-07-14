@@ -10,6 +10,7 @@ public class murderSystem : MonoBehaviour {
 	public float lightDelay;
 	public List<GameObject> guests;
 	public List<Sprite> deadPortraits;
+	public List<string> _method;
 	public int deadGuests;
 	public int maxMurderedGuests = 6;
 	public int initialGuestCount;
@@ -63,6 +64,8 @@ public class murderSystem : MonoBehaviour {
 		deadPortraits.Add(guests [i].GetComponent<Guest> ().guestClass.Portrait);
 		guests[i].GetComponent<Guest>().Die();
 		clue = clueScript.getClue (_guestScript.guestClass, murderer.GetComponent<Guest> ().guestClass);
+		print (clue.deathType);
+		_method.Add (clue.deathType);
 		_guestScript.setDeathText (clue.getDeathClue ());
 		deadGuests++;
 

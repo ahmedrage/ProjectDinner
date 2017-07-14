@@ -34,7 +34,8 @@ public class statDisplay : MonoBehaviour {
 		}
 			
 		failedArrests.text = "Failed arrests: " + _statManager.failedArrests.ToString ();
-		saveGuests.text = "Saved guest percentage: " + _statManager.savedGuestPercentage.ToString ();
+		saveGuests.text = "Saved guest percentage: " + _statManager.savedGuestPercentage.ToString () +"%";
+		freqMethod.text = "Most frequent murder method: " + _statManager.frequentMethod;
 		
 	}
 }

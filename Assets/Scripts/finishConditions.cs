@@ -54,8 +54,10 @@ public class finishConditions : MonoBehaviour {
 	void endGameInfo(){
 		numDeadGuests = murdererScript.deadGuests.ToString();
 		_statManager.deadGuestsPorts = new Sprite[murdererScript.deadGuests]; // I know it's cancer, but it will do
+		_statManager.method = new string[murdererScript._method.Count];
 		_statManager.savedGuests = murdererScript.guests.Count;
 		murdererScript.deadPortraits.CopyTo (_statManager.deadGuestsPorts);
+		murdererScript._method.CopyTo (_statManager.method);
 
 
 		if (murdererScript.deadGuests == 1) {
@@ -85,6 +87,7 @@ public class finishConditions : MonoBehaviour {
 		murdererPortraitImg.enabled =true;
 		murdererName.enabled = true;
 		numDeadGuestsText.enabled = true;
+		controlScript.enabled = false;
 		endGameMenu.SetActive (true);
 		imgs.SetActive (true);
 		Cursor.SetCursor (normalCursor, Vector2.zero, CursorMode.Auto);
