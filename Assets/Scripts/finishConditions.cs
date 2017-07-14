@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using XInputDotNetPure;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 using System.Collections.Generic;
 using System.Collections;
 
@@ -9,6 +10,7 @@ public class finishConditions : MonoBehaviour {
 
 	public string numDeadGuests;
 	public string murderer;
+	public bool interrogation = false;
 	public GameObject endGameMenu;
 	public GameObject imgs;
 	public GameObject pauseScript;
@@ -34,14 +36,14 @@ public class finishConditions : MonoBehaviour {
 	public statManager _statManager;
 
 	// Use this for initialization
-	void Start () {
+	void Awake () {
 		timer = GameObject.Find ("timer");
 		murdererScript = GetComponent<murderSystem> ();
 		controlScript = GetComponent<controlSystem> ();
 		pauseScript = GameObject.Find ("pauseMenu");
 		eventSystem = GameObject.Find ("EventSystem").GetComponent<EventSystem> ();
 		_statManager = GameObject.Find ("dataManager").GetComponent<statManager> ();
-		murdererPortraitImg.enabled =false;
+		murdererPortraitImg.enabled = false;
 		murdererName.enabled = false;
 		numDeadGuestsText.enabled = false;
 	}
@@ -52,6 +54,9 @@ public class finishConditions : MonoBehaviour {
 	}
 
 	void endGameInfo(){
+		if (interrogation) {
+			return;
+		}
 		numDeadGuests = murdererScript.deadGuests.ToString();
 		_statManager.deadGuestsPorts = new Sprite[murdererScript.deadGuests]; // I know it's cancer, but it will do
 		_statManager.method = new string[murdererScript._method.Count];
@@ -80,16 +85,19 @@ public class finishConditions : MonoBehaviour {
 	}
 
 	void enableUI(){
-		bar.SetActive (false);
-		controlScript.responseImg.enabled = false;
-		controlScript.instruction.enabled = false;  
-		controlScript.dialoguePannel.SetActive(false);
-		murdererPortraitImg.enabled =true;
-		murdererName.enabled = true;
-		numDeadGuestsText.enabled = true;
-		controlScript.enabled = false;
+		if (!interrogation) {
+			bar.SetActive (false);
+			controlScript.responseImg.enabled = false;
+			controlScript.instruction.enabled = false;  
+			controlScript.dialoguePannel.SetActive (false);
+			murdererPortraitImg.enabled = true;
+			murdererName.enabled = true;
+			numDeadGuestsText.enabled = true;
+			controlScript.enabled = false;
+			imgs.SetActive (true);
+
+		}
 		endGameMenu.SetActive (true);
-		imgs.SetActive (true);
 		Cursor.SetCursor (normalCursor, Vector2.zero, CursorMode.Auto);
 		Destroy (pauseScript);
 
@@ -107,14 +115,27 @@ public class finishConditions : MonoBehaviour {
 	}
 
 	public void Win(){
-		title.text = "You got the murderer";
+		if (!interrogation) {
+			title.text = "You got the murderer";
+			enableUI ();
+			interrogation = true;
+		} else {
+			title.text = "You broke the murderer";
+			SceneManager.LoadScene ("TrainLevel");
+			enableUI ();
+		}
 		restartButton.GetComponentInChildren<Text> ().text = "Next";
 		win = true;
-		enableUI ();
 	}
 
 	public void Lose(){
-		title.text = "You lost control of the crowd and the killer got away";
+		if (!interrogation) {
+			title.text = "You lost control of the crowd and the killer got away";
+		} else {
+			title.text = "You ran out of time to interrogate the murderer";
+			SceneManager.LoadScene ("InterrogationScene");
+
+		}
 		lose = true;
 		enableUI ();
 	}

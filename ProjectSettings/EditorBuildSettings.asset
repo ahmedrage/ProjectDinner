@@ -13,6 +13,9 @@ EditorBuildSettings:
     guid: c3222014d40c69d48a409401b8c0735b
   - enabled: 1
     path: Assets/InterrogationScene.unity
+    guid: 4441780f990dd1847b4d744fd6eee579
+  - enabled: 1
+    path: Assets/TrainLevel.unity
     guid: 00000000000000000000000000000000
   - enabled: 1
     path: Assets/statScene.unity

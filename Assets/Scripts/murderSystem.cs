@@ -52,7 +52,8 @@ public class murderSystem : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (murderer.GetComponent<Guest>().dead == true) {
+		if (murderer.GetComponent<Guest>().dead == true && finishScript.interrogation == false) {
+			print ("A rare and illustrious fish");
 			finishScript.Win ();
 		}
 

@@ -6,6 +6,7 @@ using UnityEngine.UI;
 
 public class interrogationSystem : MonoBehaviour {
 	public statManager stats;
+	public finishConditions finishScript;
 	public GuestClass murderer;
 	public int fear;
 	public int comfort;
@@ -32,12 +33,15 @@ public class interrogationSystem : MonoBehaviour {
 	public Image portrait;
 	bool accusing;
 	bool canAccuse = false;
-	int ind = 0;
+	bool won = false;
+	public int ind = 0;
 	float timeToPrint;
 	int timeLeft;
 	float initialTime;
 	// Use this for initialization
-	void Start () {
+	void Awake () {
+		finishScript = GetComponent<finishConditions> ();
+		finishScript.interrogation = true;
 		portrait = GameObject.Find ("port").GetComponent<Image>();
 		stats = GameObject.Find("dataManager").GetComponent<statManager> ();
 		if (stats.lastMurderer != null) {
@@ -129,19 +133,25 @@ public class interrogationSystem : MonoBehaviour {
 		}
 
 		if (accusing == true && timeToPrint < Time.time && ind <= finalDialouge.Length -1) {
+			won = true;
 			reactText.text += @"
 " +finalDialouge [ind];
 			ind++;
 			timeToPrint = Time.time + waitTime;
 			removeText ();
-		} else if (finalDialouge.Length - 1 > ind) {
-			//next scene
+		} else if (ind >= finalDialouge.Length) {
+			finishScript.interrogation = true;
+			print ("Test");
+			finishScript.Win ();
 		}
-		timeLeft = Mathf.RoundToInt(timeToComplete - (Time.time - initialTime));
+		if (!won) {
+			timeLeft = Mathf.RoundToInt (timeToComplete - (Time.time - initialTime));
+		}
 		if (timeLeft <= 0) {
 			comfortButton.interactable = false;
 			threatButton.interactable = false;
 			accuseButton.interactable = false;
+			finishScript.Lose ();
 		} else {
 			timerText.text = timeLeft.ToString();
 		}

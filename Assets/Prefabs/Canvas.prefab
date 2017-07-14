@@ -1022,7 +1022,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 001693e5747966b4181f2817b78ed8d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextScene: 
+  nextScene: InterrogationScene
   finishScript: {fileID: 0}
 --- !u!114 &114268720677395466
 MonoBehaviour:
@@ -2882,7 +2882,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.71625006, y: 0.947236}
   m_AnchorMax: {x: 0.9912499, y: 0.9907641}
-  m_AnchoredPosition: {x: -6.600006, y: 5.9000244}
+  m_AnchoredPosition: {x: -6.5999756, y: 5.9000244}
   m_SizeDelta: {x: 70, y: 9.9314}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224919540196968522
