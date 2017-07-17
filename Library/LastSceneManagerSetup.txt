@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/HotelScene.unity
+- path: Assets/Scenes/NewHotel.unity
   isLoaded: 1
   isActive: 1

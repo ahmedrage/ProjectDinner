@@ -36,7 +36,7 @@ public class statManager : MonoBehaviour {
 	void Update () {
 		savedGuestPercentage = Mathf.Round(((float)savedGuests / totalGuests)*100);
 		breakTime = Mathf.Min(breakTime);
-		print (savedGuestPercentage);
+		//print (savedGuestPercentage);
 
 		string element = "";
 		int count = 0;
