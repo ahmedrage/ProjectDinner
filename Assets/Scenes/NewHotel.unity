@@ -3381,180 +3381,180 @@ Prefab:
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[7].name
-      value: Sargent Hahn
+      value: Chef Snowpea
       objectReference: {fileID: 0}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[7].profession
-      value: 7
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[7].idleSprite
       value: 
-      objectReference: {fileID: 21300028, guid: 9aad855742e78074d8f3a16f0bc68972,
+      objectReference: {fileID: 21300174, guid: 976e0af6b5d41f7439e2f219c7b3cbd2,
         type: 3}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[7].Portrait
       value: 
-      objectReference: {fileID: 21300012, guid: 85bd58bdd42be424fbe7b9eb1670b1a3,
+      objectReference: {fileID: 21300072, guid: 565e2550b67a392498e26ea78f3f0779,
         type: 3}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[7].interrogationSprites.Array.data[0]
       value: 
-      objectReference: {fileID: 21300058, guid: f151bd449b991d747bb89e46f8d07c2e,
+      objectReference: {fileID: 21300074, guid: 565e2550b67a392498e26ea78f3f0779,
         type: 3}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[7].interrogationSprites.Array.data[1]
       value: 
-      objectReference: {fileID: 21300060, guid: f151bd449b991d747bb89e46f8d07c2e,
+      objectReference: {fileID: 21300076, guid: 565e2550b67a392498e26ea78f3f0779,
         type: 3}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[7].interrogationSprites.Array.data[2]
       value: 
-      objectReference: {fileID: 21300062, guid: f151bd449b991d747bb89e46f8d07c2e,
+      objectReference: {fileID: 21300078, guid: 565e2550b67a392498e26ea78f3f0779,
         type: 3}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[7].deadSprite
       value: 
-      objectReference: {fileID: 21300030, guid: 9aad855742e78074d8f3a16f0bc68972,
+      objectReference: {fileID: 21300178, guid: 976e0af6b5d41f7439e2f219c7b3cbd2,
         type: 3}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[7].animationController
       value: 
-      objectReference: {fileID: 9100000, guid: 1204ff75d332f9042b1580d76513c900, type: 2}
+      objectReference: {fileID: 9100000, guid: f63766a71bff28c44a58cd3ca87cc7d5, type: 2}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[8].name
-      value: Sargent Hahn
+      value: Mr Einwasser
       objectReference: {fileID: 0}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[8].profession
-      value: 7
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[8].Accessory
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[8].Blemish
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[8].idleSprite
       value: 
-      objectReference: {fileID: 21300028, guid: 9aad855742e78074d8f3a16f0bc68972,
+      objectReference: {fileID: 21300082, guid: 976e0af6b5d41f7439e2f219c7b3cbd2,
         type: 3}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[8].Portrait
       value: 
-      objectReference: {fileID: 21300012, guid: 85bd58bdd42be424fbe7b9eb1670b1a3,
+      objectReference: {fileID: 21300112, guid: 565e2550b67a392498e26ea78f3f0779,
         type: 3}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[8].interrogationSprites.Array.data[0]
       value: 
-      objectReference: {fileID: 21300058, guid: f151bd449b991d747bb89e46f8d07c2e,
+      objectReference: {fileID: 21300114, guid: 565e2550b67a392498e26ea78f3f0779,
         type: 3}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[8].interrogationSprites.Array.data[1]
       value: 
-      objectReference: {fileID: 21300060, guid: f151bd449b991d747bb89e46f8d07c2e,
+      objectReference: {fileID: 21300116, guid: 565e2550b67a392498e26ea78f3f0779,
         type: 3}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[8].interrogationSprites.Array.data[2]
       value: 
-      objectReference: {fileID: 21300062, guid: f151bd449b991d747bb89e46f8d07c2e,
+      objectReference: {fileID: 21300118, guid: 565e2550b67a392498e26ea78f3f0779,
         type: 3}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[8].deadSprite
       value: 
-      objectReference: {fileID: 21300030, guid: 9aad855742e78074d8f3a16f0bc68972,
+      objectReference: {fileID: 21300098, guid: 976e0af6b5d41f7439e2f219c7b3cbd2,
         type: 3}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[8].animationController
       value: 
-      objectReference: {fileID: 9100000, guid: 1204ff75d332f9042b1580d76513c900, type: 2}
+      objectReference: {fileID: 9100000, guid: ed13f180224319a4c9169fadce43939c, type: 2}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[9].name
-      value: Sargent Hahn
+      value: Senator Flonnagan
       objectReference: {fileID: 0}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[9].profession
-      value: 7
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[9].Blemish
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[9].idleSprite
       value: 
-      objectReference: {fileID: 21300028, guid: 9aad855742e78074d8f3a16f0bc68972,
+      objectReference: {fileID: 21300182, guid: 976e0af6b5d41f7439e2f219c7b3cbd2,
         type: 3}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[9].Portrait
       value: 
-      objectReference: {fileID: 21300012, guid: 85bd58bdd42be424fbe7b9eb1670b1a3,
+      objectReference: {fileID: 21300080, guid: 565e2550b67a392498e26ea78f3f0779,
         type: 3}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[9].interrogationSprites.Array.data[0]
       value: 
-      objectReference: {fileID: 21300058, guid: f151bd449b991d747bb89e46f8d07c2e,
+      objectReference: {fileID: 21300082, guid: 565e2550b67a392498e26ea78f3f0779,
         type: 3}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[9].interrogationSprites.Array.data[1]
       value: 
-      objectReference: {fileID: 21300060, guid: f151bd449b991d747bb89e46f8d07c2e,
+      objectReference: {fileID: 21300084, guid: 565e2550b67a392498e26ea78f3f0779,
         type: 3}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[9].interrogationSprites.Array.data[2]
       value: 
-      objectReference: {fileID: 21300062, guid: f151bd449b991d747bb89e46f8d07c2e,
+      objectReference: {fileID: 21300084, guid: 565e2550b67a392498e26ea78f3f0779,
         type: 3}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[9].deadSprite
       value: 
-      objectReference: {fileID: 21300030, guid: 9aad855742e78074d8f3a16f0bc68972,
+      objectReference: {fileID: 21300186, guid: 976e0af6b5d41f7439e2f219c7b3cbd2,
         type: 3}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[9].animationController
       value: 
-      objectReference: {fileID: 9100000, guid: 1204ff75d332f9042b1580d76513c900, type: 2}
+      objectReference: {fileID: 9100000, guid: 31fc1ac91e640a2448a5a66455937a78, type: 2}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[10].name
-      value: Sargent Hahn
+      value: Ms Michaels
       objectReference: {fileID: 0}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[10].Accessory
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
@@ -3565,52 +3565,52 @@ Prefab:
         type: 2}
       propertyPath: GuestArray.Array.data[10].idleSprite
       value: 
-      objectReference: {fileID: 21300028, guid: 9aad855742e78074d8f3a16f0bc68972,
+      objectReference: {fileID: 21300156, guid: 976e0af6b5d41f7439e2f219c7b3cbd2,
         type: 3}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[10].Portrait
       value: 
-      objectReference: {fileID: 21300012, guid: 85bd58bdd42be424fbe7b9eb1670b1a3,
+      objectReference: {fileID: 21300056, guid: 565e2550b67a392498e26ea78f3f0779,
         type: 3}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[10].interrogationSprites.Array.data[0]
       value: 
-      objectReference: {fileID: 21300058, guid: f151bd449b991d747bb89e46f8d07c2e,
+      objectReference: {fileID: 21300058, guid: 565e2550b67a392498e26ea78f3f0779,
         type: 3}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[10].interrogationSprites.Array.data[1]
       value: 
-      objectReference: {fileID: 21300060, guid: f151bd449b991d747bb89e46f8d07c2e,
+      objectReference: {fileID: 21300060, guid: 565e2550b67a392498e26ea78f3f0779,
         type: 3}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[10].interrogationSprites.Array.data[2]
       value: 
-      objectReference: {fileID: 21300062, guid: f151bd449b991d747bb89e46f8d07c2e,
+      objectReference: {fileID: 21300062, guid: 565e2550b67a392498e26ea78f3f0779,
         type: 3}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[10].deadSprite
       value: 
-      objectReference: {fileID: 21300030, guid: 9aad855742e78074d8f3a16f0bc68972,
+      objectReference: {fileID: 21300162, guid: 976e0af6b5d41f7439e2f219c7b3cbd2,
         type: 3}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[10].animationController
       value: 
-      objectReference: {fileID: 9100000, guid: 1204ff75d332f9042b1580d76513c900, type: 2}
+      objectReference: {fileID: 9100000, guid: 20a20eac9d2bc2947854a0a2e650d82e, type: 2}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[11].name
-      value: Sargent Hahn
+      value: Lady Dekor
       objectReference: {fileID: 0}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[11].profession
-      value: 7
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
@@ -3621,108 +3621,108 @@ Prefab:
         type: 2}
       propertyPath: GuestArray.Array.data[11].idleSprite
       value: 
-      objectReference: {fileID: 21300028, guid: 9aad855742e78074d8f3a16f0bc68972,
+      objectReference: {fileID: 21300034, guid: 976e0af6b5d41f7439e2f219c7b3cbd2,
         type: 3}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[11].Portrait
       value: 
-      objectReference: {fileID: 21300012, guid: 85bd58bdd42be424fbe7b9eb1670b1a3,
+      objectReference: {fileID: 21300024, guid: 565e2550b67a392498e26ea78f3f0779,
         type: 3}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[11].interrogationSprites.Array.data[0]
       value: 
-      objectReference: {fileID: 21300058, guid: f151bd449b991d747bb89e46f8d07c2e,
+      objectReference: {fileID: 21300026, guid: 565e2550b67a392498e26ea78f3f0779,
         type: 3}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[11].interrogationSprites.Array.data[1]
       value: 
-      objectReference: {fileID: 21300060, guid: f151bd449b991d747bb89e46f8d07c2e,
+      objectReference: {fileID: 21300028, guid: 565e2550b67a392498e26ea78f3f0779,
         type: 3}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[11].interrogationSprites.Array.data[2]
       value: 
-      objectReference: {fileID: 21300062, guid: f151bd449b991d747bb89e46f8d07c2e,
+      objectReference: {fileID: 21300030, guid: 565e2550b67a392498e26ea78f3f0779,
         type: 3}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[11].deadSprite
       value: 
-      objectReference: {fileID: 21300030, guid: 9aad855742e78074d8f3a16f0bc68972,
+      objectReference: {fileID: 21300052, guid: 976e0af6b5d41f7439e2f219c7b3cbd2,
         type: 3}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[11].animationController
       value: 
-      objectReference: {fileID: 9100000, guid: 1204ff75d332f9042b1580d76513c900, type: 2}
+      objectReference: {fileID: 9100000, guid: 1a954ae74f9f3c246aa3a2d5f290ed24, type: 2}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[12].name
-      value: Sargent Hahn
+      value: Doctor Wem
       objectReference: {fileID: 0}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[12].profession
-      value: 7
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[12].Accessory
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[12].Blemish
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[12].idleSprite
       value: 
-      objectReference: {fileID: 21300028, guid: 9aad855742e78074d8f3a16f0bc68972,
+      objectReference: {fileID: 21300056, guid: 976e0af6b5d41f7439e2f219c7b3cbd2,
         type: 3}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[12].Portrait
       value: 
-      objectReference: {fileID: 21300012, guid: 85bd58bdd42be424fbe7b9eb1670b1a3,
+      objectReference: {fileID: 21300032, guid: 565e2550b67a392498e26ea78f3f0779,
         type: 3}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[12].interrogationSprites.Array.data[0]
       value: 
-      objectReference: {fileID: 21300058, guid: f151bd449b991d747bb89e46f8d07c2e,
+      objectReference: {fileID: 21300034, guid: 565e2550b67a392498e26ea78f3f0779,
         type: 3}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[12].interrogationSprites.Array.data[1]
       value: 
-      objectReference: {fileID: 21300060, guid: f151bd449b991d747bb89e46f8d07c2e,
+      objectReference: {fileID: 21300036, guid: 565e2550b67a392498e26ea78f3f0779,
         type: 3}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[12].interrogationSprites.Array.data[2]
       value: 
-      objectReference: {fileID: 21300062, guid: f151bd449b991d747bb89e46f8d07c2e,
+      objectReference: {fileID: 21300038, guid: 565e2550b67a392498e26ea78f3f0779,
         type: 3}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[12].deadSprite
       value: 
-      objectReference: {fileID: 21300030, guid: 9aad855742e78074d8f3a16f0bc68972,
+      objectReference: {fileID: 21300062, guid: 976e0af6b5d41f7439e2f219c7b3cbd2,
         type: 3}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[12].animationController
       value: 
-      objectReference: {fileID: 9100000, guid: 1204ff75d332f9042b1580d76513c900, type: 2}
+      objectReference: {fileID: 9100000, guid: 75150f45b8880de419c1a737122df80e, type: 2}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[13].name
-      value: Sargent Hahn
+      value: Lieutenant Wolf
       objectReference: {fileID: 0}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
@@ -3733,104 +3733,104 @@ Prefab:
         type: 2}
       propertyPath: GuestArray.Array.data[13].idleSprite
       value: 
-      objectReference: {fileID: 21300028, guid: 9aad855742e78074d8f3a16f0bc68972,
+      objectReference: {fileID: 21300000, guid: 976e0af6b5d41f7439e2f219c7b3cbd2,
         type: 3}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[13].Portrait
       value: 
-      objectReference: {fileID: 21300012, guid: 85bd58bdd42be424fbe7b9eb1670b1a3,
+      objectReference: {fileID: 21300000, guid: 565e2550b67a392498e26ea78f3f0779,
         type: 3}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[13].interrogationSprites.Array.data[0]
       value: 
-      objectReference: {fileID: 21300058, guid: f151bd449b991d747bb89e46f8d07c2e,
+      objectReference: {fileID: 21300002, guid: 565e2550b67a392498e26ea78f3f0779,
         type: 3}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[13].interrogationSprites.Array.data[1]
       value: 
-      objectReference: {fileID: 21300060, guid: f151bd449b991d747bb89e46f8d07c2e,
+      objectReference: {fileID: 21300004, guid: 565e2550b67a392498e26ea78f3f0779,
         type: 3}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[13].interrogationSprites.Array.data[2]
       value: 
-      objectReference: {fileID: 21300062, guid: f151bd449b991d747bb89e46f8d07c2e,
+      objectReference: {fileID: 21300006, guid: 565e2550b67a392498e26ea78f3f0779,
         type: 3}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[13].deadSprite
       value: 
-      objectReference: {fileID: 21300030, guid: 9aad855742e78074d8f3a16f0bc68972,
+      objectReference: {fileID: 21300004, guid: 976e0af6b5d41f7439e2f219c7b3cbd2,
         type: 3}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[13].animationController
       value: 
-      objectReference: {fileID: 9100000, guid: 1204ff75d332f9042b1580d76513c900, type: 2}
+      objectReference: {fileID: 9100000, guid: 05ae93f8a7c8dba4ebbcb8104bf61321, type: 2}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[14].name
-      value: Sargent Hahn
+      value: Senator Gibson
       objectReference: {fileID: 0}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[14].profession
-      value: 7
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[14].Accessory
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[14].Blemish
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[14].idleSprite
       value: 
-      objectReference: {fileID: 21300028, guid: 9aad855742e78074d8f3a16f0bc68972,
+      objectReference: {fileID: 21300130, guid: 976e0af6b5d41f7439e2f219c7b3cbd2,
         type: 3}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[14].Portrait
       value: 
-      objectReference: {fileID: 21300012, guid: 85bd58bdd42be424fbe7b9eb1670b1a3,
+      objectReference: {fileID: 21300088, guid: 565e2550b67a392498e26ea78f3f0779,
         type: 3}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[14].interrogationSprites.Array.data[0]
       value: 
-      objectReference: {fileID: 21300058, guid: f151bd449b991d747bb89e46f8d07c2e,
+      objectReference: {fileID: 21300090, guid: 565e2550b67a392498e26ea78f3f0779,
         type: 3}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[14].interrogationSprites.Array.data[1]
       value: 
-      objectReference: {fileID: 21300060, guid: f151bd449b991d747bb89e46f8d07c2e,
+      objectReference: {fileID: 21300092, guid: 565e2550b67a392498e26ea78f3f0779,
         type: 3}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[14].interrogationSprites.Array.data[2]
       value: 
-      objectReference: {fileID: 21300062, guid: f151bd449b991d747bb89e46f8d07c2e,
+      objectReference: {fileID: 21300094, guid: 565e2550b67a392498e26ea78f3f0779,
         type: 3}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[14].deadSprite
       value: 
-      objectReference: {fileID: 21300030, guid: 9aad855742e78074d8f3a16f0bc68972,
+      objectReference: {fileID: 21300136, guid: 976e0af6b5d41f7439e2f219c7b3cbd2,
         type: 3}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[14].animationController
       value: 
-      objectReference: {fileID: 9100000, guid: 1204ff75d332f9042b1580d76513c900, type: 2}
+      objectReference: {fileID: 9100000, guid: 99270e6aa3774b8499c35b068d2f1499, type: 2}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[2].Blemish
@@ -3854,37 +3854,37 @@ Prefab:
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[7].Accessory
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[7].Blemish
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[9].Accessory
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[10].profession
-      value: 7
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[11].Accessory
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[13].Accessory
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
       propertyPath: GuestArray.Array.data[13].Blemish
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
@@ -4256,7 +4256,7 @@ Prefab:
         type: 2}
       propertyPath: GuestArray.Array.data[0].animationController
       value: 
-      objectReference: {fileID: 9100000, guid: 05ae93f8a7c8dba4ebbcb8104bf61321, type: 2}
+      objectReference: {fileID: 9100000, guid: e5ec3c286323b7f439377b3ef9dddf3b, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c20e09b099f61814d90bc6e8ed9eec2d, type: 2}
   m_IsPrefabParent: 0
