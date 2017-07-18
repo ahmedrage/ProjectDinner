@@ -10,6 +10,15 @@ public class TypewriterScript : MonoBehaviour {
 	string currentText = "";
 	public Text dialogueText;
 
+	private bool spaceBarDown = false;
+
+	IEnumerator WaitForKey(KeyCode keyCode)
+	{
+		while (!Input.GetKeyDown (keyCode)) {
+			yield return null;
+		}
+	}
+
 	IEnumerator showText () {
 		for (int i = 0; i <= text.Length; i++) {
 			currentText = text.Substring (0, i);
@@ -18,6 +27,7 @@ public class TypewriterScript : MonoBehaviour {
 
 			if (i == text.Length) {
 				print ("ended stooge");
+				yield return StartCoroutine (WaitForKey (KeyCode.Space));
 			}
 		}
 	}
@@ -31,6 +41,7 @@ public class TypewriterScript : MonoBehaviour {
 
 	public IEnumerator displayDialogueInOrder (List<string> dialogue) {
 		dialogueText.color = Color.white;
+		dialogue.Add ("");
 		foreach (string tx in dialogue) {
 			text = tx;
 			yield return StartCoroutine (showText());
