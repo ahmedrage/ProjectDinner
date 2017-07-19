@@ -48,11 +48,13 @@
   <ItemGroup>
      <Compile Include="Assets\InteractableObjectScript.cs" />
      <Compile Include="Assets\Scripts\AnimationManager.cs" />
+     <Compile Include="Assets\Scripts\CinematicDialogue.cs" />
      <Compile Include="Assets\Scripts\Clues.cs" />
      <Compile Include="Assets\Scripts\Guest.cs" />
      <Compile Include="Assets\Scripts\GuestScript.cs" />
      <Compile Include="Assets\Scripts\Staircase.cs" />
      <Compile Include="Assets\Scripts\Timer.cs" />
+     <Compile Include="Assets\Scripts\TypewriterScript.cs" />
      <Compile Include="Assets\Scripts\cameraShake.cs" />
      <Compile Include="Assets\Scripts\controlSystem.cs" />
      <Compile Include="Assets\Scripts\endGameMenu.cs" />
