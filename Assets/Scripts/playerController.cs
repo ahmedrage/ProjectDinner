@@ -220,6 +220,7 @@ public class playerController : MonoBehaviour {
 			//Debug.DrawRay (transform.position, directionToGuest, Color.white);
 			if (Vector2.Angle (transform.up, directionToGuest) < fovAngle / 2) {
 				//Debug.DrawRay (transform.position, directionToGuest, Color.red);
+				print("FUCKING SHAKE SHAKE");
 				targetsInCircle [i].GetComponent<Guest> ().scared = true;
 				targetsInCircle [i].GetComponent<Guest> ().threat = true;
 				targetsInCircle [i].GetComponent<Guest> ().Rotate ();

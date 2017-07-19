@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/PhoneCinematic.unity
+- path: Assets/GuestScene.unity
   isLoaded: 1
   isActive: 1

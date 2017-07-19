@@ -66,6 +66,9 @@ public class murderSystem : MonoBehaviour {
 		int i = Random.Range (0, guests.Count);
 		Guest _guestScript = guests[i].GetComponent<Guest>();
 		deadPortraits.Add(guests [i].GetComponent<Guest> ().guestClass.Portrait);
+		murderer.GetComponent<Guest> ().scared = true;
+		murderer.GetComponent<Guest> ().threat = false;
+		murderer.GetComponent<Guest> ().shakeFrequencey += 0.005f;
 		guests[i].GetComponent<Guest>().Die();
 		clue = clueScript.getClue (_guestScript.guestClass, murderer.GetComponent<Guest> ().guestClass);
 		print (clue.deathType);
