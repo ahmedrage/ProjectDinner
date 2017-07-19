@@ -101,7 +101,7 @@ public class Guest : MonoBehaviour {
 		}
 
 		switch (guestClass.Blemish.ToString ()) {
-		case "tatoo":
+		case "tattoo":
 			Panel.transform.GetChild (3).GetComponent<Text> ().text = "Has a tattoo";
 			break;
 		case "scar":
