@@ -52,6 +52,7 @@
      <Compile Include="Assets\Scripts\Clues.cs" />
      <Compile Include="Assets\Scripts\Guest.cs" />
      <Compile Include="Assets\Scripts\GuestScript.cs" />
+     <Compile Include="Assets\Scripts\JournalScript.cs" />
      <Compile Include="Assets\Scripts\Staircase.cs" />
      <Compile Include="Assets\Scripts\Timer.cs" />
      <Compile Include="Assets\Scripts\TypewriterScript.cs" />
@@ -66,6 +67,7 @@
      <Compile Include="Assets\Scripts\playerController.cs" />
      <Compile Include="Assets\Scripts\settings.cs" />
      <Compile Include="Assets\Scripts\textTest.cs" />
+     <Compile Include="Assets\ToggleJournalScript.cs" />
      <Compile Include="Assets\XInputDotNet\Examples\XInputTestCS.cs" />
      <Compile Include="Assets\audioManager.cs" />
      <Compile Include="Assets\canvasRotationScript.cs" />
