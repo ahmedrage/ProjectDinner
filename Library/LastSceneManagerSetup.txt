@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/TrainLevel.unity
-=======
-- path: Assets/GuestScene.unity
->>>>>>> 63081b13f675b15bfd4eb2e122936a692af505c0
+- path: Assets/Scenes/HotelLevel.unity
   isLoaded: 1
   isActive: 1

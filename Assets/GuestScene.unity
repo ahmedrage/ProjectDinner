@@ -1579,7 +1579,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.35375002, y: 0.020564632}
   m_AnchorMax: {x: 0.65500003, y: 0.06242237}
-  m_AnchoredPosition: {x: -278.89575, y: -4.5999756}
+  m_AnchoredPosition: {x: -278.89578, y: -4.5999756}
   m_SizeDelta: {x: 4210, y: 169}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &526811842
@@ -2498,6 +2498,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextScene: InterrogationScene
   finishScript: {fileID: 0}
+  murderSys: {fileID: 0}
+  _statManager: {fileID: 0}
 --- !u!1 &939312905
 GameObject:
   m_ObjectHideFlags: 0
@@ -3574,6 +3576,11 @@ Prefab:
       propertyPath: fovAngle
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011590514942, guid: e390d2af1c4387540a68f0e064a05ba8,
+        type: 2}
+      propertyPath: instructionCalm
+      value: 
+      objectReference: {fileID: 2085467753}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e390d2af1c4387540a68f0e064a05ba8, type: 2}
   m_IsPrefabParent: 0

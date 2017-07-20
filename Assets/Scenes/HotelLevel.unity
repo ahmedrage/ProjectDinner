@@ -170,7 +170,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -1, y: 6.7783}
+  m_AnchoredPosition: {x: -1, y: 6.7782993}
   m_SizeDelta: {x: 73, y: 18}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &58358135
@@ -1405,7 +1405,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 267877312}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 95a1dfe79b57fae4daec3387d729bcd7, type: 3}
   m_Name: 
@@ -6723,6 +6723,11 @@ Prefab:
       propertyPath: m_ApplyRootMotion
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011590514942, guid: e390d2af1c4387540a68f0e064a05ba8,
+        type: 2}
+      propertyPath: instructionCalm
+      value: 
+      objectReference: {fileID: 2085467753}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e390d2af1c4387540a68f0e064a05ba8, type: 2}
   m_IsPrefabParent: 0
