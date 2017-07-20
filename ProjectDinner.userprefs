@@ -1,13 +1,14 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\JournalScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CinematicDialogue.cs">
     <Files>
-      <File FileName="Assets\Scripts\CinematicDialogue.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\CinematicDialogue.cs" Line="19" Column="2" />
       <File FileName="Assets\Scripts\TypewriterScript.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Clues.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\GuestScript.cs" Line="8" Column="103" />
+      <File FileName="Assets\Scripts\GuestScript.cs" Line="1" Column="1" />
       <File FileName="Assets\Scripts\Guest.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\JournalScript.cs" Line="44" Column="13" />
+      <File FileName="Assets\Scripts\JournalScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\CinematicSceneSwitch.cs" Line="11" Column="39" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
