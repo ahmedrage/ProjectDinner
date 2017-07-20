@@ -55,6 +55,7 @@
      <Compile Include="Assets\Scripts\Staircase.cs" />
      <Compile Include="Assets\Scripts\Timer.cs" />
      <Compile Include="Assets\Scripts\TypewriterScript.cs" />
+     <Compile Include="Assets\Scripts\cameraPan.cs" />
      <Compile Include="Assets\Scripts\cameraShake.cs" />
      <Compile Include="Assets\Scripts\controlSystem.cs" />
      <Compile Include="Assets\Scripts\endGameMenu.cs" />
