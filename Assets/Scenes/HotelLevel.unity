@@ -170,8 +170,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -4.0091248, y: 0.000030517578}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -1, y: 6.7783}
+  m_SizeDelta: {x: 73, y: 18}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &58358135
 MonoBehaviour:
@@ -194,13 +194,13 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 249450528903fdf4e89b694d421bd4ac, type: 3}
+    m_Font: {fileID: 12800000, guid: 25d8698481873d6439e6c2e98c61b7cb, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 1
     m_MaxSize: 300
-    m_Alignment: 3
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -4023,7 +4023,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 249450528903fdf4e89b694d421bd4ac, type: 3}
+    m_Font: {fileID: 12800000, guid: 25d8698481873d6439e6c2e98c61b7cb, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
@@ -4302,6 +4302,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextScene: Interrogation3Scene
   finishScript: {fileID: 0}
+  murderSys: {fileID: 0}
+  _statManager: {fileID: 0}
 --- !u!1 &944936198
 GameObject:
   m_ObjectHideFlags: 0
@@ -5949,8 +5951,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 5.300934, y: 0.000015258789}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 2, y: 8.407299}
+  m_SizeDelta: {x: -6, y: 23.764}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1217813110
 MonoBehaviour:
@@ -5973,13 +5975,13 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 249450528903fdf4e89b694d421bd4ac, type: 3}
+    m_Font: {fileID: 12800000, guid: 25d8698481873d6439e6c2e98c61b7cb, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 1
     m_MaxSize: 300
-    m_Alignment: 3
+    m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
@@ -7048,7 +7050,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 166, y: -110.399994}
+  m_AnchoredPosition: {x: 163.1, y: -105.5}
   m_SizeDelta: {x: 239, y: 115}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1489461268
@@ -8379,7 +8381,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 249450528903fdf4e89b694d421bd4ac, type: 3}
+    m_Font: {fileID: 12800000, guid: 25d8698481873d6439e6c2e98c61b7cb, type: 3}
     m_FontSize: 100
     m_FontStyle: 0
     m_BestFit: 0
@@ -10284,7 +10286,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 249450528903fdf4e89b694d421bd4ac, type: 3}
+    m_Font: {fileID: 12800000, guid: 25d8698481873d6439e6c2e98c61b7cb, type: 3}
     m_FontSize: 14
     m_FontStyle: 0
     m_BestFit: 1
@@ -10711,7 +10713,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 249450528903fdf4e89b694d421bd4ac, type: 3}
+    m_Font: {fileID: 12800000, guid: 25d8698481873d6439e6c2e98c61b7cb, type: 3}
     m_FontSize: 100
     m_FontStyle: 0
     m_BestFit: 0
