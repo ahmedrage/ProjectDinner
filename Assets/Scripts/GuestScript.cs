@@ -18,6 +18,7 @@ public class GuestClass {
 	public Sprite Portrait;
 	public Sprite[] interrogationSprites; //0 = bad; 1 = good; 2 = neuteral  
 	public Sprite deadSprite;
+	public Sprite outSprite;
 	public RuntimeAnimatorController animationController;
 }
 

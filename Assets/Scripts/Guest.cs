@@ -189,7 +189,7 @@ public class Guest : MonoBehaviour {
 		this.gameObject.layer = LayerMask.NameToLayer("deadGuest");
 		deathPanel.gameObject.SetActive (false);
 		transform.Find ("Graphics").GetComponent<Animator> ().enabled = false;
-		transform.Find ("Graphics").GetComponent<SpriteRenderer> ().sprite = guestClass.deadSprite; // need to change to dead sprite with no blood
+		transform.Find ("Graphics").GetComponent<SpriteRenderer> ().sprite = guestClass.outSprite; // need to change to dead sprite with no blood
 	}
 
 	public void Rotate(){
