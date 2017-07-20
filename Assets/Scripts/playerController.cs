@@ -2,6 +2,7 @@
 using XInputDotNetPure;
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
 public class playerController : MonoBehaviour {
 
 	public float speed;
@@ -33,6 +34,7 @@ public class playerController : MonoBehaviour {
 	public Animator myAnimator;
 	public List<Transform> nearbyGuests; // This array holds all the guests who are close enough to display details.
 	public GameObject nearestGuest;
+	public Text instructionCalm;
 	//bool playing = false;
 	bool usingController;
 	public bool rmb;
@@ -72,6 +74,7 @@ public class playerController : MonoBehaviour {
 		rb.velocity = (movement * speed);
 
 		if(usingController){
+			instructionCalm.text = "L1 to promise       R2 to calm";
 			Vector2 playerDirection = Vector2.right * rHoriz + -Vector2.up * rVert;
 			playerDirection.Normalize ();
 
@@ -92,7 +95,9 @@ public class playerController : MonoBehaviour {
 			transform.rotation = Quaternion.Euler (0f, 0f, rotZ + -90);
 			controllerCrosshair.GetComponent<SpriteRenderer> ().sprite = null;
 			Cursor.visible = true;
-			Cursor.lockState = CursorLockMode.None;		
+			Cursor.lockState = CursorLockMode.None;	
+			instructionCalm.text = "Q to promise       E to calm";
+
 		}
 
 		if (guesses > 0) {
@@ -129,13 +134,13 @@ public class playerController : MonoBehaviour {
 		}
 
 		if (controlSys.accused) {
-			if (Input.GetKeyDown(KeyCode.Q)) {
+			if (Input.GetKeyDown(KeyCode.Q) || GamePad.GetState(PlayerIndex.One).Buttons.LeftShoulder == ButtonState.Pressed) {
 				speed = 0;
 				myAnimator.SetBool ("Moving", false);
 				controlSys.response (controlSys.promises.Count, controlSys.promises, true);
 			}
 
-			if (Input.GetKeyDown (KeyCode.E)) {
+			if (Input.GetKeyDown (KeyCode.E) || GamePad.GetState(PlayerIndex.One).Buttons.RightShoulder == ButtonState.Pressed) {
 				speed = 0;
 				myAnimator.SetBool ("Moving", false);
 				controlSys.response (controlSys.calming.Count, controlSys.calming, false);
