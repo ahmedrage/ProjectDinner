@@ -1,69 +1,69 @@
 fileFormatVersion: 2
 guid: 48382fc096d79fa43a2ba4f336a27c67
-timeCreated: 1499963027
+timeCreated: 1500511637
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
-    21300000: char portraints level 2_3
-    21300002: char portraints level 2_4
-    21300004: char portraints level 2_5
-    21300006: char portraints level 2_6
-    21300008: char portraints level 2_9
-    21300010: char portraints level 2_10
-    21300012: char portraints level 2_11
-    21300014: char portraints level 2_12
-    21300016: char portraints level 2_14
-    21300018: char portraints level 2_15
-    21300020: char portraints level 2_16
-    21300022: char portraints level 2_17
-    21300024: char portraints level 2_19
-    21300026: char portraints level 2_20
-    21300028: char portraints level 2_21
-    21300030: char portraints level 2_22
-    21300032: char portraints level 2_24
-    21300034: char portraints level 2_25
-    21300036: char portraints level 2_26
-    21300038: char portraints level 2_27
-    21300040: char portraints level 2_30
-    21300042: char portraints level 2_31
-    21300044: char portraints level 2_32
-    21300046: char portraints level 2_33
-    21300048: char portraints level 2_35
-    21300050: char portraints level 2_36
-    21300052: char portraints level 2_37
-    21300054: char portraints level 2_38
-    21300056: char portraints level 2_40
-    21300058: char portraints level 2_41
-    21300060: char portraints level 2_42
-    21300062: char portraints level 2_43
-    21300064: char portraints level 2_45
-    21300066: char portraints level 2_46
-    21300068: char portraints level 2_47
-    21300070: char portraints level 2_48
-    21300072: char portraints level 2_50
-    21300074: char portraints level 2_51
-    21300076: char portraints level 2_52
-    21300078: char portraints level 2_53
-    21300080: char portraints level 2_56
-    21300082: char portraints level 2_57
-    21300084: char portraints level 2_58
-    21300086: char portraints level 2_59
-    21300088: char portraints level 2_61
-    21300090: char portraints level 2_62
-    21300092: char portraints level 2_63
-    21300094: char portraints level 2_64
-    21300096: char portraints level 2_67
-    21300098: char portraints level 2_68
-    21300100: char portraints level 2_69
-    21300102: char portraints level 2_70
-    21300104: char portraints level 2_72
-    21300106: char portraints level 2_73
-    21300108: char portraints level 2_74
-    21300110: char portraints level 2_75
-    21300112: char portraints level 2_77
-    21300114: char portraints level 2_78
-    21300116: char portraints level 2_79
-    21300118: char portraints level 2_80
+    21300000: 14
+    21300002: 14A
+    21300004: 14B
+    21300006: 14G
+    21300008: 2
+    21300010: 2A
+    21300012: 2B
+    21300014: 2G
+    21300016: 4
+    21300018: 4A
+    21300020: 4B
+    21300022: G
+    21300024: 12
+    21300026: 12A
+    21300028: 12B
+    21300030: 12G
+    21300032: 13
+    21300034: 13A
+    21300036: 13B
+    21300038: 13G
+    21300040: 5
+    21300042: 5A
+    21300044: 5B
+    21300046: 5G
+    21300048: 9
+    21300050: 9A
+    21300052: 9B
+    21300054: 9G
+    21300056: 1
+    21300058: 1A
+    21300060: 1B
+    21300062: 1G
+    21300064: 6
+    21300066: 6A
+    21300068: 6B
+    21300070: 6G
+    21300072: 15
+    21300074: 15A
+    21300076: 15B
+    21300078: 15G
+    21300080: 3
+    21300082: 3A
+    21300084: 3B
+    21300086: 3G
+    21300088: 11
+    21300090: 11A
+    21300092: 11B
+    21300094: 11G
+    21300096: 7
+    21300098: 7A
+    21300100: 7B
+    21300102: 7G
+    21300104: 8
+    21300106: 8A
+    21300108: 8B
+    21300110: 8G
+    21300112: 10
+    21300114: 10A
+    21300116: 10B
+    21300118: 10G
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -130,7 +130,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: char portraints level 2_3
+      name: 14
       rect:
         serializedVersion: 2
         x: 35
@@ -138,12 +138,12 @@ TextureImporter:
         width: 30
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_4
+      name: 14A
       rect:
         serializedVersion: 2
         x: 78
@@ -151,12 +151,12 @@ TextureImporter:
         width: 30
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_5
+      name: 14B
       rect:
         serializedVersion: 2
         x: 120
@@ -164,12 +164,12 @@ TextureImporter:
         width: 30
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_6
+      name: 14G
       rect:
         serializedVersion: 2
         x: 162
@@ -177,12 +177,12 @@ TextureImporter:
         width: 30
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_9
+      name: 2
       rect:
         serializedVersion: 2
         x: 31
@@ -190,12 +190,12 @@ TextureImporter:
         width: 38
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_10
+      name: 2A
       rect:
         serializedVersion: 2
         x: 74
@@ -203,12 +203,12 @@ TextureImporter:
         width: 38
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_11
+      name: 2B
       rect:
         serializedVersion: 2
         x: 116
@@ -216,12 +216,12 @@ TextureImporter:
         width: 38
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_12
+      name: 2G
       rect:
         serializedVersion: 2
         x: 158
@@ -229,12 +229,12 @@ TextureImporter:
         width: 38
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_14
+      name: 4
       rect:
         serializedVersion: 2
         x: 31
@@ -242,12 +242,12 @@ TextureImporter:
         width: 38
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_15
+      name: 4A
       rect:
         serializedVersion: 2
         x: 74
@@ -255,12 +255,12 @@ TextureImporter:
         width: 38
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_16
+      name: 4B
       rect:
         serializedVersion: 2
         x: 116
@@ -268,12 +268,12 @@ TextureImporter:
         width: 38
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_17
+      name: G
       rect:
         serializedVersion: 2
         x: 158
@@ -281,12 +281,12 @@ TextureImporter:
         width: 38
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_19
+      name: 12
       rect:
         serializedVersion: 2
         x: 37
@@ -294,12 +294,12 @@ TextureImporter:
         width: 28
         height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_20
+      name: 12A
       rect:
         serializedVersion: 2
         x: 80
@@ -307,12 +307,12 @@ TextureImporter:
         width: 28
         height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_21
+      name: 12B
       rect:
         serializedVersion: 2
         x: 122
@@ -320,12 +320,12 @@ TextureImporter:
         width: 28
         height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_22
+      name: 12G
       rect:
         serializedVersion: 2
         x: 164
@@ -333,12 +333,12 @@ TextureImporter:
         width: 28
         height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_24
+      name: 13
       rect:
         serializedVersion: 2
         x: 31
@@ -346,12 +346,12 @@ TextureImporter:
         width: 38
         height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_25
+      name: 13A
       rect:
         serializedVersion: 2
         x: 74
@@ -359,12 +359,12 @@ TextureImporter:
         width: 38
         height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_26
+      name: 13B
       rect:
         serializedVersion: 2
         x: 116
@@ -372,12 +372,12 @@ TextureImporter:
         width: 38
         height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_27
+      name: 13G
       rect:
         serializedVersion: 2
         x: 158
@@ -385,12 +385,12 @@ TextureImporter:
         width: 38
         height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_30
+      name: 5
       rect:
         serializedVersion: 2
         x: 33
@@ -398,12 +398,12 @@ TextureImporter:
         width: 34
         height: 42
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_31
+      name: 5A
       rect:
         serializedVersion: 2
         x: 76
@@ -411,12 +411,12 @@ TextureImporter:
         width: 34
         height: 42
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_32
+      name: 5B
       rect:
         serializedVersion: 2
         x: 118
@@ -424,12 +424,12 @@ TextureImporter:
         width: 34
         height: 42
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_33
+      name: 5G
       rect:
         serializedVersion: 2
         x: 160
@@ -437,12 +437,12 @@ TextureImporter:
         width: 34
         height: 42
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_35
+      name: 9
       rect:
         serializedVersion: 2
         x: 35
@@ -450,12 +450,12 @@ TextureImporter:
         width: 26
         height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_36
+      name: 9A
       rect:
         serializedVersion: 2
         x: 78
@@ -463,12 +463,12 @@ TextureImporter:
         width: 26
         height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_37
+      name: 9B
       rect:
         serializedVersion: 2
         x: 120
@@ -476,12 +476,12 @@ TextureImporter:
         width: 26
         height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_38
+      name: 9G
       rect:
         serializedVersion: 2
         x: 162
@@ -489,12 +489,12 @@ TextureImporter:
         width: 26
         height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_40
+      name: 1
       rect:
         serializedVersion: 2
         x: 35
@@ -502,12 +502,12 @@ TextureImporter:
         width: 30
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_41
+      name: 1A
       rect:
         serializedVersion: 2
         x: 78
@@ -515,12 +515,12 @@ TextureImporter:
         width: 30
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_42
+      name: 1B
       rect:
         serializedVersion: 2
         x: 120
@@ -528,12 +528,12 @@ TextureImporter:
         width: 30
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_43
+      name: 1G
       rect:
         serializedVersion: 2
         x: 162
@@ -541,12 +541,12 @@ TextureImporter:
         width: 30
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_45
+      name: 6
       rect:
         serializedVersion: 2
         x: 35
@@ -554,12 +554,12 @@ TextureImporter:
         width: 24
         height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_46
+      name: 6A
       rect:
         serializedVersion: 2
         x: 78
@@ -567,12 +567,12 @@ TextureImporter:
         width: 24
         height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_47
+      name: 6B
       rect:
         serializedVersion: 2
         x: 120
@@ -580,12 +580,12 @@ TextureImporter:
         width: 24
         height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_48
+      name: 6G
       rect:
         serializedVersion: 2
         x: 162
@@ -593,12 +593,12 @@ TextureImporter:
         width: 24
         height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_50
+      name: 15
       rect:
         serializedVersion: 2
         x: 37
@@ -606,12 +606,12 @@ TextureImporter:
         width: 28
         height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_51
+      name: 15A
       rect:
         serializedVersion: 2
         x: 80
@@ -619,12 +619,12 @@ TextureImporter:
         width: 28
         height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_52
+      name: 15B
       rect:
         serializedVersion: 2
         x: 122
@@ -632,12 +632,12 @@ TextureImporter:
         width: 28
         height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_53
+      name: 15G
       rect:
         serializedVersion: 2
         x: 164
@@ -645,12 +645,12 @@ TextureImporter:
         width: 28
         height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_56
+      name: 3
       rect:
         serializedVersion: 2
         x: 35
@@ -658,12 +658,12 @@ TextureImporter:
         width: 30
         height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_57
+      name: 3A
       rect:
         serializedVersion: 2
         x: 78
@@ -671,12 +671,12 @@ TextureImporter:
         width: 30
         height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_58
+      name: 3B
       rect:
         serializedVersion: 2
         x: 120
@@ -684,12 +684,12 @@ TextureImporter:
         width: 30
         height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_59
+      name: 3G
       rect:
         serializedVersion: 2
         x: 162
@@ -697,12 +697,12 @@ TextureImporter:
         width: 30
         height: 40
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_61
+      name: 11
       rect:
         serializedVersion: 2
         x: 31
@@ -710,12 +710,12 @@ TextureImporter:
         width: 30
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_62
+      name: 11A
       rect:
         serializedVersion: 2
         x: 74
@@ -723,12 +723,12 @@ TextureImporter:
         width: 30
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_63
+      name: 11B
       rect:
         serializedVersion: 2
         x: 116
@@ -736,12 +736,12 @@ TextureImporter:
         width: 30
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_64
+      name: 11G
       rect:
         serializedVersion: 2
         x: 158
@@ -749,12 +749,12 @@ TextureImporter:
         width: 30
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_67
+      name: 7
       rect:
         serializedVersion: 2
         x: 31
@@ -762,12 +762,12 @@ TextureImporter:
         width: 38
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_68
+      name: 7A
       rect:
         serializedVersion: 2
         x: 74
@@ -775,12 +775,12 @@ TextureImporter:
         width: 38
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_69
+      name: 7B
       rect:
         serializedVersion: 2
         x: 116
@@ -788,12 +788,12 @@ TextureImporter:
         width: 38
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_70
+      name: 7G
       rect:
         serializedVersion: 2
         x: 158
@@ -801,12 +801,12 @@ TextureImporter:
         width: 38
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_72
+      name: 8
       rect:
         serializedVersion: 2
         x: 39
@@ -814,12 +814,12 @@ TextureImporter:
         width: 20
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_73
+      name: 8A
       rect:
         serializedVersion: 2
         x: 82
@@ -827,12 +827,12 @@ TextureImporter:
         width: 20
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_74
+      name: 8B
       rect:
         serializedVersion: 2
         x: 124
@@ -840,12 +840,12 @@ TextureImporter:
         width: 20
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_75
+      name: 8G
       rect:
         serializedVersion: 2
         x: 166
@@ -853,12 +853,12 @@ TextureImporter:
         width: 20
         height: 38
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_77
+      name: 10
       rect:
         serializedVersion: 2
         x: 39
@@ -866,12 +866,12 @@ TextureImporter:
         width: 24
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_78
+      name: 10A
       rect:
         serializedVersion: 2
         x: 82
@@ -879,12 +879,12 @@ TextureImporter:
         width: 24
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_79
+      name: 10B
       rect:
         serializedVersion: 2
         x: 124
@@ -892,12 +892,12 @@ TextureImporter:
         width: 24
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
     - serializedVersion: 2
-      name: char portraints level 2_80
+      name: 10G
       rect:
         serializedVersion: 2
         x: 166
@@ -905,7 +905,7 @@ TextureImporter:
         width: 24
         height: 28
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       tessellationDetail: 0
