@@ -11,11 +11,19 @@ public class TypewriterScript : MonoBehaviour {
 	public Text dialogueText;
 
 	private bool spaceBarDown = false;
+	private bool completeLineInstant = false;
+	private bool readyForNext = false;
 
-	IEnumerator WaitForKey(KeyCode keyCode)
+	IEnumerator WaitForKey()
 	{
-		while (!Input.GetKeyDown (keyCode)) {
+		while (!Input.GetButtonDown("Fire1") && !Input.GetButtonDown("Jump")) {
 			yield return null;
+		}
+	}
+
+	void Update () {
+		if (Input.GetButtonDown ("Fire1") || Input.GetButtonDown ("Jump")) {
+			completeLineInstant = true;
 		}
 	}
 
@@ -24,10 +32,14 @@ public class TypewriterScript : MonoBehaviour {
 			currentText = text.Substring (0, i);
 			this.GetComponent<Text> ().text = currentText;
 			yield return new WaitForSeconds (delay);
-
+			if (completeLineInstant) {
+				i = text.Length;
+				this.GetComponent<Text> ().text = text;
+				completeLineInstant = false;
+			}
 			if (i == text.Length) {
 				print ("ended stooge");
-				yield return StartCoroutine (WaitForKey (KeyCode.Space));
+				yield return StartCoroutine (WaitForKey ());
 			}
 		}
 	}
@@ -44,7 +56,7 @@ public class TypewriterScript : MonoBehaviour {
 		dialogue.Add ("");
 		foreach (string tx in dialogue) {
 			text = tx;
-			yield return StartCoroutine (showText());
+			yield return StartCoroutine (showText ());
 		}
 	}
 }
