@@ -2036,6 +2036,11 @@ Prefab:
       propertyPath: fovAngle
       value: 180
       objectReference: {fileID: 0}
+    - target: {fileID: 212000013549243540, guid: e390d2af1c4387540a68f0e064a05ba8,
+        type: 2}
+      propertyPath: m_SortingOrder
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e390d2af1c4387540a68f0e064a05ba8, type: 2}
   m_IsPrefabParent: 0

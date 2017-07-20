@@ -1,0 +1,1 @@
+Overlay cranes on scene as part of the background

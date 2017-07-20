@@ -389,7 +389,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -442, y: 34.48799}
+  m_AnchoredPosition: {x: -442, y: 34.487976}
   m_SizeDelta: {x: 4452, y: 503.44568}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &1889085478
@@ -707,4 +707,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DialogueBox: {fileID: 1889085476}
-  dialogues: []
+  dialogues:
+  - test423
+  - wwwwwwww
+  - aw
+  - tesrt
