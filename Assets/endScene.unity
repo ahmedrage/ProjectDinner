@@ -261,7 +261,7 @@ GameObject:
   - component: {fileID: 429366175}
   - component: {fileID: 429366174}
   m_Layer: 5
-  m_Name: Image (7)
+  m_Name: mImg3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -304,7 +304,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300018, guid: 85bd58bdd42be424fbe7b9eb1670b1a3, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -872,7 +872,7 @@ GameObject:
   - component: {fileID: 1100185033}
   - component: {fileID: 1100185032}
   m_Layer: 5
-  m_Name: Image (5)
+  m_Name: mImg1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -915,7 +915,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300012, guid: 85bd58bdd42be424fbe7b9eb1670b1a3, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -940,7 +940,7 @@ GameObject:
   - component: {fileID: 1154542264}
   - component: {fileID: 1154542263}
   m_Layer: 5
-  m_Name: Image (6)
+  m_Name: mImg2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -983,7 +983,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300016, guid: 85bd58bdd42be424fbe7b9eb1670b1a3, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1305,12 +1305,21 @@ MonoBehaviour:
   coords:
   - {x: 1232, y: 189}
   - {x: 2050, y: 189}
+  murderPortraitImages:
+  - {fileID: 1100185032}
+  - {fileID: 1154542263}
+  - {fileID: 429366174}
+  _murdererNames:
+  - {fileID: 711546448}
+  - {fileID: 230733145}
+  - {fileID: 1928641520}
   _showTime: 3
   panning: 0
   panSpeed: 9
   point: 0
   blackScreen: {fileID: 1630192553}
   title: {fileID: 824629452}
+  _statManager: {fileID: 0}
 --- !u!1 &1911622054
 GameObject:
   m_ObjectHideFlags: 0

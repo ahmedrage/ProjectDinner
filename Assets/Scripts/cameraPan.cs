@@ -6,12 +6,15 @@ using UnityEngine;
 
 public class cameraPan : MonoBehaviour {
 	public Vector2[] coords;
+	public List<Image> murderPortraitImages;
+	public List<Text> _murdererNames;
 	public float _showTime;
 	public bool panning;
 	public float panSpeed;
 	public int point;
 	public Image blackScreen;
 	public Text title;
+	public statManager _statManager;
 	Vector2 newPosition;
 
 	void Awake(){
@@ -20,6 +23,7 @@ public class cameraPan : MonoBehaviour {
 		panning = true;
 		blackScreen.enabled = false;
 		title.enabled = false;
+		_statManager = GameObject.Find ("dataManager").GetComponent<statManager> ();
 	}
 		
 	// Update is called once per frame
@@ -30,6 +34,14 @@ public class cameraPan : MonoBehaviour {
 
 		if (point == 2) {
 			cutOut ();
+		}
+
+		for (int i = 0; i < _statManager.murderers.Count; i++) {
+			murderPortraitImages [i].sprite = _statManager.murderers [i];
+		}
+
+		for (int x = 0; x < _statManager.murdererNames.Count; x++) {
+			_murdererNames [x].text = _statManager.murdererNames [x];
 		}
 	}
 
