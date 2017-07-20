@@ -10178,6 +10178,36 @@ Prefab:
       value: 
       objectReference: {fileID: 21300138, guid: 976e0af6b5d41f7439e2f219c7b3cbd2,
         type: 3}
+    - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
+        type: 2}
+      propertyPath: GuestArray.Array.data[15].outSprite
+      value: 
+      objectReference: {fileID: 21300006, guid: b7a79652262838745a6586d0914d5de4,
+        type: 3}
+    - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
+        type: 2}
+      propertyPath: GuestArray.Array.data[16].outSprite
+      value: 
+      objectReference: {fileID: 21300016, guid: b7a79652262838745a6586d0914d5de4,
+        type: 3}
+    - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
+        type: 2}
+      propertyPath: GuestArray.Array.data[17].outSprite
+      value: 
+      objectReference: {fileID: 21300036, guid: b7a79652262838745a6586d0914d5de4,
+        type: 3}
+    - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
+        type: 2}
+      propertyPath: GuestArray.Array.data[18].outSprite
+      value: 
+      objectReference: {fileID: 21300046, guid: b7a79652262838745a6586d0914d5de4,
+        type: 3}
+    - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
+        type: 2}
+      propertyPath: GuestArray.Array.data[19].outSprite
+      value: 
+      objectReference: {fileID: 21300054, guid: b7a79652262838745a6586d0914d5de4,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c20e09b099f61814d90bc6e8ed9eec2d, type: 2}
   m_IsPrefabParent: 0

@@ -16,17 +16,18 @@ public class cameraShake : MonoBehaviour {
 			playerScript = GameObject.Find ("player").GetComponent<playerController> ();
 		}
 		//Instance = this;
-		initialPosition = transform.localPosition;
 
 		Shake (_amplitude, _duration);
 	}
 
 	public void Shake (float amplitude, float duration)
 	{	
+		initialPosition = transform.localPosition;
 		_amplitude = amplitude;
 		isShaking = true;
 		CancelInvoke ();
 		Invoke ("StopShaking", duration);
+		transform.position = initialPosition;
 	}
 
 	public void StopShaking()
@@ -47,7 +48,7 @@ public class cameraShake : MonoBehaviour {
 			currentPosition = transform.localPosition; 
 			transform.localPosition = initialPosition + Random.insideUnitSphere * _amplitude;
 		} else {
-			transform.localPosition = initialPosition;
+			//transform.localPosition = initialPosition;
 		}
 	}
 }
