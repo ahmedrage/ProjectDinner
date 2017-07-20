@@ -1,0 +1,468 @@
+fileFormatVersion: 2
+guid: b7a79652262838745a6586d0914d5de4
+timeCreated: 1500264337
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_0
+    21300002: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_1
+    21300004: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_2
+    21300006: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_3
+    21300008: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_4
+    21300010: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_5
+    21300012: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_6
+    21300014: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_7
+    21300016: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_8
+    21300018: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_9
+    21300020: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_10
+    21300022: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_11
+    21300024: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_12
+    21300026: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_13
+    21300028: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_14
+    21300030: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_15
+    21300032: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_16
+    21300034: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_17
+    21300036: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_18
+    21300038: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_19
+    21300040: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_20
+    21300042: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_21
+    21300044: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_22
+    21300046: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_23
+    21300048: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_24
+    21300050: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_25
+    21300052: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_26
+    21300054: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_27
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 10
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_0
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 621
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_1
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 622
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_2
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 615
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_3
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 615
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_4
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 536
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_5
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 536
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_6
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 536
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_7
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 533
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_8
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 533
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_9
+      rect:
+        serializedVersion: 2
+        x: 15
+        y: 498
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_10
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 498
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_11
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 498
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_12
+      rect:
+        serializedVersion: 2
+        x: 71
+        y: 497
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_13
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 498
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_14
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 498
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_15
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 498
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_16
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 498
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_17
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 490
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_18
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 492
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_19
+      rect:
+        serializedVersion: 2
+        x: 69
+        y: 452
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_20
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 452
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_21
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 452
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_22
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 447
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_23
+      rect:
+        serializedVersion: 2
+        x: 193
+        y: 447
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_24
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 327
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_25
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 328
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_26
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 322
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: all chars dead + idle+ unconscious lvl 3 - ADDITIONAL_27
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 322
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

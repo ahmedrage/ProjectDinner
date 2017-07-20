@@ -74,6 +74,19 @@ public class Clue {
 	public string deathText;
 	public string appearanceText;
 
+	public Dictionary<string, string> work_accessories = new Dictionary<string, string>();
+
+	void Start() {
+		work_accessories.Add ("Doctor", "Stethoscope");
+		work_accessories.Add ("Scientist", "Vial");
+		work_accessories.Add ("Author", "Quill");
+		work_accessories.Add ("Home_maker", "Measuring Tape");
+		work_accessories.Add ("Chef", "Knife");
+		work_accessories.Add ("Politician", "Clipboard");
+		work_accessories.Add ("Film_maker", "Film Reel");
+		work_accessories.Add ("Veteran", "Gun");
+	}
+
 
 	public Clue(GuestClass _guest, string _deathType, bool _isAppearance) {
 		isAppearance = _isAppearance;
@@ -115,13 +128,13 @@ public class Clue {
 		int descriptorRand = Random.Range(0, 2);
 		if (descriptorRand == 1) {
 			switch (murderer.Accessory.ToString ()) {
-			case "Hat":
+			case "hat":
 				appearanceText = "I think the murderer was wearing a hat.";
 				break;
-			case "Glasses":
+			case "glasses":
 				appearanceText = "I believe I saw the murderer wearing glasses!";
 				break;
-			case "WorkAccessory":
+			case "work_accessory":
 				appearanceText = "They had some sort of technical instrument.";
 				break;
 			default:
@@ -130,13 +143,13 @@ public class Clue {
 			}
 		} else {
 			switch(murderer.Blemish.ToString()) {
-			case "Tattoo": 
+			case "tattoo": 
 				appearanceText = "I saw that the murderer had a tattoo.";
 				break;
-			case "Scar":
-				appearanceText = "They had some sort of horrible scar!";
+			case "scar":
+				appearanceText = "They had some sort of terrible scar!";
 				break;
-			case "SkinCondition":
+			case "skin_condition":
 				appearanceText = "The murderer had the most horrible skin.";
 				break;
 			default:

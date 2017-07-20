@@ -9,6 +9,7 @@ public class textTest : MonoBehaviour {
 	public string text;
 	string currentText = "";
 	public Text dialogueText;
+
 	// Use this for initialization
 	void Start () {
 	}
@@ -25,11 +26,18 @@ public class textTest : MonoBehaviour {
 		}
 	}
 		
-
 	public void displayDialogue(int listCount, List<string> dialogue){
 		dialogueText.color = Color.white;
 		int x = Random.Range (0, listCount);
 		text = dialogue [x];
 		StartCoroutine (showText());
+	}
+
+	public void displayDialogueInOrder (List<string> dialogue){
+		dialogueText.color = Color.white;
+		foreach (string tx in dialogue) {
+			text = tx;
+			StartCoroutine (showText());
+		}
 	}
 }

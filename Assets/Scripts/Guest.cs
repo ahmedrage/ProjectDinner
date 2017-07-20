@@ -1,6 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 using UnityEngine.UI;
+using System.Collections.Generic;
 public class Guest : MonoBehaviour {
 
 	// Use this for initialization
@@ -20,6 +21,8 @@ public class Guest : MonoBehaviour {
 	public GameObject playerPos;
 	public GameObject graphics;
 	public Vector3 initialRotataion;
+	public Dictionary<string, string> work_accessories = new Dictionary<string, string>();
+
 
 	playerController playerScript;
 	Transform deathPanel;
@@ -54,21 +57,62 @@ public class Guest : MonoBehaviour {
 		}
 	}
 
+
+
 	public void setText () {
 		Panel = transform.GetChild (0).transform.GetChild (0);
 		Panel.transform.GetChild (0).GetComponent<Text> ().text = guestClass.name;
-		Panel.transform.GetChild (1).GetComponent<Text> ().text = guestClass.profession.ToString ();
+		//Panel.transform.GetChild (1).GetComponent<Text> ().text = guestClass.profession.ToString ();
 
-		if (guestClass.Accessory.ToString () == "no_accesories") {
-			Panel.transform.GetChild (2).GetComponent<Text> ().text = "Is wearing no accessories";
-		}else{
+		work_accessories.Add ("Doctor", "stethoscope");
+		work_accessories.Add ("Scientist", "vial");
+		work_accessories.Add ("Author", "quill");
+		work_accessories.Add ("Home_maker", "measuring tape");
+		work_accessories.Add ("Chef", "knife");
+		work_accessories.Add ("Politician", "clipboard");
+		work_accessories.Add ("Film_maker", "film Reel");
+		work_accessories.Add ("Veteran", "gun");
 
-			Panel.transform.GetChild (2).GetComponent<Text> ().text = "Is wearing a" + guestClass.Accessory.ToString ();;
-			Panel.transform.GetChild (3).GetComponent<Text> ().text = "Has a" + guestClass.Blemish.ToString ();
+		switch (guestClass.profession.ToString ()) {
+		case "Home_maker":
+			Panel.transform.GetChild (1).GetComponent<Text> ().text = "Home maker";
+			break;
+		case "Film_maker":
+			Panel.transform.GetChild (1).GetComponent<Text> ().text = "Film maker";
+			break;
+		default:
+			Panel.transform.GetChild (1).GetComponent<Text> ().text = guestClass.profession.ToString ();
+			break;
 		}
 
-		if (guestClass.Accessory.ToString () == "glasses") {
+		switch (guestClass.Accessory.ToString ()) {
+		case "hat":
+			Panel.transform.GetChild (2).GetComponent<Text> ().text = "Has a hat";
+			break;
+		case "glasses":
 			Panel.transform.GetChild (2).GetComponent<Text> ().text = "Is wearing glasses";
+			break;
+		case "work_accessory":
+			Panel.transform.GetChild (2).GetComponent<Text> ().text = "Has a " + work_accessories [guestClass.profession.ToString ()].ToString ();
+			break;
+		default:
+			Panel.transform.GetChild (2).GetComponent<Text> ().text = "Has no accessory";
+			break;
+		}
+
+		switch (guestClass.Blemish.ToString ()) {
+		case "tattoo":
+			Panel.transform.GetChild (3).GetComponent<Text> ().text = "Has a tattoo";
+			break;
+		case "scar":
+			Panel.transform.GetChild (3).GetComponent<Text> ().text = "Has a scar";
+			break;
+		case "skin_condition":
+			Panel.transform.GetChild (3).GetComponent<Text> ().text = "Has a skin condition";
+			break;
+		default:
+			Panel.transform.GetChild (3).GetComponent<Text> ().text = "Has clear skin";
+			break;
 		}
 	}
 
