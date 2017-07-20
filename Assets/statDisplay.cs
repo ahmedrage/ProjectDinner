@@ -29,8 +29,9 @@ public class statDisplay : MonoBehaviour {
 			murderPortraitImages [i].sprite = _statManager.murderers [i];
 		}
 
-		for (int y = 0; y < _statManager.deadGuestsPorts.Length; y++) {
+		for (int y = 0; y < _statManager.deadGuestsPorts.Count; y++) {
 			_deadGuestImages [y].sprite = _statManager.deadGuestsPorts [y];
+			_deadGuestImages [y].enabled = true;
 		}
 			
 		failedArrests.text = "Failed arrests: " + _statManager.failedArrests.ToString ();

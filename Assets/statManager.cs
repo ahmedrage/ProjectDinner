@@ -5,7 +5,7 @@ using UnityEngine;
 public class statManager : MonoBehaviour {
 
 	static statManager Instance;
-	public Sprite[] deadGuestsPorts;
+	public List<Sprite> deadGuestsPorts;
 	public GuestClass lastMurderer;
 	public List<Sprite> murderers;
 	public List<string> murdererNames;
@@ -19,7 +19,6 @@ public class statManager : MonoBehaviour {
 	public int freq;
 	public double savedGuestPercentage;
 	public string frequentMethod;
-	public float breakTime;
 
 	// Use this for initialization
   	void Start () {
@@ -35,8 +34,6 @@ public class statManager : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		savedGuestPercentage = Mathf.Round(((float)savedGuests / totalGuests)*100);
-		breakTime = Mathf.Min(breakTime);
-		//print (savedGuestPercentage);
 
 		string element = "";
 		int count = 0;

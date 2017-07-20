@@ -43,8 +43,6 @@ public class murderSystem : MonoBehaviour {
 		murdererName = murderer.GetComponent<Guest> ().guestClass.name;
 		murdererPortrait = murderer.GetComponent<Guest> ().guestClass.Portrait;
 		_statManager = GameObject.Find ("dataManager").GetComponent<statManager> ();
-		_statManager.murderers.Add (murdererPortrait);
-		_statManager.murdererNames.Add (murdererName);
 		initialGuestCount = guests.Count;
 		_statManager.totalGuests += initialGuestCount;
 		_statManager.lastMurderer = murderer.GetComponent<Guest> ().guestClass;
