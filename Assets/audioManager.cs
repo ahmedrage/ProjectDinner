@@ -8,7 +8,7 @@ public class audioManager : MonoBehaviour {
 	public List<AudioSource> soundEffects;
 	public AudioSource music;
 	public enum AudioChannel {Master, Sfx, Music};
-
+	public bool destroy;
 	public float sfxLevel { get; private set;}
 	public float musicLevel { get; private set;}
 	public float masterLevel { get; private set;}
@@ -19,7 +19,7 @@ public class audioManager : MonoBehaviour {
 	void Awake(){
 		if (instance != null) {
 			Destroy (gameObject);
-		} else {
+		} else if (!destroy) {
 			instance = this;
 			DontDestroyOnLoad (gameObject);
 		}

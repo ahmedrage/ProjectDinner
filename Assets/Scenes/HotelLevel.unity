@@ -3125,6 +3125,11 @@ Prefab:
       propertyPath: m_AnchoredPosition.x
       value: -278.89584
       objectReference: {fileID: 0}
+    - target: {fileID: 114268515250157698, guid: e3ffddcbf4d16de4cb072c0f9375ce8e,
+        type: 2}
+      propertyPath: nextScene
+      value: Interrogation3Scene
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e3ffddcbf4d16de4cb072c0f9375ce8e, type: 2}
   m_IsPrefabParent: 0

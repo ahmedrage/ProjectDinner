@@ -9,14 +9,29 @@ EditorBuildSettings:
     path: Assets/menuScene.unity
     guid: 8ee198c9581f89f4a8a6ddbc32b9bc65
   - enabled: 1
+    path: Assets/Scenes/Openinc.unity
+    guid: 6100e264a8464ff4fa62a1705b5aa530
+  - enabled: 1
     path: Assets/GuestScene.unity
     guid: c3222014d40c69d48a409401b8c0735b
   - enabled: 1
     path: Assets/InterrogationScene.unity
     guid: 4441780f990dd1847b4d744fd6eee579
   - enabled: 1
+    path: Assets/Scenes/PhoneCinematic.unity
+    guid: addf2346157bf194388f9d47f2f5ccf1
+  - enabled: 1
     path: Assets/TrainLevel.unity
     guid: e8bb78495e7073041a97dd35cf9e90a0
+  - enabled: 1
+    path: Assets/Interrogation2Scene.unity
+    guid: 4422a8bd2699fc7439672450a2ed090d
+  - enabled: 1
+    path: Assets/Scenes/HotelLevel.unity
+    guid: f450c2335c1194f4d8f8a565ab55c66f
+  - enabled: 1
+    path: Assets/Interrogation3Scene.unity
+    guid: e0f952d1479de9642bbbf00e69157740
   - enabled: 1
     path: Assets/endScene.unity
     guid: 777b1bfae75c517469e8bde6dec3e381

@@ -39,7 +39,7 @@ public class menu : MonoBehaviour {
 			clickToContinue.color = Color.Lerp (Color.clear, Color.white, Mathf.PingPong(Time.time,1.5f));
 
 			if (Input.GetButtonDown ("Fire1")) {
-				SceneManager.LoadScene ("GuestScene");
+				SceneManager.LoadScene ("Openinc");
 			}
 		}
 

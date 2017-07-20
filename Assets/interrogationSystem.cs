@@ -8,6 +8,7 @@ using UnityEngine.UI;
 public class interrogationSystem : MonoBehaviour {
 	public statManager stats;
 	public GuestClass murderer;
+	cameraShake shakeScript;
 	public int fear;
 	public int comfort;
 	public int minDifference = 50;
@@ -39,10 +40,16 @@ public class interrogationSystem : MonoBehaviour {
 	float timeToPrint;
 	int timeLeft;
 	float initialTime;
+	public float amp;
+	public float dur;
+
+	int finalInd;
 	// Use this for initialization
 	void Awake () {
 		menu = GameObject.Find ("Canvas").transform.Find("menu").gameObject;
 		portrait = GameObject.Find ("port").GetComponent<Image>();
+		shakeScript = GameObject.Find("Image (1)").gameObject.GetComponent<cameraShake> ();
+
 		stats = GameObject.Find("dataManager").GetComponent<statManager> ();
 		if (stats.lastMurderer.Portrait != null) {
 			murderer = stats.lastMurderer;
@@ -67,7 +74,18 @@ public class interrogationSystem : MonoBehaviour {
 			print ("Difference is too high" + difference.ToString());
 		}
 	}
+	public void finalAccuse () {
+		portrait.sprite = murderer.interrogationSprites [0];
 
+		shakeScript.Shake (amp, dur);
+		if (finalInd+1 >= finalDialouge.Length) {
+			win ();
+		}
+		reactText.text += @"
+" +finalDialouge [finalInd];
+		finalInd++;
+		removeText ();
+	}
 	public void Interact(bool isComfort) {
 		int initialDifference = fear - comfort;
 		if (isComfort) {
@@ -119,6 +137,7 @@ public class interrogationSystem : MonoBehaviour {
 			//display dialouge
 			//play some animation I guess
 			//then move to next season
+			shakeScript.Shake (amp, dur);
 			React(true,false);
 			comfortButton.interactable = false;
 			threatButton.interactable = false;

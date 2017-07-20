@@ -512,11 +512,18 @@ MonoBehaviour:
   - It'll all be over soon.
   - I want to help you.
   finalDialouge:
-  - Ok you got me.
-  - There is going to be another attack
-  - In chicago
+  - ENOUGH
+  - '...'
+  - We are not alone
+  - We are strong
+  - We will strike again
+  - For too long the strong have preyed on the weak
+  - We will free the people from their shackles
+  - Liberation continues tomorrow, in Chicago
+  - I'd move quickly, Detective
+  - TIME'S RUNNING OUT
   - 
-  waitTime: 2
+  waitTime: 4
   timeToComplete: 30
   comfortText: {fileID: 690743060}
   threatText: {fileID: 429118123}
@@ -528,6 +535,8 @@ MonoBehaviour:
   portrait: {fileID: 0}
   menu: {fileID: 0}
   ind: 0
+  amp: 0
+  dur: 0
 --- !u!1 &267877312
 GameObject:
   m_ObjectHideFlags: 0
@@ -1524,6 +1533,7 @@ GameObject:
   - component: {fileID: 1323928297}
   - component: {fileID: 1323928299}
   - component: {fileID: 1323928298}
+  - component: {fileID: 1323928300}
   m_Layer: 5
   m_Name: Image (1)
   m_TagString: Untagged
@@ -1582,6 +1592,20 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1323928296}
+--- !u!114 &1323928300
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1323928296}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95a1dfe79b57fae4daec3387d729bcd7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _amplitude: 1
+  _duration: 1
+  playerScript: {fileID: 0}
 --- !u!1 &1421468097
 GameObject:
   m_ObjectHideFlags: 0

@@ -83,6 +83,7 @@
      <Compile Include="Assets\testMover.cs" />
      <Compile Include="Assets\testScript.cs" />
      <Compile Include="Assets\trackMover.cs" />
+     <Compile Include="Assets\zoom.cs" />
      <None Include="Assets\XInputDotNet\Docs.txt" />
      <None Include="Assets\XInputDotNet\MITLicense.txt" />
      <None Include="Assets\Art\Opening\Readme.txt" />
