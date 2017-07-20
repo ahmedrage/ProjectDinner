@@ -8,7 +8,12 @@ public class CinematicDialogue : MonoBehaviour {
 	public List<string> dialogues;
 
 	void Start() {
-		StartCoroutine(DialogueBox.gameObject.GetComponent<TypewriterScript> ().displayDialogueInOrder (dialogues));
+		StartCoroutine (RunText ());
+	}
+
+	IEnumerator RunText () {
+		yield return StartCoroutine(DialogueBox.gameObject.GetComponent<TypewriterScript> ().displayDialogueInOrder (dialogues));
+		GameObject.Find ("SceneSwitcher").GetComponent<CinematicSceneSwitch> ().Transition ();
 	}
 
 }

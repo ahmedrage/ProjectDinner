@@ -7,9 +7,9 @@ public class GuestClass {
 	public string name;
 	public enum professions {Doctor, Scientist, Author, Home_maker, Chef, Politician, Film_maker, Veteran};
 	public professions profession;
-	public enum Accessories {hat, glasses, work_accessory, no_accesories};
+	public enum Accessories {hat, glasses, work_accessory, no_accesory};
 	public Accessories Accessory;
-	public enum Blemishes {Tattoo, Scar, skin_condition, clean_skin};
+	public enum Blemishes {tattoo, scar, skin_condition, clean_skin};
 	public Blemishes Blemish;
 
 

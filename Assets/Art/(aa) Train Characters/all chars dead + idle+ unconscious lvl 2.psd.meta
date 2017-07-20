@@ -1,13 +1,105 @@
 fileFormatVersion: 2
 guid: ca950c4211418024f8fc314bc73babf0
-timeCreated: 1499843285
+timeCreated: 1500419758
 licenseType: Free
 TextureImporter:
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    21300000: Char14Idle1
+    21300002: Char14Idle2
+    21300004: Char14Dead1
+    21300006: Char14Dead2
+    21300008: Char2Idle1
+    21300010: Char2Idle2
+    21300012: Char2Dead1
+    21300014: Char2Dead2
+    21300016: Char4Idle1
+    21300018: Char4Idle2
+    21300020: Char4Idle3
+    21300022: Char4Idle4
+    21300024: Char4Idle5
+    21300026: Char4Idle6
+    21300028: Char4Idle7
+    21300030: Char4Dead1
+    21300032: Char4Dead2
+    21300034: Char12Idle1
+    21300036: Char12Idle2
+    21300038: Char12Idle3
+    21300040: Char12Idle4
+    21300042: Char12Idle5
+    21300044: Char12Idle6
+    21300046: Char12Idle7
+    21300048: Char12Idle8
+    21300050: Char12Idle9
+    21300052: Char12Dead1
+    21300054: Char12Dead2
+    21300056: Char13Idle1
+    21300058: Char13Idle2
+    21300060: Char13Idle3
+    21300062: Char13Dead1
+    21300064: Char13Dead2
+    21300066: Char5Idle1
+    21300068: Char5Idle2
+    21300070: Char5Idle3
+    21300072: Char5Idle4
+    21300074: Char5Idle5
+    21300076: Char5Idle6
+    21300078: Char5Dead1
+    21300080: Char5Dead2
+    21300082: Char9Idle1
+    21300084: Char9Idle2
+    21300086: Char9Idle3
+    21300088: Char9Idle4
+    21300090: Char9Idle5
+    21300092: Char9Idle6
+    21300094: Char9Idle7
+    21300096: Char9Idle8
+    21300098: Char9Dead1
+    21300100: Char9Dead2
+    21300102: all chars dead + idle+ unconscious lvl 2_51
+    21300104: Char1Idle2
+    21300106: Char1Dead1
+    21300108: Char1Dead2
+    21300110: Char6Idle1
+    21300112: Char6Idle2
+    21300114: Char6Idle3
+    21300116: Char6Dead1
+    21300118: Char6Dead2
+    21300120: Char15Idle1
+    21300122: Char15Idle2
+    21300124: Char15Idle3
+    21300126: Char15Idle4
+    21300128: Char15Dead1
+    21300130: Char15Dead2
+    21300132: Char3Idle1
+    21300134: Char3Idle2
+    21300136: Char3Idle3
+    21300138: Char3Idle4
+    21300140: Char3Idle5
+    21300142: Char3Idle6
+    21300144: Char3Dead1
+    21300146: Char3Dead2
+    21300148: Char11Idle1
+    21300150: Char11Idle2
+    21300152: Char11Idle3
+    21300154: Char11Dead1
+    21300156: Char11Dead2
+    21300158: Char7Idle1
+    21300160: Char7Idle2
+    21300162: Char7Dead1
+    21300164: Char7Dead2
+    21300166: Char8Idle1
+    21300168: Char8Idle2
+    21300170: Char8Dead1
+    21300172: Char8Dead2
+    21300174: Char10Idle1
+    21300176: Char10Idle2
+    21300178: Char10Dead1
+    21300180: Char10Dead2
+    21300182: Char1Idle1
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
-    enableMipMap: 1
+    enableMipMap: 0
     sRGBTexture: 1
     linearTexture: 0
     fadeOut: 0
@@ -19,7 +111,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-  isReadable: 0
+  isReadable: 1
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -27,40 +119,1231 @@ TextureImporter:
   textureFormat: 1
   maxTextureSize: 2048
   textureSettings:
-    filterMode: -1
-    aniso: -1
+    filterMode: 0
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
-  nPOTScale: 1
+    wrapMode: 1
+  nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 0
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 10
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 0
+  textureType: 8
   textureShape: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
   platformSettings:
   - buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 8192
+    textureFormat: -1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Char14Idle1
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 1227
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char14Idle2
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 1228
+        width: 11
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char14Dead1
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 1221
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char14Dead2
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 1221
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char2Idle1
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 1180
+        width: 13
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char2Idle2
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 1180
+        width: 13
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char2Dead1
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 1173
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char2Dead2
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 1173
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char4Idle1
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1130
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char4Idle2
+      rect:
+        serializedVersion: 2
+        x: 14
+        y: 1130
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char4Idle3
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 1130
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char4Idle4
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 1130
+        width: 11
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char4Idle5
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 1130
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char4Idle6
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 1130
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char4Idle7
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 1130
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char4Dead1
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 1125
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char4Dead2
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 1125
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char12Idle1
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 1079
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char12Idle2
+      rect:
+        serializedVersion: 2
+        x: 23
+        y: 1079
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char12Idle3
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 1079
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char12Idle4
+      rect:
+        serializedVersion: 2
+        x: 62
+        y: 1079
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char12Idle5
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 1079
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char12Idle6
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 1079
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char12Idle7
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 1079
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char12Idle8
+      rect:
+        serializedVersion: 2
+        x: 129
+        y: 1079
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char12Idle9
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 1079
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char12Dead1
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 1077
+        width: 13
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char12Dead2
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 1077
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char13Idle1
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 1033
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char13Idle2
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 1033
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char13Idle3
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 1033
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char13Dead1
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 1030
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char13Dead2
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 1030
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char5Idle1
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 986
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char5Idle2
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 986
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char5Idle3
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 986
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char5Idle4
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 986
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char5Idle5
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 985
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char5Idle6
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 986
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char5Dead1
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 983
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char5Dead2
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 984
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char9Idle1
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 942
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char9Idle2
+      rect:
+        serializedVersion: 2
+        x: 22
+        y: 942
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char9Idle3
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 942
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char9Idle4
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 941
+        width: 11
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char9Idle5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 942
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char9Idle6
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 942
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char9Idle7
+      rect:
+        serializedVersion: 2
+        x: 118
+        y: 942
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char9Idle8
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 942
+        width: 10
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char9Dead1
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 934
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char9Dead2
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 936
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char1Idle2
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 868
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char1Dead1
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 864
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char1Dead2
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 864
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char6Idle1
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 805
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char6Idle2
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 805
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char6Idle3
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 805
+        width: 11
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char6Dead1
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 800
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char6Dead2
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 800
+        width: 11
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char15Idle1
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 743
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char15Idle2
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 743
+        width: 11
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char15Idle3
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 743
+        width: 10
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char15Idle4
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 743
+        width: 10
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char15Dead1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 740
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char15Dead2
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 741
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char3Idle1
+      rect:
+        serializedVersion: 2
+        x: 8
+        y: 688
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char3Idle2
+      rect:
+        serializedVersion: 2
+        x: 30
+        y: 688
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char3Idle3
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 688
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char3Idle4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 688
+        width: 7
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char3Idle5
+      rect:
+        serializedVersion: 2
+        x: 85
+        y: 688
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char3Idle6
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 688
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char3Dead1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 686
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char3Dead2
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 688
+        width: 9
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char11Idle1
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 633
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char11Idle2
+      rect:
+        serializedVersion: 2
+        x: 79
+        y: 633
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char11Idle3
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 632
+        width: 11
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char11Dead1
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 631
+        width: 13
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char11Dead2
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 631
+        width: 11
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char7Idle1
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 583
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char7Idle2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 583
+        width: 9
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char7Dead1
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 578
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char7Dead2
+      rect:
+        serializedVersion: 2
+        x: 183
+        y: 579
+        width: 9
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char8Idle1
+      rect:
+        serializedVersion: 2
+        x: 58
+        y: 530
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char8Idle2
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 530
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char8Dead1
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 525
+        width: 13
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char8Dead2
+      rect:
+        serializedVersion: 2
+        x: 182
+        y: 526
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char10Idle1
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 460
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char10Idle2
+      rect:
+        serializedVersion: 2
+        x: 77
+        y: 460
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char10Dead1
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 455
+        width: 13
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char10Dead2
+      rect:
+        serializedVersion: 2
+        x: 181
+        y: 455
+        width: 9
+        height: 17
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: Char1Idle1
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 868
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
     outline: []
   spritePackingTag: 
   userData: 
