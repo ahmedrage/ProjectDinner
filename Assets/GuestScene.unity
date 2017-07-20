@@ -1579,7 +1579,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.35375002, y: 0.020564632}
   m_AnchorMax: {x: 0.65500003, y: 0.06242237}
-  m_AnchoredPosition: {x: -278.896, y: -4.5999756}
+  m_AnchoredPosition: {x: -278.89575, y: -4.5999756}
   m_SizeDelta: {x: 4210, y: 169}
   m_Pivot: {x: 0, y: 1}
 --- !u!222 &526811842
@@ -5299,11 +5299,96 @@ Prefab:
       propertyPath: GuestArray.Array.data[3].name
       value: Herbert Loom
       objectReference: {fileID: 0}
-    - target: {fileID: 114000013972229538, guid: c20e09b099f61814d90bc6e8ed9eec2d,
+    - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
         type: 2}
-      propertyPath: m_Enabled
-      value: 0
-      objectReference: {fileID: 0}
+      propertyPath: GuestArray.Array.data[0].outSprite
+      value: 
+      objectReference: {fileID: 21300114, guid: 64651888a1041454d86bd58bbc38520f,
+        type: 3}
+    - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
+        type: 2}
+      propertyPath: GuestArray.Array.data[1].outSprite
+      value: 
+      objectReference: {fileID: 21300014, guid: 64651888a1041454d86bd58bbc38520f,
+        type: 3}
+    - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
+        type: 2}
+      propertyPath: GuestArray.Array.data[2].outSprite
+      value: 
+      objectReference: {fileID: 21300154, guid: 64651888a1041454d86bd58bbc38520f,
+        type: 3}
+    - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
+        type: 2}
+      propertyPath: GuestArray.Array.data[3].outSprite
+      value: 
+      objectReference: {fileID: 21300032, guid: 64651888a1041454d86bd58bbc38520f,
+        type: 3}
+    - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
+        type: 2}
+      propertyPath: GuestArray.Array.data[4].outSprite
+      value: 
+      objectReference: {fileID: 21300080, guid: 64651888a1041454d86bd58bbc38520f,
+        type: 3}
+    - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
+        type: 2}
+      propertyPath: GuestArray.Array.data[5].outSprite
+      value: 
+      objectReference: {fileID: 21300126, guid: 64651888a1041454d86bd58bbc38520f,
+        type: 3}
+    - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
+        type: 2}
+      propertyPath: GuestArray.Array.data[6].outSprite
+      value: 
+      objectReference: {fileID: 21300172, guid: 64651888a1041454d86bd58bbc38520f,
+        type: 3}
+    - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
+        type: 2}
+      propertyPath: GuestArray.Array.data[7].outSprite
+      value: 
+      objectReference: {fileID: 21300180, guid: 64651888a1041454d86bd58bbc38520f,
+        type: 3}
+    - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
+        type: 2}
+      propertyPath: GuestArray.Array.data[8].outSprite
+      value: 
+      objectReference: {fileID: 21300100, guid: 64651888a1041454d86bd58bbc38520f,
+        type: 3}
+    - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
+        type: 2}
+      propertyPath: GuestArray.Array.data[9].outSprite
+      value: 
+      objectReference: {fileID: 21300188, guid: 64651888a1041454d86bd58bbc38520f,
+        type: 3}
+    - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
+        type: 2}
+      propertyPath: GuestArray.Array.data[10].outSprite
+      value: 
+      objectReference: {fileID: 21300164, guid: 64651888a1041454d86bd58bbc38520f,
+        type: 3}
+    - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
+        type: 2}
+      propertyPath: GuestArray.Array.data[11].outSprite
+      value: 
+      objectReference: {fileID: 21300054, guid: 64651888a1041454d86bd58bbc38520f,
+        type: 3}
+    - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
+        type: 2}
+      propertyPath: GuestArray.Array.data[12].outSprite
+      value: 
+      objectReference: {fileID: 21300064, guid: 64651888a1041454d86bd58bbc38520f,
+        type: 3}
+    - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
+        type: 2}
+      propertyPath: GuestArray.Array.data[13].outSprite
+      value: 
+      objectReference: {fileID: 21300006, guid: 64651888a1041454d86bd58bbc38520f,
+        type: 3}
+    - target: {fileID: 114000012449678826, guid: c20e09b099f61814d90bc6e8ed9eec2d,
+        type: 2}
+      propertyPath: GuestArray.Array.data[14].outSprite
+      value: 
+      objectReference: {fileID: 21300138, guid: 64651888a1041454d86bd58bbc38520f,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c20e09b099f61814d90bc6e8ed9eec2d, type: 2}
   m_IsPrefabParent: 0
