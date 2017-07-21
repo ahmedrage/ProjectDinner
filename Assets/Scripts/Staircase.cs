@@ -17,6 +17,7 @@ public class Staircase : MonoBehaviour {
 			GameObject player = other.gameObject;
 			player.transform.position = new Vector3 (Destination.transform.position.x, Destination.transform.position.y + adjust, 0); //Destination.transform.position;
 			Camera.transform.position = CameraFocus;
+			Camera.gameObject.GetComponent<cameraShake> ().initialPosition = CameraFocus;
 		}
 	}
 }
