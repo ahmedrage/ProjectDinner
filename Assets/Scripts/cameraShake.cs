@@ -5,7 +5,7 @@ public class cameraShake : MonoBehaviour {
 	//public static cameraShake Instance;
 	public float _amplitude = 1f;
 	public float _duration = 1;
-	private Vector3 initialPosition;
+	public Vector3 initialPosition;
 	private Vector3 currentPosition;
 	private bool isShaking = false;
 	public playerController playerScript;
@@ -48,7 +48,7 @@ public class cameraShake : MonoBehaviour {
 			currentPosition = transform.localPosition; 
 			transform.localPosition = initialPosition + Random.insideUnitSphere * _amplitude;
 		} else {
-			//transform.localPosition = initialPosition;
+			transform.localPosition = initialPosition;
 		}
 	}
 }
