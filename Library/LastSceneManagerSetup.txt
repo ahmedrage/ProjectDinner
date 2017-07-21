@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/statScene.unity
+- path: Assets/Scenes/TrainCinematic.unity
   isLoaded: 1
   isActive: 1

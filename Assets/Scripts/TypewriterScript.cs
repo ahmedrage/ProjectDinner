@@ -12,22 +12,25 @@ public class TypewriterScript : MonoBehaviour {
 
 	private bool spaceBarDown = false;
 	private bool completeLineInstant = false;
-	private bool readyForNext = false;
 
+	bool display;
 	IEnumerator WaitForKey()
 	{
-		while (!Input.GetButtonDown("Fire1") && !Input.GetButtonDown("Jump")) {
+		while (!display) {
 			yield return null;
 		}
 	}
 
 	void Update () {
-		if (Input.GetButtonDown ("Fire1") || Input.GetButtonDown ("Jump")) {
+		if ((Input.GetButtonDown ("Fire1") || Input.GetButtonDown ("Jump")) && dialogueText.text.Length >= text.Length) {
+			display = true;
+		} else if ((Input.GetButtonDown ("Fire1") || Input.GetButtonDown ("Jump")) && dialogueText.text.Length < text.Length) {
 			completeLineInstant = true;
 		}
 	}
 
 	IEnumerator showText () {
+		display = false;
 		for (int i = 0; i <= text.Length; i++) {
 			currentText = text.Substring (0, i);
 			this.GetComponent<Text> ().text = currentText;
@@ -39,6 +42,7 @@ public class TypewriterScript : MonoBehaviour {
 			}
 			if (i == text.Length) {
 				print ("ended stooge");
+				display = false;
 				yield return StartCoroutine (WaitForKey ());
 			}
 		}
@@ -52,6 +56,7 @@ public class TypewriterScript : MonoBehaviour {
 	}
 
 	public IEnumerator displayDialogueInOrder (List<string> dialogue) {
+		display = false;
 		dialogueText.color = Color.white;
 		dialogue.Add ("");
 		foreach (string tx in dialogue) {
