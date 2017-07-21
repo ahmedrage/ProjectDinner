@@ -64,6 +64,11 @@ public class menu : MonoBehaviour {
 		if (controllerConnected && eventSystem.currentSelectedGameObject == null) {
 			eventSystem.SetSelectedGameObject (menuElements [1]);
 		}
+
+		if (settingScript.controlsSelected == true && controllerConnected == true) {
+			eventSystem.SetSelectedGameObject (optionElements [1]);
+			print("should select the fucking back button you cunt");
+		}
 	}
 
 	public void Play(){
@@ -71,8 +76,8 @@ public class menu : MonoBehaviour {
 	}
 
 	public void Option(){
-
 		uiHandler (false, true);
+		eventSystem.SetSelectedGameObject (optionElements[2]);
 	}
 
 	public void Quit(){
@@ -88,8 +93,12 @@ public class menu : MonoBehaviour {
 			}
 			optionTitle.text = "OPTIONS";
 			settingScript.controlsSelected = false;
+			print ("back to menu");
+			eventSystem.SetSelectedGameObject (optionElements [2]);
 		} else {
 			uiHandler (true, false);
+			print ("back to main menu");
+			eventSystem.SetSelectedGameObject (menuElements [1]);
 		}
 	}
 
