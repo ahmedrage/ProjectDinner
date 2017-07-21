@@ -12,17 +12,17 @@ public class statDisplay : MonoBehaviour {
 	public List<Text> _murdererNames;
 	public List<Image> _deadGuestImages;
 	public List<GameObject> menuElements;
-	public List<GameObject> creditElements;
+	//public List<GameObject> creditElements;
 	public Text failedArrests;
 	public Text saveGuests;
 	public Text freqMethod;
-	public Text credBody;
-	public Text credTitle;
-	public Text deadG;
-	public GameObject title;
-	public GameObject backToStat;
-	public GameObject _credits;
-	public GameObject lvlNameGroup;
+	//public Text credBody;
+	//public Text credTitle;
+	//public Text deadG;
+	//public GameObject title;
+	//public GameObject backToStat;
+	//public GameObject _credits;
+	//public GameObject lvlNameGroup;
 	public statManager _statManager;
 	public EventSystem eventSystem;
 
@@ -34,7 +34,7 @@ public class statDisplay : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-//		_statManager = GameObject.Find ("dataManager").GetComponent<statManager> ();
+		_statManager = GameObject.Find ("dataManager").GetComponent<statManager> ();
 		eventSystem = GetComponent<EventSystem> ();
 
 		if (GamePad.GetState (PlayerIndex.One).IsConnected) {
@@ -44,7 +44,7 @@ public class statDisplay : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		/*for (int x = 0; x < _statManager.murdererNames.Count; x++) {
+		for (int x = 0; x < _statManager.murdererNames.Count; x++) {
 			_murdererNames [x].text = _statManager.murdererNames [x];
 		}
 
@@ -59,7 +59,7 @@ public class statDisplay : MonoBehaviour {
 			
 		failedArrests.text = "Failed arrests: " + _statManager.failedArrests.ToString ();
 		saveGuests.text = "Saved guest percentage: " + _statManager.savedGuestPercentage.ToString () +"%";
-		freqMethod.text = "Most frequent murder method: " + _statManager.frequentMethod;*/
+		freqMethod.text = "Most frequent murder method: " + _statManager.frequentMethod;
 
 		if (GamePad.GetState (PlayerIndex.One).IsConnected) {
 			controllerConnected = true;
@@ -82,13 +82,13 @@ public class statDisplay : MonoBehaviour {
 	}
 
 	public void Credits(){
-		saveGuests.enabled = false;
+		/*saveGuests.enabled = false;
 		freqMethod.enabled = false;
 		failedArrests.enabled = false;
 		credTitle.enabled = true;
 		credBody.enabled = true;
 		deadG.enabled = false;
-		backToStat.SetActive (true);
+		//backToStat.SetActive (true);
 		_credits.SetActive (false);
 		title.SetActive (false);
 		lvlNameGroup.SetActive (false);
@@ -104,14 +104,14 @@ public class statDisplay : MonoBehaviour {
 
 		for (int y = 0; y < murderPortraitImages.Count; y++) {
 			murderPortraitImages [y].enabled = false;
-		}
+		}*/
 	}
 
 	public void Menu(){
 		SceneManager.LoadScene ("menuScene");
 	}
 
-	public void Stats(){ // make own function with parameters
+	/*public void Stats(){ // make own function with parameters
 		saveGuests.enabled = true;
 		freqMethod.enabled = true;
 		failedArrests.enabled = true;
@@ -136,5 +136,5 @@ public class statDisplay : MonoBehaviour {
 		for (int y = 0; y < murderPortraitImages.Count; y++) {
 			murderPortraitImages [y].enabled = true;
 		}
-	}
+	}*/
 }

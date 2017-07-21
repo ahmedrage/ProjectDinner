@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class audioManager : MonoBehaviour {
 
 	public List<AudioSource> soundEffects;
-	public AudioSource music;
+	public List<AudioSource> soundTracks;
 	public enum AudioChannel {Master, Sfx, Music};
 	public bool destroy;
 	public float sfxLevel { get; private set;}
@@ -15,6 +15,7 @@ public class audioManager : MonoBehaviour {
 
 	// Use this for initialization
 	public static audioManager instance;
+
 
 	void Awake(){
 		if (instance != null) {
@@ -35,9 +36,12 @@ public class audioManager : MonoBehaviour {
 		foreach (AudioSource sfx in soundEffects) {
 			sfx.volume = sfxLevel;
 		}
-		music.volume = musicLevel;
-		AudioListener.volume = masterLevel;
 
+		foreach (AudioSource msc in soundTracks) {
+			msc.volume = musicLevel;
+		}
+
+		AudioListener.volume = masterLevel;
 	}
 
 	public void setVolume(float value, AudioChannel channel){
@@ -60,6 +64,8 @@ public class audioManager : MonoBehaviour {
 	}
 
 	public void playSound(AudioClip clip, Vector2 pos){
-		AudioSource.PlayClipAtPoint (clip, pos, sfxLevel);
+		if (clip != null) {
+			AudioSource.PlayClipAtPoint (clip, pos, sfxLevel);
+		}
 	}
 }

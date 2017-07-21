@@ -14,6 +14,7 @@ public class cameraPan : MonoBehaviour {
 	public int point;
 	public Image blackScreen;
 	public Text title;
+	public Text credits;
 	public statManager _statManager;
 	Vector2 newPosition;
 
@@ -74,6 +75,9 @@ public class cameraPan : MonoBehaviour {
 
 	IEnumerator toStats(){
 		yield return new WaitForSeconds (_showTime);
+		title.enabled = false;
+		credits.enabled = true;
+		yield return new WaitForSeconds (2f);
 		SceneManager.LoadScene ("StatScene");
 	}
 }
