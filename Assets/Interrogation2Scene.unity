@@ -458,6 +458,7 @@ MonoBehaviour:
     Portrait: {fileID: 0}
     interrogationSprites: []
     deadSprite: {fileID: 0}
+    outSprite: {fileID: 0}
     animationController: {fileID: 0}
   fear: 0
   comfort: 0
@@ -473,15 +474,15 @@ MonoBehaviour:
   - You're on my side, detective.
   negativeComfortDialouge:
   - I don't trust you detective.
-  - Good cop huh? Try harder.
+  - Good cop huh? Try harder!
   - Why would I trust you?
   - We aren't friends detective.
   - I'm not a weak person detective.
   positiveThreatDialouge:
-  - Please no.
+  - Please, no!
   - I'm sorry.
   - I don't want to go to jail.
-  - Please stop.
+  - Please, stop!
   - I want to go home.
   negativeThreatDialouge:
   - I'm not afraid of you, detective.
@@ -490,8 +491,8 @@ MonoBehaviour:
   - I will not be harrased.
   - Who do you think you are?
   threatDialouge:
-  - You're going away for a long time
-  - You're scum
+  - You're going away for a long time.
+  - You're scum.
   - Murderer.
   - You'll pay for what you've done.
   - I'm going to put you away.
@@ -514,9 +515,9 @@ MonoBehaviour:
   finalDialouge:
   - ALRIGHT, steady on
   - '...'
-  - Think your awfuly clever
+  - Think your awfuly clever.
   - Don't you, detective?
-  - Your blind like the rest of them.
+  - You're blind like the rest of them.
   - You don't even see your chains
   - The rich get richer
   - With their boot on our throat
@@ -802,6 +803,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   nextScene: 
   finishScript: {fileID: 0}
+  murderSys: {fileID: 0}
+  _statManager: {fileID: 0}
 --- !u!1 &690743058
 GameObject:
   m_ObjectHideFlags: 0
@@ -1086,7 +1089,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 3.4, y: 145.09999}
+  m_AnchoredPosition: {x: 3.4, y: 145.1}
   m_SizeDelta: {x: 219.7, y: -243.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &847659644
