@@ -39,7 +39,6 @@ public class settings : MonoBehaviour {
 		instructionText.enabled = true;
 		controlsTitle.text = "CONTROLS";
 		controlsSelected = true;
-
 		foreach (GameObject uiElement in settingUI) {
 			uiElement.SetActive (false);
 		}
