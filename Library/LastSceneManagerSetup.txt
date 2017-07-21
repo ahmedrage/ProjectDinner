@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/endScene.unity
+=======
+- path: Assets/Interrogation2Scene.unity
+>>>>>>> 4eefbc0878c7e3212a274c5847d7356804f6cbee
   isLoaded: 1
   isActive: 1
