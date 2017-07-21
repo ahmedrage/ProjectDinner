@@ -42,7 +42,7 @@ public class interrogationSystem : MonoBehaviour {
 	float initialTime;
 	public float amp;
 	public float dur;
-
+	bool lost = false;
 	int finalInd;
 	// Use this for initialization
 	void Awake () {
@@ -195,5 +195,9 @@ public class interrogationSystem : MonoBehaviour {
 
 	void lose () {
 		menu.SetActive (true);
+		if (!lost) {
+			menu.transform.GetChild (0).GetComponent<Button> ().Select ();
+		}
+		lost = true;
 	}
 }
