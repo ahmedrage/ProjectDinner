@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class statDisplay : MonoBehaviour {
 	public List<Image> murderPortraitImages;
 	public List<Text> _murdererNames;
@@ -9,7 +10,13 @@ public class statDisplay : MonoBehaviour {
 	public Text failedArrests;
 	public Text saveGuests;
 	public Text freqMethod;
-	public Text _breakTime;
+	public Text credBody;
+	public Text credTitle;
+	public Text deadG;
+	public GameObject title;
+	public GameObject backToStat;
+	public GameObject _credits;
+	public GameObject lvlNameGroup;
 	public statManager _statManager;
 
 
@@ -38,5 +45,59 @@ public class statDisplay : MonoBehaviour {
 		saveGuests.text = "Saved guest percentage: " + _statManager.savedGuestPercentage.ToString () +"%";
 		freqMethod.text = "Most frequent murder method: " + _statManager.frequentMethod;
 		
+	}
+
+	public void Credits(){
+		saveGuests.enabled = false;
+		freqMethod.enabled = false;
+		failedArrests.enabled = false;
+		credTitle.enabled = true;
+		credBody.enabled = true;
+		deadG.enabled = false;
+		backToStat.SetActive (true);
+		_credits.SetActive (false);
+		title.SetActive (false);
+		lvlNameGroup.SetActive (false);
+
+		for (int i = 0; i < _deadGuestImages.Count; i++) {
+			_deadGuestImages [i].enabled = false;
+		}
+
+		for (int z = 0; z < _murdererNames.Count; z++) {
+			_murdererNames [z].enabled = false;
+		}
+
+		for (int y = 0; y < murderPortraitImages.Count; y++) {
+			murderPortraitImages [y].enabled = false;
+		}
+	}
+
+	public void Menu(){
+		SceneManager.LoadScene ("menuScene");
+	}
+
+	public void Stats(){ // make own function with parameters
+		saveGuests.enabled = true;
+		freqMethod.enabled = true;
+		failedArrests.enabled = true;
+		credTitle.enabled = false;
+		credBody.enabled = false;
+		deadG.enabled = true;
+		backToStat.SetActive (false);
+		_credits.SetActive (true);
+		title.SetActive (true);
+		lvlNameGroup.SetActive (true);
+
+		for (int i = 0; i < _deadGuestImages.Count; i++) {
+			_deadGuestImages [i].enabled = true;
+		}
+
+		for (int z = 0; z < _murdererNames.Count; z++) {
+			_murdererNames [z].enabled = true;
+		}
+
+		for (int y = 0; y < murderPortraitImages.Count; y++) {
+			murderPortraitImages [y].enabled = true;
+		}
 	}
 }
