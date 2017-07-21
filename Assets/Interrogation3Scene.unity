@@ -647,6 +647,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _amplitude: 0.1
   _duration: 0.1
+  initialPosition: {x: 0, y: 0, z: 0}
   playerScript: {fileID: 0}
 --- !u!1 &429118121
 GameObject:
@@ -1614,6 +1615,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _amplitude: 2
   _duration: 1
+  initialPosition: {x: 0, y: 0, z: 0}
   playerScript: {fileID: 0}
 --- !u!1 &1421468097
 GameObject:
@@ -2008,7 +2010,7 @@ MonoBehaviour:
   m_Script: {fileID: -619905303, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
+  m_FirstSelected: {fileID: 2090034821}
   m_sendNavigationEvents: 1
   m_DragThreshold: 5
 --- !u!4 &1629381957
