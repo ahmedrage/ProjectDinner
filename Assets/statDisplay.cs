@@ -3,10 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using XInputDotNetPure;
+using UnityEngine.EventSystems;
+
+
 public class statDisplay : MonoBehaviour {
 	public List<Image> murderPortraitImages;
 	public List<Text> _murdererNames;
 	public List<Image> _deadGuestImages;
+	public List<GameObject> menuElements;
+	public List<GameObject> creditElements;
 	public Text failedArrests;
 	public Text saveGuests;
 	public Text freqMethod;
@@ -18,17 +24,27 @@ public class statDisplay : MonoBehaviour {
 	public GameObject _credits;
 	public GameObject lvlNameGroup;
 	public statManager _statManager;
+	public EventSystem eventSystem;
+
+	bool controllerConnected;
+
+
 
 
 
 	// Use this for initialization
 	void Start () {
-		_statManager = GameObject.Find ("dataManager").GetComponent<statManager> ();
+//		_statManager = GameObject.Find ("dataManager").GetComponent<statManager> ();
+		eventSystem = GetComponent<EventSystem> ();
+
+		if (GamePad.GetState (PlayerIndex.One).IsConnected) {
+			eventSystem.firstSelectedGameObject = menuElements [0];
+		}
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		for (int x = 0; x < _statManager.murdererNames.Count; x++) {
+		/*for (int x = 0; x < _statManager.murdererNames.Count; x++) {
 			_murdererNames [x].text = _statManager.murdererNames [x];
 		}
 
@@ -43,7 +59,25 @@ public class statDisplay : MonoBehaviour {
 			
 		failedArrests.text = "Failed arrests: " + _statManager.failedArrests.ToString ();
 		saveGuests.text = "Saved guest percentage: " + _statManager.savedGuestPercentage.ToString () +"%";
-		freqMethod.text = "Most frequent murder method: " + _statManager.frequentMethod;
+		freqMethod.text = "Most frequent murder method: " + _statManager.frequentMethod;*/
+
+		if (GamePad.GetState (PlayerIndex.One).IsConnected) {
+			controllerConnected = true;
+			Cursor.visible = false;
+			Cursor.lockState = CursorLockMode.Locked;
+		} else {
+			controllerConnected = false;
+			Cursor.visible = true;
+			Cursor.lockState = CursorLockMode.None;
+		}
+
+		if (controllerConnected == false) {
+			eventSystem.SetSelectedGameObject(null);
+		}
+
+		if (controllerConnected && eventSystem.currentSelectedGameObject == null) {
+			eventSystem.SetSelectedGameObject (menuElements [0]);
+		}
 		
 	}
 
@@ -58,6 +92,7 @@ public class statDisplay : MonoBehaviour {
 		_credits.SetActive (false);
 		title.SetActive (false);
 		lvlNameGroup.SetActive (false);
+		eventSystem.SetSelectedGameObject (creditElements [0]);
 
 		for (int i = 0; i < _deadGuestImages.Count; i++) {
 			_deadGuestImages [i].enabled = false;
@@ -87,6 +122,8 @@ public class statDisplay : MonoBehaviour {
 		_credits.SetActive (true);
 		title.SetActive (true);
 		lvlNameGroup.SetActive (true);
+		eventSystem.SetSelectedGameObject (menuElements [0]);
+
 
 		for (int i = 0; i < _deadGuestImages.Count; i++) {
 			_deadGuestImages [i].enabled = true;
