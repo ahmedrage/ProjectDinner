@@ -1,11 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\cameraPan.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\playerController.cs">
     <Files>
       <File FileName="Assets\audioManager.cs" Line="1" Column="1" />
       <File FileName="Assets\musicPlayer.cs" Line="1" Column="1" />
-      <File FileName="Assets\statDisplay.cs" Line="15" Column="4" />
-      <File FileName="Assets\Scripts\cameraPan.cs" Line="80" Column="40" />
+      <File FileName="Assets\statDisplay.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\cameraPan.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\playerController.cs" Line="138" Column="5" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

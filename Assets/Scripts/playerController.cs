@@ -9,6 +9,7 @@ public class playerController : MonoBehaviour {
 	public float radius;
 	public float fovAngle;
 	public float knockoutSpeed;
+	public float hitDistance;
 	public GameObject controllerCrosshair;
 	public GameObject hintPannel;
 	public Texture2D cursor;
@@ -56,6 +57,7 @@ public class playerController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+		Debug.DrawRay (transform.position, this.transform.up * hitDistance);
 		checkGuests ();
 		float moveHorizontal = Input.GetAxisRaw ("Horizontal");
 		float moveVertical = Input.GetAxisRaw ("Vertical");
@@ -101,33 +103,7 @@ public class playerController : MonoBehaviour {
 		}
 
 		if (guesses > 0) {
-			if (Input.GetButton ("Fire2") || leftTrigger == 1 && usingController) {
-				canGuess = true;
-				gunSprite.sprite = gun;
-				rmb = true;
-				guestsInView ();
-				if (usingController) {
-					controllerCrosshair.GetComponent<SpriteRenderer> ().sprite = controllerCursor;
-				}
-				Cursor.SetCursor (cursor, Vector2.zero, CursorMode.Auto);
-				speed = knockoutSpeed;
-			} else {
-				rmb = false;
-
-			} 
-
-
-			if(Input.GetButtonUp("Fire2") || leftTrigger == 0 && usingController){
-				Cursor.SetCursor (normalCursor,Vector2.zero,CursorMode.Auto);
-				gunSprite.sprite = null;
-
-				if (usingController) {
-					controllerCrosshair.GetComponent<SpriteRenderer> ().sprite = controllerNormalCursor;
-				}
-				canGuess = false;
-				speed = 6;
-			}
-
+			canGuess = true;
 			if (canGuess && (Input.GetButtonDown ("Fire1") || rightTrigger == 1 && usingController)) {
 				knockOut ();
 			}
@@ -155,12 +131,18 @@ public class playerController : MonoBehaviour {
 
 		if (Input.GetKeyDown (KeyCode.LeftShift) || Input.GetButtonDown("controllerBack")) {
 			hintPannel.SetActive (!(hintPannel.activeSelf));
+			if (hintPannel.activeSelf) {
+				Time.timeScale = 0;
+			} else {
+				Time.timeScale = 1;
+			}
 		}
 	}
 		
 	void knockOut() {
 		gameObject.GetComponent<Animator> ().SetBool ("Attacking", true);
-		RaycastHit2D hit = Physics2D.Linecast(startPosition.position,endPosition.position);
+		RaycastHit2D hit = Physics2D.Raycast(startPosition.position,this.transform.up,hitDistance);
+		Debug.DrawRay (transform.position, this.transform.up * hitDistance);
 		if (hit != null && hit.collider != null && hit.collider.gameObject.layer == LayerMask.NameToLayer("Guest")) {
 			hit.collider.gameObject.GetComponent<Guest>().arrest();
 			murderSys._shake ();
