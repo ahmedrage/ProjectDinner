@@ -1964,7 +1964,7 @@ MonoBehaviour:
 
     Back to acess Journal
 
-    RT while holding LT to Shoot
+    RT while holding LT to arrest a guest
 
 
     Attempt to find and kill the murderer
@@ -2047,7 +2047,7 @@ MonoBehaviour:
 
     Left Shift to acess Journal
 
-    LMB while holding RMB to Shoot
+    Left click while holding right click to arrest a guest
 
 
     Attempt to find and kill the murderer
