@@ -71,6 +71,8 @@
      <Compile Include="Assets\Scripts\textTest.cs" />
      <Compile Include="Assets\ToggleJournalScript.cs" />
      <Compile Include="Assets\TransitionScript.cs" />
+     <Compile Include="Assets\Tutorial\TutorialManager.cs" />
+     <Compile Include="Assets\Tutorial\TutorialMurderScript.cs" />
      <Compile Include="Assets\XInputDotNet\Examples\XInputTestCS.cs" />
      <Compile Include="Assets\audioManager.cs" />
      <Compile Include="Assets\canvasRotationScript.cs" />

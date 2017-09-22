@@ -29,7 +29,7 @@ public class TypewriterScript : MonoBehaviour {
 		}
 	}
 
-	IEnumerator showText () {
+	public IEnumerator showText () {
 		display = false;
 		for (int i = 0; i <= text.Length; i++) {
 			currentText = text.Substring (0, i);
@@ -41,11 +41,18 @@ public class TypewriterScript : MonoBehaviour {
 				completeLineInstant = false;
 			}
 			if (i == text.Length) {
-				print ("ended stooge");
 				display = false;
 				yield return StartCoroutine (WaitForKey ());
+				text = "";
+				dialogueText.text = text;
 			}
 		}
+	}
+
+	public void PrintLine (string line) {
+		display = false;
+		text = line;
+		StartCoroutine (showText ());
 	}
 
 	public void displayRandomDialogue (int listCount, List<string> dialogue) {
@@ -56,6 +63,7 @@ public class TypewriterScript : MonoBehaviour {
 	}
 
 	public IEnumerator displayDialogueInOrder (List<string> dialogue) {
+		Debug.Log ("You filthy whore");
 		display = false;
 		dialogueText.color = Color.white;
 		dialogue.Add ("");

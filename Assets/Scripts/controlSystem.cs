@@ -5,6 +5,7 @@ using UnityEngine;
 
 public class controlSystem : MonoBehaviour {
 
+	public bool inTutorial;
 	public finishConditions finishScript;
 	public murderSystem murderScript;
 	public playerController playerScript;
