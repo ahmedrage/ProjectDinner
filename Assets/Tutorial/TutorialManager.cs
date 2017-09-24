@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TutorialManager : MonoBehaviour {
 
@@ -23,28 +24,66 @@ public class TutorialManager : MonoBehaviour {
 
 	public GameObject Focus;
 	public GameObject FocusCalm;
+	public GameObject Timer;
 
-	// Use this for initialization
+	private float timerMax;
+	private float timerTime;
+
+	private bool timerDone;
+
+	private bool finalVictim;
+	private bool gameWon;
+
+	public GameObject BlackScreen;
+	public GameObject EndMenu;
+
 	void Start () {
+		timerMax = 20f;
+		timerTime = timerMax;
 		typewriter = Dialogue.GetComponent<TypewriterScript> ();
 		controlSys = GetComponent<controlSystem> ();
 		SpawnGuests ();
 		StartCoroutine(RunTutorial ());
 	}
-	
-	// Update is called once per frame
-	/*void Update () {
-		if ((Input.GetButtonDown ("Fire1") || Input.GetButtonDown ("Jump")) && dialogueText.text.Length >= text.Length) {
-			display = true;
-		} else if ((Input.GetButtonDown ("Fire1") || Input.GetButtonDown ("Jump")) && dialogueText.text.Length < text.Length) {
-			completeLineInstant = true;
-		}
-	}*/
 
 	void Update () {
 		if (Input.GetButtonDown ("Fire3")) {
 			journalOpened = true;
 		}
+		if (Timer.activeSelf) {
+			if (timerTime > 0) {
+				timerTime -= Time.deltaTime;
+			} else {
+				if (finalVictim) {
+					Lose ();
+				}
+				timerTime = timerMax;
+				timerMax -= 5;
+				timerDone = true;
+			}
+			Timer.GetComponent<Text> ().text = "NEXT VICTIM: " + Mathf.Floor (timerTime).ToString ();
+		}
+		if (SpawnedGuests [3].GetComponent<Guest> ().arrested) {
+			Win ();
+		}
+	}
+
+	private void Lose () {
+		Timer.SetActive (false);
+		GameObject.Find ("bar").SetActive (false);
+		GameObject.Find ("calmness").SetActive (false);
+		BlackScreen.SetActive (true);
+		EndMenu.SetActive (true);
+		GameObject.Find ("title").GetComponent<Text> ().text = "You didn't get the murderer in time!";
+	}
+
+	private void Win() {
+		Timer.SetActive (false);
+		GameObject.Find ("bar").SetActive (false);
+		GameObject.Find ("calmness").SetActive (false);
+		BlackScreen.SetActive (true);
+		EndMenu.SetActive (true);
+		GameObject.Find ("title").GetComponent<Text> ().text = "You got the murderer!";
 	}
 
 	IEnumerator RunTutorial () {
@@ -56,7 +95,7 @@ public class TutorialManager : MonoBehaviour {
 		textToPrint.Add ("You can walk up to each of them and they will tell you about themselves.");
 		yield return StartCoroutine (typewriter.displayDialogueInOrder (textToPrint));
 		textToPrint.Clear ();
-		yield return new WaitForSeconds (25f);
+		yield return new WaitForSeconds (20f);
 		yield return new WaitForSeconds (0.1f);
 		yield return StartCoroutine (lightFlash (2f));
 		KillGuest (0, "This guest was bludgeoned to death!");
@@ -68,7 +107,7 @@ public class TutorialManager : MonoBehaviour {
 		yield return new WaitForSeconds (3f);
 		//StartCoroutine (WaitForGuestInvestigate ("G1"));
 		textToPrint.Add("As you can see, this guest has been bludgeoned to death.");
-		textToPrint.Add ("This gives you a clue as to whom the murderer is.");
+		textToPrint.Add ("This gives you a clue as to whom the murderer may be.");
 		textToPrint.Add ("Press Left Shift to access your journal.");
 		yield return StartCoroutine (typewriter.displayDialogueInOrder (textToPrint));
 		textToPrint.Clear ();
@@ -94,8 +133,33 @@ public class TutorialManager : MonoBehaviour {
 		textToPrint.Add ("This is the calm bar.");
 		textToPrint.Add ("The calm bar indicates how calm the room is.");
 		textToPrint.Add ("The room becomes less calm every time a guest dies");
-		textToPrint.Add ("As an investigator, it is your job to keep the room calm so you can find the killer.");
-		textToPrint.Add ("");
+		textToPrint.Add ("As the investigator, it is your job to keep the room calm so you can find the killer.");
+		yield return StartCoroutine (typewriter.displayDialogueInOrder (textToPrint));
+		textToPrint.Clear ();
+		yield return new WaitForSeconds (2f);
+		yield return StartCoroutine (lightFlash (0.3f));
+		yield return new WaitForSeconds (0.1f);
+		yield return StartCoroutine (lightFlash (0.3f));
+		textToPrint.Add ("Unfortunately, the killer isn't going to wait for you.");
+		textToPrint.Add ("You are on a timer, and the time you have gets shorter after each murder.");
+		textToPrint.Add ("You must hurry!");
+		yield return StartCoroutine (typewriter.displayDialogueInOrder (textToPrint));
+		textToPrint.Clear ();
+		Timer.SetActive (true);
+		while (!timerDone) {
+			yield return null;
+		}
+		timerDone = false;
+		yield return StartCoroutine (lightFlash (2f));
+		KillGuest (4, "This guest has died from multiple cut wounds!");
+		yield return new WaitForSeconds (3f);
+		textToPrint.Add ("This victim died from cut wounds!");
+		textToPrint.Add ("This helps us eliminate the veteran as a potential suspect as he cannot cut.");
+		textToPrint.Add ("This leaves only the chef!");
+		textToPrint.Add ("To arrest the chef, walk up to him and hold down the right mouse button then the left mouse button."); 
+		yield return StartCoroutine (typewriter.displayDialogueInOrder (textToPrint));
+		textToPrint.Clear ();
+		finalVictim = true;
 	}
 
 	IEnumerator WaitForAllGuests() {
