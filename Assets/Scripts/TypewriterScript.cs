@@ -63,10 +63,9 @@ public class TypewriterScript : MonoBehaviour {
 	}
 
 	public IEnumerator displayDialogueInOrder (List<string> dialogue) {
-		Debug.Log ("You filthy whore");
 		display = false;
 		dialogueText.color = Color.white;
-		dialogue.Add ("");
+		//dialogue.Add ("");
 		foreach (string tx in dialogue) {
 			text = tx;
 			yield return StartCoroutine (showText ());
