@@ -38,7 +38,7 @@ public class TutorialManager : MonoBehaviour {
 	public GameObject EndMenu;
 
 	void Start () {
-		timerMax = 20f;
+		timerMax = 30f;
 		timerTime = timerMax;
 		typewriter = Dialogue.GetComponent<TypewriterScript> ();
 		controlSys = GetComponent<controlSystem> ();
@@ -57,8 +57,8 @@ public class TutorialManager : MonoBehaviour {
 				if (finalVictim) {
 					Lose ();
 				}
-				timerTime = timerMax;
 				timerMax -= 5;
+				timerTime = timerMax;
 				timerDone = true;
 			}
 			Timer.GetComponent<Text> ().text = "NEXT VICTIM: " + Mathf.Floor (timerTime).ToString ();

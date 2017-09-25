@@ -1252,14 +1252,14 @@ RectTransform:
   m_GameObject: {fileID: 681126160}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1.4116696, y: 1.8793278, z: 1.782106}
   m_Children: []
-  m_Father: {fileID: 718998356}
-  m_RootOrder: 1
+  m_Father: {fileID: 1761922848}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 1, y: 1}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 233, y: 137}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -0.000043080734, y: -0.00000047683716}
   m_SizeDelta: {x: 300, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &681126162
@@ -1321,7 +1321,6 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 256454395}
-  - {fileID: 681126161}
   m_Father: {fileID: 1693313953}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1561,7 +1560,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.35375002, y: 0.020564632}
   m_AnchorMax: {x: 0.65500003, y: 0.06242237}
-  m_AnchoredPosition: {x: -278.89612, y: -4.5999756}
+  m_AnchoredPosition: {x: -278.8962, y: -4.5999756}
   m_SizeDelta: {x: 4210, y: 169}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &869635093
@@ -1759,6 +1758,7 @@ GameObject:
   - component: {fileID: 960779563}
   - component: {fileID: 960779562}
   - component: {fileID: 960779561}
+  - component: {fileID: 960779564}
   m_Layer: 5
   m_Name: Menu
   m_TagString: Untagged
@@ -1826,8 +1826,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_MethodName: Quit
+      - m_Target: {fileID: 960779564}
+        m_MethodName: GoMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1874,6 +1874,17 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 960779559}
+--- !u!114 &960779564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 960779559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e90168849c1d08145ad4248bd169a797, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &970805728
 GameObject:
   m_ObjectHideFlags: 0
@@ -2812,6 +2823,11 @@ Prefab:
         type: 2}
       propertyPath: hitDistance
       value: 3.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011590514942, guid: e390d2af1c4387540a68f0e064a05ba8,
+        type: 2}
+      propertyPath: inTutorial
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e390d2af1c4387540a68f0e064a05ba8, type: 2}
@@ -4304,16 +4320,17 @@ RectTransform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1761922847}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.70838106, y: 0.53210515, z: 0.56113386}
-  m_Children: []
+  m_Children:
+  - {fileID: 681126161}
   m_Father: {fileID: 1693313953}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.71625006, y: 0.947236}
   m_AnchorMax: {x: 0.9912499, y: 0.9907641}
-  m_AnchoredPosition: {x: -0.2999878, y: 0.7999878}
+  m_AnchoredPosition: {x: -0.2999878, y: 0.7999573}
   m_SizeDelta: {x: 70, y: 9.9314}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1761922849
@@ -5162,8 +5179,8 @@ MonoBehaviour:
     - {fileID: 21300018, guid: 0d36d74f17ad3544590be58c9ddd26d2, type: 3}
     - {fileID: 21300020, guid: 0d36d74f17ad3544590be58c9ddd26d2, type: 3}
     - {fileID: 21300022, guid: 0d36d74f17ad3544590be58c9ddd26d2, type: 3}
-    deadSprite: {fileID: 21300042, guid: 9aad855742e78074d8f3a16f0bc68972, type: 3}
-    outSprite: {fileID: 21300034, guid: b7a79652262838745a6586d0914d5de4, type: 3}
+    deadSprite: {fileID: 21300034, guid: b7a79652262838745a6586d0914d5de4, type: 3}
+    outSprite: {fileID: 21300036, guid: b7a79652262838745a6586d0914d5de4, type: 3}
     animationController: {fileID: 9100000, guid: e3728dc8a1af35c488b6bb883a85dedb,
       type: 2}
   SpawnPoints:
