@@ -5,6 +5,7 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 public class playerController : MonoBehaviour {
 
+	public bool inTutorial;
 	public float speed;
 	public float radius;
 	public float fovAngle;
@@ -150,7 +151,9 @@ public class playerController : MonoBehaviour {
 				_isShaking = true;
 				audioManager.instance.playSound(blugeSound,Vector2.zero);
 				guesses--; // decrease calm
-				controlSys.calmness -= (controlSys.initialCalmness/ initialGuess) * controlSys.negativePromiseMod;
+				if (!inTutorial) {
+					controlSys.calmness -= (controlSys.initialCalmness / initialGuess) * controlSys.negativePromiseMod;
+				}
 				_statManager.failedArrests += 1;
 			}
 

@@ -21,6 +21,7 @@ public class menu : MonoBehaviour {
 		
 	bool canContinue;
 	bool controllerConnected;
+	bool tutorial;
 	settings settingScript;
 
 	void Start(){
@@ -33,13 +34,23 @@ public class menu : MonoBehaviour {
 		}
 	}
 
+	public void Tutorial () {
+		tutorial = true;
+		Play ();
+	}
+
 	public void Update(){
 		
 		if (canContinue) {
 			clickToContinue.color = Color.Lerp (Color.clear, Color.white, Mathf.PingPong(Time.time,1.5f));
 
 			if (Input.GetButtonDown ("Fire1")) {
-				SceneManager.LoadScene ("Openinc");
+				if (!tutorial) {
+					SceneManager.LoadScene ("Openinc");
+				} else {
+					tutorial = false;
+					SceneManager.LoadScene ("Tutorial");
+				}
 			}
 		}
 
